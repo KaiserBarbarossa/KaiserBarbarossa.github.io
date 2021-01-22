@@ -4,3 +4,4 @@ User-agent: *
 #  Disallow: /
 #
 Allow: /
+Sitemap: https://kaiserbarbarossa.github.io/sitemap.xml
