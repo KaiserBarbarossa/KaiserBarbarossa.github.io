@@ -4,6 +4,7 @@
     <title>Categories on Mein Schmierzettel</title>
     <link>https://kaiserbarbarossa.github.io/categories/</link>
     <description>Recent content in Categories on Mein Schmierzettel</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

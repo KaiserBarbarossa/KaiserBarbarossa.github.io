@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
+    <loc>https://kaiserbarbarossa.github.io/</loc>
+    <lastmod>2021-01-23T16:15:30+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kaiserbarbarossa.github.io/</loc>
+    <loc>https://kaiserbarbarossa.github.io/post/</loc>
+    <lastmod>2021-01-23T16:15:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kaiserbarbarossa.github.io/post/2021/01/23/warum-diesen-blog/</loc>
+    <lastmod>2021-01-23T16:15:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
   </url>
   
   <url>
