@@ -3,37 +3,16 @@
   <channel>
     <title>Mein Schmierzettel</title>
     <link>https://kaiserbarbarossa.github.io/</link>
-    <description>Mein Schmierzettel</description>
+    <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language>
-    <lastBuildDate>Fri, 22 Jan 2021 16:53:28 +0100</lastBuildDate>
-    
-    <atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Jan 2021 16:53:28 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Addons</title>
       <link>https://kaiserbarbarossa.github.io/firefox/addons/</link>
       <pubDate>Fri, 22 Jan 2021 16:53:28 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/firefox/addons/</guid>
-      <description>&lt;h1 id=&#34;firefox&#34;&gt;Firefox&lt;/h1&gt;
-&lt;h2 id=&#34;meine-firefox-addons&#34;&gt;Meine Firefox-Addons&lt;/h2&gt;
-&lt;h3 id=&#34;addons&#34;&gt;Addons&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/wiki-sidebar/&#34;&gt;Wikipedia Sidebar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/vk-sidebar/&#34;&gt;VK Sidebar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/telegram-sidebar/&#34;&gt;Telegram Sidebar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/insta-sidebar/&#34;&gt;Instagram Sidebar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;themes&#34;&gt;Themes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/smooth_dark/&#34;&gt;Smooth Dark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/ubuntuusers/&#34;&gt;Ubuntuusers Light&lt;/a&gt; (siehe auch &lt;a href=&#34;https://forum.ubuntuusers.de/topic/ubuntuusers-theme-fuer-firefox/&#34;&gt;hier&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/brown-purple-passion/&#34;&gt;Brown-purple passion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://addons.mozilla.org/de/firefox/addon/pastel-no-1/&#34;&gt;Pastel No. 1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Firefox Meine Firefox-Addons Addons  Wikipedia Sidebar VK Sidebar Telegram Sidebar Instagram Sidebar  Themes  Smooth Dark Ubuntuusers Light (siehe auch hier) Brown-purple passion Pastel No. 1  </description>
     </item>
     
   </channel>
