@@ -6,7 +6,17 @@
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sat, 23 Jan 2021 16:15:30 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jan 2021 18:52:29 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weechat - der bessere IRC-Client</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</link>
+      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</guid>
+      <description>Ich selber nutze als Messenger eigentlich nur den IRC und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.
+Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.</description>
+    </item>
+    
     <item>
       <title>Warum schreibe ich diesen Blog?</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/01/23/warum-diesen-blog/</link>
