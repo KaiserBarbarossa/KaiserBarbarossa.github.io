@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 27 Jan 2021 18:52:29 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jan 2021 20:01:46 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IRC</title>
-      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
-      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      <title>git</title>
+      <link>https://kaiserbarbarossa.github.io/tags/git/</link>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
-      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
+      <guid>https://kaiserbarbarossa.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
       <link>https://kaiserbarbarossa.github.io/tags/linux/</link>
-      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/linux/</guid>
       <description></description>
@@ -28,7 +28,7 @@
     <item>
       <title>Open Source</title>
       <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
       <description></description>
@@ -37,9 +37,18 @@
     <item>
       <title>Programme</title>
       <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
-      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IRC</title>
+      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
+      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
       <description></description>
     </item>
     

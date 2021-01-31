@@ -6,7 +6,18 @@
     <description>Recent content in Programme on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 27 Jan 2021 18:52:29 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/programme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jan 2021 20:01:46 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/programme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grafische Tools für Git</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</link>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</guid>
+      <description>Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:
+gitg Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:
+sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog.</description>
+    </item>
+    
     <item>
       <title>Weechat - der bessere IRC-Client</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</link>
