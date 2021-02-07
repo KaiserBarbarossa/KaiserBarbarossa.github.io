@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/tags/python/</link>
+    <description>Recent content in Python on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 07 Feb 2021 18:12:26 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyBrowse</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</link>
+      <pubDate>Sun, 07 Feb 2021 18:12:26 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</guid>
+      <description>Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.
+Den Quellcode findet man unter https://github.com/KaiserBarbarossa/MyBrowse.git.
+Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: https://forum.ubuntuusers.de/post/9227690/</description>
+    </item>
+    
+  </channel>
+</rss>
