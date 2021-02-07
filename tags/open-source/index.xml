@@ -28,5 +28,15 @@ sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebun
 Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.</description>
     </item>
     
+    <item>
+      <title>Warum ich Linux Nutze</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</guid>
+      <description>Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.
+Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.</description>
+    </item>
+    
   </channel>
 </rss>
