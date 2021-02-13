@@ -6,7 +6,18 @@
     <description>Recent content in Open Source on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 07 Feb 2021 10:37:30 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Feb 2021 19:16:51 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sich an Open-Source-Projekten beteiligen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</link>
+      <pubDate>Fri, 12 Feb 2021 19:16:51 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</guid>
+      <description>Für mich ist einer der großen Vorteile, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.
+Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:
+ Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden.</description>
+    </item>
+    
     <item>
       <title>Warum ich Linux Nutze</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</link>
