@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/categories/python/</link>
+    <description>Recent content in Python on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 14 Feb 2021 17:05:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Warum schreibt man einen eigenen Browser?</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</link>
+      <pubDate>Sun, 14 Feb 2021 17:05:45 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</guid>
+      <description>Ich frage mich, warum ich hier eigentlich gar nicht über MyBrowse berichte. Viel mehr Infos darüber findet man tatsächlich im entsprechenden Thread auf ubuntuusers. Das will ich hiermit ändern und vor allem meine Ambition und meine Ziele dahinter klarmachen.
+Warum? Computer sind viel zu schnell zu alt. Ich selber bin stolzer Nutzer eines ca. 10 Jahre alten Notebookes und muss demzufolge mit Restriktionen rechnen. Die meisten Browser wie Firefox (und auch der oftmals als viel schneller und ressourcenschonender dargestellte Chrom{e/ium} frisst Ressourcen)</description>
+    </item>
+    
+  </channel>
+</rss>
