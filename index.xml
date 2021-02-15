@@ -6,7 +6,19 @@
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 14 Feb 2021 17:05:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Feb 2021 22:09:15 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xfce: Themes auf der Kommandozeile auswählen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</link>
+      <pubDate>Mon, 15 Feb 2021 22:09:15 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</guid>
+      <description>Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.
+Das Theme lässt sich folgender Maßen anpassen:
+xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;  Und der Iconsatz lässt sich folgendermaßen anpassen:
+xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;  So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.</description>
+    </item>
+    
     <item>
       <title>Warum schreibt man einen eigenen Browser?</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</link>

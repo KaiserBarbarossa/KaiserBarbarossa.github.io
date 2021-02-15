@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xfce on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/tags/xfce/</link>
+    <description>Recent content in Xfce on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 15 Feb 2021 22:09:15 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/xfce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xfce: Themes auf der Kommandozeile auswählen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</link>
+      <pubDate>Mon, 15 Feb 2021 22:09:15 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</guid>
+      <description>Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.
+Das Theme lässt sich folgender Maßen anpassen:
+xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;  Und der Iconsatz lässt sich folgendermaßen anpassen:
+xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;  So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.</description>
+    </item>
+    
+  </channel>
+</rss>
