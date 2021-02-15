@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 15 Feb 2021 22:09:15 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Feb 2021 22:40:19 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://kaiserbarbarossa.github.io/categories/linux/</link>
+      <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Programme</title>
       <link>https://kaiserbarbarossa.github.io/categories/programme/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 14 Feb 2021 17:05:45 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://kaiserbarbarossa.github.io/categories/linux/</link>
-      <pubDate>Fri, 12 Feb 2021 19:16:51 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/categories/linux/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,30 @@
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 15 Feb 2021 22:09:15 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Feb 2021 22:40:19 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ganzen Inhalt in Hugo-Feeds anzeigen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/ganzen-inhalt-in-feeds-anzeigen/</link>
+      <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/ganzen-inhalt-in-feeds-anzeigen/</guid>
+      <description>&lt;p&gt;Standardmäßig zeigt Hugo nur den Anfang eines Artikels in den Feeds an.&lt;/p&gt;
+&lt;p&gt;Will man dies ändern kann man wie folgt vorgehen:&lt;/p&gt;
+&lt;p&gt;Normalerweise sollte man nicht die Themes direkt unter &lt;code&gt;themes/&lt;/code&gt; bearbeiten. Stattdessen sollte man die Vorlagen nach &lt;code&gt;layouts&lt;/code&gt; kopieren und dort bearbeiten beziehungsweise aus dem Git-Repo dorthin herunterladen. Also folgende Befehle ausgehend von dem Pfad des Blogs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd layouts/_default
+wget https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/_default/rss.xml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jetzt kann man die Datei &lt;code&gt;rss.xml&lt;/code&gt; editieren und die Zeile&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;description&amp;gt;{{ .Summary | html }}&amp;lt;/description&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;durch&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;description&amp;gt;{{- .Content | html -}}&amp;lt;/description&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach muss man die Seite neu bauen.&lt;/p&gt;
+&lt;p&gt;Gefunden hatte ich die Lösung &lt;a href=&#34;https://blog.eternalrecurrence.space/posts/displaying-the-full-content-in-hugo-rss-feed/&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Xfce: Themes auf der Kommandozeile auswählen</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</link>
