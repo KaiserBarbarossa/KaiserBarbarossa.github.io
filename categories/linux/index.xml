@@ -13,9 +13,14 @@
       <pubDate>Fri, 12 Feb 2021 19:16:51 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</guid>
-      <description>Für mich ist einer der großen Vorteile, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.
-Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:
- Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden.</description>
+      <description>&lt;p&gt;Für mich ist einer der großen &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/&#34;&gt;Vorteile&lt;/a&gt;, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.&lt;/p&gt;
+&lt;p&gt;Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden. Das kann enorm hilfreich sein und ist deshalb - auch wenn es banal klingt - ein &lt;!-- raw HTML omitted --&gt;großer&lt;!-- raw HTML omitted --&gt; Beitrag. Bugtracker findet man oft direkt beim Code-Repository des Projektes.&lt;/li&gt;
+&lt;li&gt;Übersetzungen beitragen. Die meisten Programme werden standardmäßig mit englischer Oberfläche ausgeliefert (und ggf. der Sprache des Programmierers) und können oft lokalisiert, also in andere Sprachen übersetzt werden. Die fördert zum einen die Verbreitung der Software und zum Anderen übt man dadurch selber seine eigenen Fremdsprachenkenntnisse.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wenn man nicht weiß, ob und wie man sich in einem Projekt einbringen kann, hilft es oft, den Maintainer zu kontaktieren.Ich wüßte keinen, der sich über die Anfrage nach Mitarbeit beklagen würde. Dasselbe  gilt auch für geschlossen entwickelte Projekte (wie z.B. bei &lt;a href=&#34;https://ubuntuusers.de/inyoka/&#34;&gt;Inyoka&lt;/a&gt; - so habe ich das bei Inyoka auch gemach gehabt), auch hier hilft oft eine nette Nachricht an einen Entwickler ob man helfen darf.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -24,8 +29,26 @@ Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkei
       <pubDate>Sun, 07 Feb 2021 10:37:30 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</guid>
-      <description>Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.
-Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.</description>
+      <description>&lt;p&gt;Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.&lt;/p&gt;
+&lt;p&gt;Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.&lt;/p&gt;
+&lt;p&gt;Ich war als ich das erste mal vor einem Linxu-System saß, begeistert.&lt;/p&gt;
+&lt;p&gt;Die Gründe, die Linux für mich zu einem perfekten System machen:&lt;/p&gt;
+&lt;h2 id=&#34;1-für-jeden-einsazzweck-gibt-es-ein-system&#34;&gt;1. Für jeden Einsazzweck gibt es ein System&lt;/h2&gt;
+&lt;p&gt;Linux per se ist enorm flexibel. Einzelne Distributionen bieten für alle die Möglichkeit das System zu haben, das man für sich selber braucht. Und selbst wenn es &lt;strong&gt;das&lt;/strong&gt; System für einen aktuell nicht gibt, kann man es selber erstellen.&lt;/p&gt;
+&lt;h2 id=&#34;2-flexibilität&#34;&gt;2. Flexibilität&lt;/h2&gt;
+&lt;p&gt;Eigentlich schon mit dem ersten Punkt angesprochen. Es ist recht egal ob ich einen dick auftragenden Blink-Blink-Desktop haben möchte, einen simplen Fenstermanager oder gar keine grafische Oberfläche. Mit Linux ist alles möglich.&lt;/p&gt;
+&lt;h2 id=&#34;3-es-gibt-immer-eine-wahl&#34;&gt;3. Es gibt immer eine Wahl&lt;/h2&gt;
+&lt;p&gt;Wenn eine Anwendung nicht zustimmt, kann man sich eigentlich immer sicher sein, dass es eine Alternative gibt. Das selbe gilt auch bei Distributionen - hier gibt es auch immer eine Alternative.&lt;/p&gt;
+&lt;h2 id=&#34;4-linux-ist-cool&#34;&gt;4. Linux ist cool!&lt;/h2&gt;
+&lt;p&gt;Ich kann meinen Desktop so anpassen, wie &lt;strong&gt;ich&lt;/strong&gt; es will. Das bietet in diesem Umfang keines der beiden großen amerikanischen Betriebssysteme. Man kann damit angeben, was man aus einem simplen System gemacht hat und wie toll das jetzt aussieht. Auch die Arbeit in der Konsole hat finde ich etwas. ;)&lt;/p&gt;
+&lt;h2 id=&#34;5-kostenlos&#34;&gt;5. Kostenlos&lt;/h2&gt;
+&lt;p&gt;Auch wenn Geiz nicht gut ist, hapert es doch oft am Geld. Wieso sollte man also mehr als 100€ für ein Betriebssystem ausgeben, wenn man Linux-Distributionen kostenlos bekommen kann.&lt;/p&gt;
+&lt;h2 id=&#34;6-quelloffen&#34;&gt;6. Quelloffen&lt;/h2&gt;
+&lt;p&gt;Die wenigsten Anwender werden jemals den gesamten Quellcode studieren und dann entscheiden, inwiefern man ein Programm benutzt. Aber die Möglichkeit allein gibt einem ein gutes Gefühl. Gleichzeitig erleichtert dies oftmals auch die Mitarbeit an Softwareprojekten.&lt;/p&gt;
+&lt;h2 id=&#34;7-hilfe&#34;&gt;7. Hilfe!&lt;/h2&gt;
+&lt;p&gt;Für mich ist die doch riesige Community rund um einzelne Linux-Distributionen einfach faszinierend. Man findet zu fast keinem Problem nicht schon irgendwo eine Lösung. Wenn es diese wider Erwarten doch noch nicht gibt, findet man in einem der vielen Foren sicher eine Lösung. Alternativ sind oft auch die Entwickler nicht weit.&lt;/p&gt;
+&lt;p&gt;Wenn man dann etwas mehr Erfahrung gesammelt hat, kann man wie ich auch anderen Nutzern bei ihren Problemen helfen.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

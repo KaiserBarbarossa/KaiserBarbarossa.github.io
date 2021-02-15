@@ -13,9 +13,11 @@
       <pubDate>Sun, 07 Feb 2021 18:12:26 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</guid>
-      <description>Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.
-Den Quellcode findet man unter https://github.com/KaiserBarbarossa/MyBrowse.git.
-Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: https://forum.ubuntuusers.de/post/9227690/</description>
+      <description>&lt;p&gt;&lt;img src=&#34;../mybrowse.png&#34; alt=&#34;Bildschirmfoto&#34; title=&#34;MyBrowse&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.&lt;/p&gt;
+&lt;p&gt;Den Quellcode findet man unter &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse.git&#34;&gt;https://github.com/KaiserBarbarossa/MyBrowse.git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: &lt;a href=&#34;https://forum.ubuntuusers.de/post/9227690/&#34;&gt;https://forum.ubuntuusers.de/post/9227690/&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

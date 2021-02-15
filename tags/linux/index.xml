@@ -13,8 +13,26 @@
       <pubDate>Sun, 07 Feb 2021 10:37:30 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</guid>
-      <description>Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.
-Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.</description>
+      <description>&lt;p&gt;Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.&lt;/p&gt;
+&lt;p&gt;Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.&lt;/p&gt;
+&lt;p&gt;Ich war als ich das erste mal vor einem Linxu-System saß, begeistert.&lt;/p&gt;
+&lt;p&gt;Die Gründe, die Linux für mich zu einem perfekten System machen:&lt;/p&gt;
+&lt;h2 id=&#34;1-für-jeden-einsazzweck-gibt-es-ein-system&#34;&gt;1. Für jeden Einsazzweck gibt es ein System&lt;/h2&gt;
+&lt;p&gt;Linux per se ist enorm flexibel. Einzelne Distributionen bieten für alle die Möglichkeit das System zu haben, das man für sich selber braucht. Und selbst wenn es &lt;strong&gt;das&lt;/strong&gt; System für einen aktuell nicht gibt, kann man es selber erstellen.&lt;/p&gt;
+&lt;h2 id=&#34;2-flexibilität&#34;&gt;2. Flexibilität&lt;/h2&gt;
+&lt;p&gt;Eigentlich schon mit dem ersten Punkt angesprochen. Es ist recht egal ob ich einen dick auftragenden Blink-Blink-Desktop haben möchte, einen simplen Fenstermanager oder gar keine grafische Oberfläche. Mit Linux ist alles möglich.&lt;/p&gt;
+&lt;h2 id=&#34;3-es-gibt-immer-eine-wahl&#34;&gt;3. Es gibt immer eine Wahl&lt;/h2&gt;
+&lt;p&gt;Wenn eine Anwendung nicht zustimmt, kann man sich eigentlich immer sicher sein, dass es eine Alternative gibt. Das selbe gilt auch bei Distributionen - hier gibt es auch immer eine Alternative.&lt;/p&gt;
+&lt;h2 id=&#34;4-linux-ist-cool&#34;&gt;4. Linux ist cool!&lt;/h2&gt;
+&lt;p&gt;Ich kann meinen Desktop so anpassen, wie &lt;strong&gt;ich&lt;/strong&gt; es will. Das bietet in diesem Umfang keines der beiden großen amerikanischen Betriebssysteme. Man kann damit angeben, was man aus einem simplen System gemacht hat und wie toll das jetzt aussieht. Auch die Arbeit in der Konsole hat finde ich etwas. ;)&lt;/p&gt;
+&lt;h2 id=&#34;5-kostenlos&#34;&gt;5. Kostenlos&lt;/h2&gt;
+&lt;p&gt;Auch wenn Geiz nicht gut ist, hapert es doch oft am Geld. Wieso sollte man also mehr als 100€ für ein Betriebssystem ausgeben, wenn man Linux-Distributionen kostenlos bekommen kann.&lt;/p&gt;
+&lt;h2 id=&#34;6-quelloffen&#34;&gt;6. Quelloffen&lt;/h2&gt;
+&lt;p&gt;Die wenigsten Anwender werden jemals den gesamten Quellcode studieren und dann entscheiden, inwiefern man ein Programm benutzt. Aber die Möglichkeit allein gibt einem ein gutes Gefühl. Gleichzeitig erleichtert dies oftmals auch die Mitarbeit an Softwareprojekten.&lt;/p&gt;
+&lt;h2 id=&#34;7-hilfe&#34;&gt;7. Hilfe!&lt;/h2&gt;
+&lt;p&gt;Für mich ist die doch riesige Community rund um einzelne Linux-Distributionen einfach faszinierend. Man findet zu fast keinem Problem nicht schon irgendwo eine Lösung. Wenn es diese wider Erwarten doch noch nicht gibt, findet man in einem der vielen Foren sicher eine Lösung. Alternativ sind oft auch die Entwickler nicht weit.&lt;/p&gt;
+&lt;p&gt;Wenn man dann etwas mehr Erfahrung gesammelt hat, kann man wie ich auch anderen Nutzern bei ihren Problemen helfen.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -23,9 +41,20 @@ Linux ist für viele nicht existent, man kennt es halt nicht und die paar Mensch
       <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</guid>
-      <description>Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:
-gitg Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:
-sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog.</description>
+      <description>&lt;p&gt;Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:&lt;/p&gt;
+&lt;h2 id=&#34;gitg&#34;&gt;gitg&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_gitg.png&#34; alt=&#34;Bildschirmfoto von gitg&#34; title=&#34;gitg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install gitg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;thunar-vcs-plugin&#34;&gt;thunar-vcs-plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_thunar-vcs.png&#34; alt=&#34;Bildschirmfoto von thunar-vcs-plugin&#34; title=&#34;thunar-vcs-plugin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog. benutzerdefinierte Aktionen erweiterbar. Eines dieser Plugins rüstet eine Unterstützung für Subversion und Git nach. Installierbar passenderweise über das Paket &lt;strong&gt;thunar-vcs-plugin&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get install thunar-vcs-plugin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;atom&#34;&gt;Atom&lt;/h2&gt;
+&lt;p&gt;Atom ist vielmehr als einfach ein Programm für git. Es ist der von Github entwickelte Texteditor mit Unterstützung für Syntaxhighlighting mehrerer Sprachen, Plugins, eigenen Stylesheets sowie einer Git- und einer Github-Integration&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -34,8 +63,16 @@ sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebun
       <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</guid>
-      <description>Ich selber nutze als Messenger eigentlich nur den IRC und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.
-Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.</description>
+      <description>&lt;p&gt;Ich selber nutze als Messenger eigentlich nur den &lt;a href=&#34;https://wiki.ubuntuusers.de/IRC&#34;&gt;IRC&lt;/a&gt; und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.&lt;/p&gt;
+&lt;p&gt;Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.&lt;/p&gt;
+&lt;p&gt;Für Ubuntu/Debian etc. lässt sich das Programm wie folgt installieren:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install weechat weechat-plugins weechat-scripts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Für Debian muss man im Regelfall sich das sudo wegdenken und das als Root ausführen. Starten geht einfach mit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;weechat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Weechat ist optimal für mich, da ich es einfach immer in Guake offen haben kann und bei Bedarf einblenden.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -13,9 +13,20 @@
       <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</guid>
-      <description>Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:
-gitg Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:
-sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog.</description>
+      <description>&lt;p&gt;Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:&lt;/p&gt;
+&lt;h2 id=&#34;gitg&#34;&gt;gitg&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_gitg.png&#34; alt=&#34;Bildschirmfoto von gitg&#34; title=&#34;gitg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install gitg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;thunar-vcs-plugin&#34;&gt;thunar-vcs-plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_thunar-vcs.png&#34; alt=&#34;Bildschirmfoto von thunar-vcs-plugin&#34; title=&#34;thunar-vcs-plugin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog. benutzerdefinierte Aktionen erweiterbar. Eines dieser Plugins rüstet eine Unterstützung für Subversion und Git nach. Installierbar passenderweise über das Paket &lt;strong&gt;thunar-vcs-plugin&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get install thunar-vcs-plugin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;atom&#34;&gt;Atom&lt;/h2&gt;
+&lt;p&gt;Atom ist vielmehr als einfach ein Programm für git. Es ist der von Github entwickelte Texteditor mit Unterstützung für Syntaxhighlighting mehrerer Sprachen, Plugins, eigenen Stylesheets sowie einer Git- und einer Github-Integration&lt;/p&gt;
+</description>
     </item>
     
   </channel>

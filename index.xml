@@ -13,10 +13,33 @@
       <pubDate>Mon, 15 Feb 2021 22:09:15 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</guid>
-      <description>Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.
-Das Theme lässt sich folgender Maßen anpassen:
-xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;  Und der Iconsatz lässt sich folgendermaßen anpassen:
-xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;  So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.</description>
+      <description>&lt;p&gt;Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.&lt;/p&gt;
+&lt;p&gt;Das Theme lässt sich folgender Maßen anpassen:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Und der Iconsatz lässt sich folgendermaßen anpassen:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.&lt;/p&gt;
+&lt;p&gt;Theoretisch könnte man dies auch in einem Skript z.B. wie folgt zusammenfassen.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+if [ &amp;quot;$1&amp;quot; == &amp;quot;light&amp;quot; ]
+    then
+        xfconf-query -c xsettings -p /Net/ThemeName -s Adapta
+        xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta
+        notify-send &amp;quot;Theme&amp;quot; &amp;quot;Helles Theme aktiviert&amp;quot;
+    elif [ &amp;quot;$1&amp;quot; == &amp;quot;dark&amp;quot; ]
+        then
+            xfconf-query -c xsettings -p /Net/ThemeName -s Adapta-Nokto
+            xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta-Nokto
+            notify-send &amp;quot;Theme&amp;quot; &amp;quot;Dunkles Theme aktiviert&amp;quot;
+    else
+        echo &amp;quot;Fehlendes oder falsches Argument. Beende...&amp;quot;
+        exit 1
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wenn man das Skript jetzt also mit dem Argument &amp;ldquo;light&amp;rdquo; aufruft, würden ein helles Theme und ein helles Icontheme aktiviert und mit dem Argument &amp;ldquo;dark&amp;rdquo; mit einem entsprechenden dunklen Design. Die Themen müsste man natürlich entsprechend den eigenen Vorlieben anpassen&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,8 +48,20 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp
       <pubDate>Sun, 14 Feb 2021 17:05:45 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</guid>
-      <description>Ich frage mich, warum ich hier eigentlich gar nicht über MyBrowse berichte. Viel mehr Infos darüber findet man tatsächlich im entsprechenden Thread auf ubuntuusers. Das will ich hiermit ändern und vor allem meine Ambition und meine Ziele dahinter klarmachen.
-Warum? Computer sind viel zu schnell zu alt. Ich selber bin stolzer Nutzer eines ca. 10 Jahre alten Notebookes und muss demzufolge mit Restriktionen rechnen. Die meisten Browser wie Firefox (und auch der oftmals als viel schneller und ressourcenschonender dargestellte Chrom{e/ium} frisst Ressourcen)</description>
+      <description>&lt;p&gt;Ich frage mich, warum ich hier eigentlich gar nicht über MyBrowse berichte. Viel mehr Infos darüber findet man tatsächlich im entsprechenden &lt;a href=&#34;https://forum.ubuntuusers.de/topic/mybrowse-ein-simpler-webkitbrowser-in-python/&#34;&gt;Thread&lt;/a&gt; auf ubuntuusers. Das will ich hiermit ändern und vor allem meine Ambition und meine Ziele dahinter klarmachen.&lt;/p&gt;
+&lt;h1 id=&#34;warum&#34;&gt;Warum?&lt;/h1&gt;
+&lt;p&gt;Computer sind viel zu schnell zu alt. Ich selber bin stolzer Nutzer eines ca. 10 Jahre alten Notebookes und muss demzufolge mit Restriktionen rechnen. Die meisten Browser wie Firefox (und &lt;strong&gt;auch&lt;/strong&gt; der oftmals als viel schneller und ressourcenschonender dargestellte Chrom{e/ium} frisst Ressourcen)&lt;/p&gt;
+&lt;p&gt;Firefox ist ein toller Browser! Wirklich! Aber er ist halt sicher nicht der ressourcenschonenste.&lt;/p&gt;
+&lt;p&gt;Viele Browser vergessen, wofür ein Webbrowser da ist. Man vergisst, dass ein Webbrowser Internetseiten darstellen soll und nicht noch zwei dutzend andere Dinge machen soll, auch wenn für mich ein bisschen Komfort beim Surfen dazugehört. Aber eben alles in Maßen.&lt;/p&gt;
+&lt;p&gt;Es gibt für mich aktuell genau einen Browser, der alle diese Bedingungen erfüllt und das ist meiner Meinung nach &lt;a href=&#34;https://www.uninformativ.de/git/lariza/&#34;&gt;Lariza&lt;/a&gt;. Da ich aber nicht so hohe Anforderungen an einen Browser habe, habe ich also beschlossen, einen eigenen Browser zu programmieren, auch auf Basis WebKits sowie in Python.&lt;/p&gt;
+&lt;p&gt;Was mich auch gestört hat, ist das viele Browser meinen, dass man einen eigenen Stil festlegen soll. Warum lege ich denn GTK-Themes fest, wenn jedes Programm dann doch eigene Farben definiert.&lt;/p&gt;
+&lt;p&gt;Ein anderer Hintergrundgedanke für mich war, dass meine Pythonkenntnisse im Moment eher als rudimentär zu bezeichnen sind und ich diese so ausbauen will.&lt;/p&gt;
+&lt;p&gt;So entstand innerhalb eines Tages die erste laufende Version von MyBrowse, die ich auch kurz darauf im o.g. Thread bekanntgab.&lt;/p&gt;
+&lt;h1 id=&#34;quo-vadis&#34;&gt;Quo vadis?&lt;/h1&gt;
+&lt;p&gt;MyBrowse ist &lt;strong&gt;mein&lt;/strong&gt; Webbrowser. Ich habe ihn als Ersatz für Firefox auf meinem Notebook geschrieben und habe meine eigenen Anforderungen an einen Browser.&lt;/p&gt;
+&lt;p&gt;Von daher versteht es sich denke ich von selbst, dass ich gerne Ideen und Gedanken anderer Nutzer aufgreife, aber nicht alles umsetze. Ich möchte einen Browser, der auf mich zugeschnitten ist und der meine Anforderungen trifft. Auf keinen Fall möchte ich, dass daraus so ein wunderbarer, aber aufgeblähter, Browser wie Firefox entsteht, sondern dass es endlich einen Browser gibt, der auch für Systeme älteren Semesters funktioniert.&lt;/p&gt;
+&lt;p&gt;Ich hoffe, dass ich hier während der Entwicklung noch mehr über MyBrowse schreiben werde.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -35,9 +70,14 @@ Warum? Computer sind viel zu schnell zu alt. Ich selber bin stolzer Nutzer eines
       <pubDate>Fri, 12 Feb 2021 19:16:51 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</guid>
-      <description>Für mich ist einer der großen Vorteile, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.
-Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:
- Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden.</description>
+      <description>&lt;p&gt;Für mich ist einer der großen &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/&#34;&gt;Vorteile&lt;/a&gt;, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.&lt;/p&gt;
+&lt;p&gt;Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden. Das kann enorm hilfreich sein und ist deshalb - auch wenn es banal klingt - ein &lt;!-- raw HTML omitted --&gt;großer&lt;!-- raw HTML omitted --&gt; Beitrag. Bugtracker findet man oft direkt beim Code-Repository des Projektes.&lt;/li&gt;
+&lt;li&gt;Übersetzungen beitragen. Die meisten Programme werden standardmäßig mit englischer Oberfläche ausgeliefert (und ggf. der Sprache des Programmierers) und können oft lokalisiert, also in andere Sprachen übersetzt werden. Die fördert zum einen die Verbreitung der Software und zum Anderen übt man dadurch selber seine eigenen Fremdsprachenkenntnisse.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wenn man nicht weiß, ob und wie man sich in einem Projekt einbringen kann, hilft es oft, den Maintainer zu kontaktieren.Ich wüßte keinen, der sich über die Anfrage nach Mitarbeit beklagen würde. Dasselbe  gilt auch für geschlossen entwickelte Projekte (wie z.B. bei &lt;a href=&#34;https://ubuntuusers.de/inyoka/&#34;&gt;Inyoka&lt;/a&gt; - so habe ich das bei Inyoka auch gemach gehabt), auch hier hilft oft eine nette Nachricht an einen Entwickler ob man helfen darf.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -46,9 +86,11 @@ Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkei
       <pubDate>Sun, 07 Feb 2021 18:12:26 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</guid>
-      <description>Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.
-Den Quellcode findet man unter https://github.com/KaiserBarbarossa/MyBrowse.git.
-Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: https://forum.ubuntuusers.de/post/9227690/</description>
+      <description>&lt;p&gt;&lt;img src=&#34;../mybrowse.png&#34; alt=&#34;Bildschirmfoto&#34; title=&#34;MyBrowse&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.&lt;/p&gt;
+&lt;p&gt;Den Quellcode findet man unter &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse.git&#34;&gt;https://github.com/KaiserBarbarossa/MyBrowse.git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: &lt;a href=&#34;https://forum.ubuntuusers.de/post/9227690/&#34;&gt;https://forum.ubuntuusers.de/post/9227690/&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -57,8 +99,26 @@ Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum g
       <pubDate>Sun, 07 Feb 2021 10:37:30 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</guid>
-      <description>Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.
-Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.</description>
+      <description>&lt;p&gt;Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.&lt;/p&gt;
+&lt;p&gt;Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.&lt;/p&gt;
+&lt;p&gt;Ich war als ich das erste mal vor einem Linxu-System saß, begeistert.&lt;/p&gt;
+&lt;p&gt;Die Gründe, die Linux für mich zu einem perfekten System machen:&lt;/p&gt;
+&lt;h2 id=&#34;1-für-jeden-einsazzweck-gibt-es-ein-system&#34;&gt;1. Für jeden Einsazzweck gibt es ein System&lt;/h2&gt;
+&lt;p&gt;Linux per se ist enorm flexibel. Einzelne Distributionen bieten für alle die Möglichkeit das System zu haben, das man für sich selber braucht. Und selbst wenn es &lt;strong&gt;das&lt;/strong&gt; System für einen aktuell nicht gibt, kann man es selber erstellen.&lt;/p&gt;
+&lt;h2 id=&#34;2-flexibilität&#34;&gt;2. Flexibilität&lt;/h2&gt;
+&lt;p&gt;Eigentlich schon mit dem ersten Punkt angesprochen. Es ist recht egal ob ich einen dick auftragenden Blink-Blink-Desktop haben möchte, einen simplen Fenstermanager oder gar keine grafische Oberfläche. Mit Linux ist alles möglich.&lt;/p&gt;
+&lt;h2 id=&#34;3-es-gibt-immer-eine-wahl&#34;&gt;3. Es gibt immer eine Wahl&lt;/h2&gt;
+&lt;p&gt;Wenn eine Anwendung nicht zustimmt, kann man sich eigentlich immer sicher sein, dass es eine Alternative gibt. Das selbe gilt auch bei Distributionen - hier gibt es auch immer eine Alternative.&lt;/p&gt;
+&lt;h2 id=&#34;4-linux-ist-cool&#34;&gt;4. Linux ist cool!&lt;/h2&gt;
+&lt;p&gt;Ich kann meinen Desktop so anpassen, wie &lt;strong&gt;ich&lt;/strong&gt; es will. Das bietet in diesem Umfang keines der beiden großen amerikanischen Betriebssysteme. Man kann damit angeben, was man aus einem simplen System gemacht hat und wie toll das jetzt aussieht. Auch die Arbeit in der Konsole hat finde ich etwas. ;)&lt;/p&gt;
+&lt;h2 id=&#34;5-kostenlos&#34;&gt;5. Kostenlos&lt;/h2&gt;
+&lt;p&gt;Auch wenn Geiz nicht gut ist, hapert es doch oft am Geld. Wieso sollte man also mehr als 100€ für ein Betriebssystem ausgeben, wenn man Linux-Distributionen kostenlos bekommen kann.&lt;/p&gt;
+&lt;h2 id=&#34;6-quelloffen&#34;&gt;6. Quelloffen&lt;/h2&gt;
+&lt;p&gt;Die wenigsten Anwender werden jemals den gesamten Quellcode studieren und dann entscheiden, inwiefern man ein Programm benutzt. Aber die Möglichkeit allein gibt einem ein gutes Gefühl. Gleichzeitig erleichtert dies oftmals auch die Mitarbeit an Softwareprojekten.&lt;/p&gt;
+&lt;h2 id=&#34;7-hilfe&#34;&gt;7. Hilfe!&lt;/h2&gt;
+&lt;p&gt;Für mich ist die doch riesige Community rund um einzelne Linux-Distributionen einfach faszinierend. Man findet zu fast keinem Problem nicht schon irgendwo eine Lösung. Wenn es diese wider Erwarten doch noch nicht gibt, findet man in einem der vielen Foren sicher eine Lösung. Alternativ sind oft auch die Entwickler nicht weit.&lt;/p&gt;
+&lt;p&gt;Wenn man dann etwas mehr Erfahrung gesammelt hat, kann man wie ich auch anderen Nutzern bei ihren Problemen helfen.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -67,9 +127,20 @@ Linux ist für viele nicht existent, man kennt es halt nicht und die paar Mensch
       <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</guid>
-      <description>Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:
-gitg Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:
-sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog.</description>
+      <description>&lt;p&gt;Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:&lt;/p&gt;
+&lt;h2 id=&#34;gitg&#34;&gt;gitg&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_gitg.png&#34; alt=&#34;Bildschirmfoto von gitg&#34; title=&#34;gitg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install gitg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;thunar-vcs-plugin&#34;&gt;thunar-vcs-plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_thunar-vcs.png&#34; alt=&#34;Bildschirmfoto von thunar-vcs-plugin&#34; title=&#34;thunar-vcs-plugin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog. benutzerdefinierte Aktionen erweiterbar. Eines dieser Plugins rüstet eine Unterstützung für Subversion und Git nach. Installierbar passenderweise über das Paket &lt;strong&gt;thunar-vcs-plugin&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get install thunar-vcs-plugin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;atom&#34;&gt;Atom&lt;/h2&gt;
+&lt;p&gt;Atom ist vielmehr als einfach ein Programm für git. Es ist der von Github entwickelte Texteditor mit Unterstützung für Syntaxhighlighting mehrerer Sprachen, Plugins, eigenen Stylesheets sowie einer Git- und einer Github-Integration&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -78,8 +149,16 @@ sudo apt-get install gitg  thunar-vcs-plugin Der Dateimanager der Desktopumgebun
       <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</guid>
-      <description>Ich selber nutze als Messenger eigentlich nur den IRC und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.
-Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.</description>
+      <description>&lt;p&gt;Ich selber nutze als Messenger eigentlich nur den &lt;a href=&#34;https://wiki.ubuntuusers.de/IRC&#34;&gt;IRC&lt;/a&gt; und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.&lt;/p&gt;
+&lt;p&gt;Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.&lt;/p&gt;
+&lt;p&gt;Für Ubuntu/Debian etc. lässt sich das Programm wie folgt installieren:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install weechat weechat-plugins weechat-scripts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Für Debian muss man im Regelfall sich das sudo wegdenken und das als Root ausführen. Starten geht einfach mit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;weechat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Weechat ist optimal für mich, da ich es einfach immer in Guake offen haben kann und bei Bedarf einblenden.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -88,9 +167,11 @@ Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr
       <pubDate>Sat, 23 Jan 2021 16:15:30 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/01/23/warum-diesen-blog/</guid>
-      <description>Warum noch ein Blog? Hat diese Welt nicht schon genug Blogs gesehen? Ja, sicher.
-Ich schreibe diesen Blog, um für mich eine mobile und digitale Gedankenstütze zu haben. Ich werde hier über meinen Kampf mit Linux schreiben und meine Problemlösungen veröffentlichen. Gleichzeitig versuche ich meine (miserablen) Programmierkünste vorzustellen. ;)
-Mal sehen, wie sich dieses Projekt entwickelt&amp;hellip;</description>
+      <description>&lt;p&gt;Warum noch ein Blog? Hat diese Welt nicht schon genug Blogs gesehen? Ja, sicher.&lt;/p&gt;
+&lt;p&gt;Ich schreibe diesen Blog, um für mich eine mobile und digitale Gedankenstütze zu haben. Ich werde hier über meinen Kampf mit Linux schreiben und meine Problemlösungen veröffentlichen.
+Gleichzeitig versuche ich meine (miserablen) Programmierkünste vorzustellen. ;)&lt;/p&gt;
+&lt;p&gt;Mal sehen, wie sich dieses Projekt entwickelt&amp;hellip;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -99,7 +180,7 @@ Mal sehen, wie sich dieses Projekt entwickelt&amp;hellip;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/archiv/</guid>
-      <description>Archiv</description>
+      <description></description>
     </item>
     
   </channel>
