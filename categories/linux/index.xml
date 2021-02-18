@@ -6,7 +6,33 @@
     <description>Recent content in Linux on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 15 Feb 2021 22:40:19 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 07:53:10 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Launchpad vs. Github</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</link>
+      <pubDate>Thu, 18 Feb 2021 07:53:10 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</guid>
+      <description>&lt;p&gt;Sowohl Launchpad als auch Github sind Webanwendungen auf denen man seine Projekte verwalten kann. Außerdem gibt es noch andere Anwendungen wie zum Beispiel Gitlab etc.&lt;/p&gt;
+&lt;h1 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h1&gt;
+&lt;p&gt;ACHTUNG!!!&lt;/p&gt;
+&lt;p&gt;Es besteht die Möglichkeit, dass dieser Post eigene Meinung enthält.&lt;/p&gt;
+&lt;h1 id=&#34;github&#34;&gt;Github&lt;/h1&gt;
+&lt;p&gt;Github hat den großen Vorteil, dass es von enorm vielen Menschen benutzt wird. Dadurch hat man automatisch sehr viele potentielle Mithelfer an seinem Open Source-Projekt. Der wahrscheinlich größte Nachteil Githubs ist, dass es Closed Source ist (und dass es zu M$ gehört ]:-) ) Allerdings ist es nicht mehr so wie früher, dass man bei GitHub sehr zur Kasse gebeten wird. Eigentlich kann man alles, was man normalerweise braucht auch kostenlos erledigen.&lt;/p&gt;
+&lt;h1 id=&#34;launchpad&#34;&gt;Launchpad&lt;/h1&gt;
+&lt;p&gt;Launchpad wurde von Canonical, also der Firma hinter Ubuntu, entwickelt.&lt;/p&gt;
+&lt;p&gt;Launchpad unterstützt im Gegensatz zu GitHub nicht nur Git als Versionskontrollsystem, sondern auch Bazaar nativ und kann fremde Repos z.B. von Github importieren.&lt;/p&gt;
+&lt;p&gt;Launchpad selber unterstützt Git und Bazaar, aber man kann auch Subversion- oder CVS-Repos importieren. Launchpad ist viel mehr als eine reine Code-Hosting-Plattform. Es ist genauso wie auf Github möglich, die Plattform als Bugtracker zu nutzen. Gleichzeitig bietet Launchpad aber zusätzlich noch ein wirklich wunderbares Web-Interface für Übersetzungen auf Basis gettexts und eine Frage-Antwort-Abteilung, die bei Github in die Issues-Abteilung integriert ist. Was aber wahrscheinlich die bekannteste Funktion Launchpad ist, ist die Möglichkeit mit den PPAs (Personal Package Archiv) anderen Leuten seine Programme als DEB-Paket zur Verfügung zu stellen.&lt;/p&gt;
+&lt;h1 id=&#34;fazit&#34;&gt;Fazit&lt;/h1&gt;
+&lt;p&gt;Eigentlich braucht es weder Github noch Launchpad. Theoretisch könnte man einfach einen Webserver benutzen und darauf seine Git-Repos hosten (oder man macht das mit NFS-Freigaben, dann kann man sogar den Webserver wegsparen), aber Github und Launchpad, machen einem das Leben aber deutlich einfacher. Wer allerdings unbedingt Bazaar als VCS haben möchte, sollte sich Launchpad unbedingt mal ansehen.&lt;/p&gt;
+&lt;h2 id=&#34;meine-verwendung&#34;&gt;Meine Verwendung&lt;/h2&gt;
+&lt;p&gt;Ich hoste meine meisten Projekte aktuell auf Github. Zum einen finde ich die Oberfläche intuitiever. Zum Anderen hat Github aber auch so viele Nutzer (und macht es diesen im Webinterface einfacher, sich an Projekten zu beteiligen), dass es wahrscheinlicher ist, dass sich mehr Leute an meinen Projekten beteiligen. Launchpad hat mit den PPAs allerdings auch einen Riesenvorteil.&lt;/p&gt;
+&lt;h3 id=&#34;beispiel-mybrowse&#34;&gt;Beispiel MyBrowse&lt;/h3&gt;
+&lt;p&gt;Bei MyBrowse mache ich das folgendermaßen:&lt;/p&gt;
+&lt;p&gt;Der Quellcode liegt auf Github und dort wird auch entwickelt (da MyBrowse keine Lokalisierung braucht, brauche ich dieses wirklich tolle Feature Launchpads hier nicht). Launchpad importiert dann in regelmäßigen Abständen (5 Stunden) den Quellcode und baut täglich in mein testing-PPA die Pakete. Von dort kopiere ich dann die Pakete in das normale PPA.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ganzen Inhalt in Hugo-Feeds anzeigen</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/15/ganzen-inhalt-in-feeds-anzeigen/</link>
