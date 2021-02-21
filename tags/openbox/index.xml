@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Xfce on Mein Schmierzettel</title>
-    <link>https://kaiserbarbarossa.github.io/tags/xfce/</link>
-    <description>Recent content in Xfce on Mein Schmierzettel</description>
+    <title>Openbox on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/tags/openbox/</link>
+    <description>Recent content in Openbox on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 21 Feb 2021 17:20:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/xfce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Feb 2021 17:20:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/openbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Desktopübergreifendes Ausloggen aus Whiskermenu</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</link>
@@ -38,41 +38,6 @@ fi
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Das kann man jetzt zum Beispiel unter &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &amp;ldquo;Paths&amp;rdquo; ist) im Whiskermenu als Befehl beim Abmelden &lt;code&gt;obxfceausloggen&lt;/code&gt; eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Rechtsklick auf das Whiskermenu &amp;ndash;&amp;gt; &amp;ldquo;Eigenschaften&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Befehle&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Abmelden&amp;rdquo;&lt;/em&gt;. Dort kann man dann das Skript als Befehl eintragen.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Xfce: Themes auf der Kommandozeile auswählen</title>
-      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</link>
-      <pubDate>Mon, 15 Feb 2021 22:09:15 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</guid>
-      <description>&lt;p&gt;Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.&lt;/p&gt;
-&lt;p&gt;Das Theme lässt sich folgender Maßen anpassen:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Und der Iconsatz lässt sich folgendermaßen anpassen:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.&lt;/p&gt;
-&lt;p&gt;Theoretisch könnte man dies auch in einem Skript z.B. wie folgt zusammenfassen.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-if [ &amp;quot;$1&amp;quot; == &amp;quot;light&amp;quot; ]
-    then
-        xfconf-query -c xsettings -p /Net/ThemeName -s Adapta
-        xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta
-        notify-send &amp;quot;Theme&amp;quot; &amp;quot;Helles Theme aktiviert&amp;quot;
-    elif [ &amp;quot;$1&amp;quot; == &amp;quot;dark&amp;quot; ]
-        then
-            xfconf-query -c xsettings -p /Net/ThemeName -s Adapta-Nokto
-            xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta-Nokto
-            notify-send &amp;quot;Theme&amp;quot; &amp;quot;Dunkles Theme aktiviert&amp;quot;
-    else
-        echo &amp;quot;Fehlendes oder falsches Argument. Beende...&amp;quot;
-        exit 1
-fi
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Wenn man das Skript jetzt also mit dem Argument &amp;ldquo;light&amp;rdquo; aufruft, würden ein helles Theme und ein helles Icontheme aktiviert und mit dem Argument &amp;ldquo;dark&amp;rdquo; mit einem entsprechenden dunklen Design. Die Themen müsste man natürlich entsprechend den eigenen Vorlieben anpassen&lt;/p&gt;
 </description>
     </item>
     

@@ -6,7 +6,41 @@
     <description>Recent content in Posts on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 18 Feb 2021 07:53:10 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Feb 2021 17:20:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desktopübergreifendes Ausloggen aus Whiskermenu</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</link>
+      <pubDate>Sun, 21 Feb 2021 17:20:45 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</guid>
+      <description>&lt;p&gt;Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.&lt;/p&gt;
+&lt;p&gt;Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden &lt;code&gt;xfce4-session-logout&lt;/code&gt; gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.&lt;/p&gt;
+&lt;p&gt;Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter &lt;em&gt;&amp;ldquo;Exit&amp;rdquo;&lt;/em&gt;. Alternativ mit mehr Auswahlmöglichkeiten gibt es den Befehl &lt;code&gt;obsession-logout&lt;/code&gt;.
+Theoretisch könnte man jetzt also den Befehl &lt;code&gt;xfce4-session-logout&lt;/code&gt;durch &lt;code&gt;obsession-logout&lt;/code&gt; ersetzen. Dann könnte ich die Schaltfläche aber nicht einfach unter Xfce einsetzen. Also muss eine Lösung her - z.B. ein Skript.&lt;/p&gt;
+&lt;p&gt;Der Aufbau ist eigentlich denkbar einfach: Ein Skript überprüft, ob gerade Xfce oder Openbox läuft. Wenn Xfce verwendet wird wird der Befehl &lt;code&gt;xfce4-session-logout&lt;/code&gt; aufgerufen und unter Openbox der andere Befehl. Theoretisch wäre dieses Skript dann beliebig erweiterbar (Habe ich aber nicht probiert).&lt;/p&gt;
+&lt;p&gt;Welche Desktopumgebung man verwendet kann man mit folgendem Befehl herausfinden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;printenv XDG_SESSION_DESKTOP
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;herausfinden.&lt;/p&gt;
+&lt;p&gt;Ein Skript (nennen wir es z.B. &lt;code&gt;obxfceausloggen&lt;/code&gt;) sähe z.B. so aus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+desktop=$(printenv XDG_SESSION_DESKTOP)
+if [ &amp;quot;$desktop&amp;quot; == &amp;quot;openbox&amp;quot; ]
+    then
+        obsession-logout
+    elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;XFCE&amp;quot; ]
+        then
+            xfce4-session-logout
+    else
+        echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
+        exit 1
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das kann man jetzt zum Beispiel unter &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &amp;ldquo;Paths&amp;rdquo; ist) im Whiskermenu als Befehl beim Abmelden &lt;code&gt;obxfceausloggen&lt;/code&gt; eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Rechtsklick auf das Whiskermenu &amp;ndash;&amp;gt; &amp;ldquo;Eigenschaften&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Befehle&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Abmelden&amp;rdquo;&lt;/em&gt;. Dort kann man dann das Skript als Befehl eintragen.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Launchpad vs. Github</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</link>
