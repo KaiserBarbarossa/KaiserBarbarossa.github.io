@@ -6,7 +6,30 @@
     <description>Recent content in Open Source on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 18 Feb 2021 07:53:10 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Feb 2021 15:55:31 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mybrowse 0.3 ist da</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/26/mybrowse-0-3-ist-da/</link>
+      <pubDate>Fri, 26 Feb 2021 15:55:31 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/26/mybrowse-0-3-ist-da/</guid>
+      <description>&lt;p&gt;Vor 15 Tagen habe ich die Version 0.2.2 von MyBrowse veröffentlicht und heute ist Version 0.3 dran. Da die Menge der Änderungen doch recht groß ist, habe ich mich dafür entschieden 0.3 zu veröffentlichen und nicht 0.2.3 oder etwas ähnliches.&lt;/p&gt;
+&lt;p&gt;Folgende &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse/compare/v0.2.2...v0.3&#34;&gt;Änderungen&lt;/a&gt;  sind jetzt da:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Der User-Agent von Firefox wird als Standard verwendet&lt;/li&gt;
+&lt;li&gt;die Addressleiste wurde um eine blaue Fortschrittsanzeige erweitert&lt;/li&gt;
+&lt;li&gt;auf Anregung von &lt;a href=&#34;https://ubuntuusers.de/user/ChickenLipsRFun2eat/&#34;&gt;ChickenLipsRFun2eat&lt;/a&gt; wird die Addressleiste jetzt auch als Kommandozeile verwendet&lt;/li&gt;
+&lt;li&gt;einen Starter für’s Startmenü!&lt;/li&gt;
+&lt;li&gt;Tastenkombinationen&lt;/li&gt;
+&lt;li&gt;Chronik&lt;/li&gt;
+&lt;li&gt;das Fenster ist standardmäßig maximiert&lt;/li&gt;
+&lt;li&gt;beim Hovern über einen Link wird dieser in der Addressleiste angezeigt&lt;/li&gt;
+&lt;li&gt;das Browser-Icon des Systemes wird verwendet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Außerdem ist die Addressleiste in eine eigene Zeile gewandert. Als Grundstock für die GTK-Tabs, die ich hoffentlich auch bald einbaue.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Launchpad vs. Github</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</link>
