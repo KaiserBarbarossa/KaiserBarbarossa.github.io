@@ -6,7 +6,51 @@
     <description>Recent content in Open Source on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Fri, 26 Feb 2021 15:55:31 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 12:09:20 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ein echtes freies Betriebssystem</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</link>
+      <pubDate>Mon, 01 Mar 2021 12:09:20 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</guid>
+      <description>&lt;p&gt;Ein paar GEdanken zu freier Software und GNU&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Einer der ersten Vorteile, der einem bei Linux immer am Anfang erzählt wird, ist sicherlich, dass Linux Open Source ist und man deshalb ja den Quellcode einsehen kann und verändern kann (wie viel Benutzer das tatsächlich machen, sei mal dahingestellt).
+Tatsächlich ist das gar nicht schlecht und auch einer der Gründe für Linux für mich. Viele behaupten deshalb pauschal, Linux ist ein sog. &amp;ldquo;freies Betriebssystem&amp;rdquo;.
+Wenn man sich mit Linux zumindest etwas beschäftigt hat, müssen einem die Namen &amp;ldquo;Richard Stallman&amp;rdquo; sowie GNU, das man ja bekanntermaßen &lt;em&gt;nicht&lt;/em&gt; Unix ist 😉, über den Weg laufen. Wenn es nach Richard Stallman geht, ist Linux kein freies System und vor allem folgt es nicht dem GNU-Prinzip (&amp;ldquo;One tool, one job&amp;rdquo;). In Linux wird nämlich nicht per se gegen proprietäre Software vorgegangen.&lt;/p&gt;
+&lt;p&gt;Also gab es schlaue Entwickler, die den Linux-Kernel (also &lt;strong&gt;das&lt;/strong&gt; eigentliche &amp;ldquo;Linux&amp;rdquo;) von allem proprietären Kram befreit haben und das ganze als &amp;ldquo;Linux Libre&amp;rdquo; zur Verfügung stellen. Aber wieso nimmt man nicht einfach das Betriebssystem, das durch Richard Stallman in die Welt gerufen wurde: GNU.&lt;/p&gt;
+&lt;p&gt;Tja, da gibt es ein winziges Problem, der Betriebssystemkernel von GNU, GNU Hurd, ist ziemlich instabil und es will wohl keiner damit arbeiten.&lt;/p&gt;
+&lt;p&gt;Das GNU-Projekt und die &amp;ldquo;Free Software Foundation&amp;rdquo;, die von dem selben Herrn gegründet wurde, setzt sich radikal gegen proprietäre Software ein und entwickelt dabei eine &lt;a href=&#34;https://www.gnu.org/software/&#34;&gt;Reihe&lt;/a&gt; von eigenen Programmen, darunter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailman - Programm zum Verwalten von Mailinglisten&lt;/li&gt;
+&lt;li&gt;wget - Downloadmanager&lt;/li&gt;
+&lt;li&gt;bazaar - Versionsverwaltung&lt;/li&gt;
+&lt;li&gt;coreutils - ohne das kann man die meisten Linux-Distris vergessen&lt;/li&gt;
+&lt;li&gt;Linux-Libre - siehe oben&lt;/li&gt;
+&lt;li&gt;bc - Taschenrechner für die Konsole&lt;/li&gt;
+&lt;li&gt;GNOME - eine Desktopumgebung&lt;/li&gt;
+&lt;li&gt;GnuPG - muss man das erklären&amp;hellip;&lt;/li&gt;
+&lt;li&gt;u.v.m.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Man kann sogar seine eigenen Programme dem GNU-Projekt vorschlagen, vielleicht wird man ja aufgenommen. Vorraussetzung ist natürlich, dass die Programme frei sind. Aufgrund der Tatsache, dass Linux in vielen Punkten von GNU-Software abhängt, wird es auch GNU/Linux genannt.&lt;/p&gt;
+&lt;p&gt;Aus diesen vielen Programmen kann man dann sogar theoretisch ein echtes GNU basteln, mit Hurd als Kernel. Viel Spaß! (von Debian gibt es sogar eine Variante mit Hurd).&lt;/p&gt;
+&lt;p&gt;Was bräuchte es dafür (lose Gedankensammlung):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hurd als Kernel&lt;/li&gt;
+&lt;li&gt;IceCat als Webbrowser&lt;/li&gt;
+&lt;li&gt;coreutils&lt;/li&gt;
+&lt;li&gt;bash als Shell&lt;/li&gt;
+&lt;li&gt;GNOME als Desktopumgebung (vielleicht sollte mal jemand(tm) eine leichtgewichtige Desktopumgebung schreiben, unter die GPL stellen und GNU vorschlagen)&lt;/li&gt;
+&lt;li&gt;GRUB als Bootmanager&lt;/li&gt;
+&lt;li&gt;durchgängig GTK+-Programme (Qt ist böse 😈  )&lt;/li&gt;
+&lt;li&gt;Guix als Paketmanager&lt;/li&gt;
+&lt;li&gt;wget als Downloadmanager&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dann hätte man ein echtes GNU als Betriebssystem. Es ist ja nicht so, dass sowas schon gemacht wurde: GNU Guix System (nicht mit dem Paketmanager verwechseln!!)
+*&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>MyBrowse 0.3 ist da!</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/26/mybrowse-0-3-ist-da/</link>
