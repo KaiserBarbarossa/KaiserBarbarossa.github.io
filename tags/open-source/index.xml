@@ -6,7 +6,37 @@
     <description>Recent content in Open Source on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 01 Mar 2021 12:09:20 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 13:30:41 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newsboat</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</link>
+      <pubDate>Mon, 01 Mar 2021 13:30:41 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</guid>
+      <description>&lt;p&gt;Mein liebster Feedreader ist eigentlich Newsbeuter. Dieser wird aber nicht mehr weiterentwickelt und ist deshalb auch für Ubuntu 20.04 nicht mehr in den Paketquellen. Schade&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Die gute Nachricht: Newsbeuter hat einen aktiv weiterentwickelten Fork - Newsboat. Und Newsboat ist sogar in den Paketquellen. Deshalb kann man das Programm mit folgendem Kommando installieren:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install newsboat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Feeds werden in der Datei &lt;strong&gt;~/.newsboat/urls&lt;/strong&gt; abgespeichert. Hier schreibt man einfach eine URL in jede Zeile und startet danach Newsboat neu - alternativ benutzt man die Tastenkombination [Strg] + [R].&lt;/p&gt;
+&lt;p&gt;Folgende Konfigurationen habe ich vorgenommen:&lt;/p&gt;
+&lt;h2 id=&#34;newsboatconfig&#34;&gt;~/.newsboat/config&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;browser lariza
+auto-reload yes
+reload-time 10
+user-agent &amp;quot;Lynx/2.8.9dev.16 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.5.17&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das bewirkt das beim Drücken von [o] der Artikel in Lariza geöffnet wird. Würde man hier &lt;code&gt;firefox&lt;/code&gt; eintragen, würde der Artikel in Firefox geöffnet werden. Die zweite und dritte Zeile sorgt dafür, dass die Feeds alle 10 Minuten neu eingelesen werden und die letzte Zeile ist der User-Agent, mit dem sich newsboat beim Abrufen der Feeds ausgibt, in meinem Fall also der User-Agent Lynx’. Die Konfigurationen und die Feed-Liste können 1:1 von newsbeuter übernommen werden.&lt;/p&gt;
+&lt;h2 id=&#34;bashrc&#34;&gt;~/.bashrc&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;[...]
+
+alias newsboat=&#39;newsboat -r&#39;
+
+[...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Beim Öffnen von Newsboat werden die Feeds neueingelesen.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ein echtes freies Betriebssystem</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</link>

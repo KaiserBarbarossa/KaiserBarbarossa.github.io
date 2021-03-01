@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 01 Mar 2021 12:09:20 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 13:30:41 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
       <link>https://kaiserbarbarossa.github.io/tags/linux/</link>
-      <pubDate>Mon, 01 Mar 2021 12:09:20 +0100</pubDate>
+      <pubDate>Mon, 01 Mar 2021 13:30:41 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/linux/</guid>
       <description></description>
@@ -19,9 +19,18 @@
     <item>
       <title>Open Source</title>
       <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Mon, 01 Mar 2021 12:09:20 +0100</pubDate>
+      <pubDate>Mon, 01 Mar 2021 13:30:41 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programme</title>
+      <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
+      <pubDate>Mon, 01 Mar 2021 13:30:41 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
       <description></description>
     </item>
     
@@ -31,15 +40,6 @@
       <pubDate>Fri, 26 Feb 2021 15:55:31 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/mybrowse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programme</title>
-      <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
-      <pubDate>Fri, 26 Feb 2021 15:55:31 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
       <description></description>
     </item>
     
