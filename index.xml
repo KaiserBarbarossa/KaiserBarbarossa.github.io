@@ -6,7 +6,47 @@
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 01 Mar 2021 13:30:41 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Mar 2021 15:15:38 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntuusers Feeds</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/02/ubuntuusers-feeds/</link>
+      <pubDate>Tue, 02 Mar 2021 15:15:38 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/02/ubuntuusers-feeds/</guid>
+      <description>&lt;p&gt;Bei &lt;a href=&#34;https://ubuntuusers.de&#34;&gt;ubuntuusers.de&lt;/a&gt; kann man viel &amp;ldquo;Abbonieren&amp;rdquo; und erhält dann E-Mail-Benachrichtigungen. Ansonsten kann man auch Atom-Feeds in seinen &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/&#34;&gt;Feedreader&lt;/a&gt; der Wahl importieren. Diese Feedurls sind logisch aufgebaut.&lt;/p&gt;
+&lt;p&gt;Einen Überblick über die Feeds kann man auch &lt;a href=&#34;https://ubuntuusers.de/feeds/&#34;&gt;hier&lt;/a&gt; bekommen.&lt;/p&gt;
+&lt;h1 id=&#34;forum&#34;&gt;Forum&lt;/h1&gt;
+&lt;h2 id=&#34;das-ganze-forum&#34;&gt;Das ganze Forum&lt;/h2&gt;
+&lt;p&gt;Wenn man das ganze Forum abbonieren will, benutzt man folgende URL:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://forum.ubuntuusers.de/feeds/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das &amp;ldquo;ANZAHL&amp;rdquo; kann man mit einer entsprechenden Zahl ersetzen. Das ist eigentlich nebensächlich, ich habe da meistens 10 oder 20 eingetragen. Für &amp;ldquo;WAS&amp;rdquo; gibt es drei Optionen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;short&lt;/code&gt; - nur die Einleitung&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;full&lt;/code&gt; - ganzer Beitrag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;- nur der Titel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;unterforum&#34;&gt;Unterforum&lt;/h2&gt;
+&lt;p&gt;Auch Unterforen (z.B. das &lt;a href=&#34;https://forum.ubuntuusers.de/forum/wiki/&#34;&gt;Wikiforum&lt;/a&gt;) können per Feed abboniert werden.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://forum.ubuntuusers.de/feeds/forum/FORENSLUG/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;ldquo;WAS&amp;rdquo; und &amp;ldquo;ANZAHL&amp;rdquo; sind die selben Optionen wie oben.  &amp;ldquo;FORENSLUG&amp;rdquo; legt das Forum fest. Das Wikiforum hat die URL &lt;a href=&#34;https://forum.ubuntuusers.de/forum/wiki/&#34;&gt;https://forum.ubuntuusers.de/forum/wiki/&lt;/a&gt;, FORENSLUG ist also mit &lt;strong&gt;wiki&lt;/strong&gt; zu ersetzen.&lt;/p&gt;
+&lt;h1 id=&#34;wiki&#34;&gt;Wiki&lt;/h1&gt;
+&lt;p&gt;Die letzten Änderungen im Wiki sind über folgende Feed-URL erreichbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://wiki.ubuntuusers.de/_feed/10/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bei Feeds für einzelne Artikel scheint es aktuell einen Fehler zu geben.&lt;/p&gt;
+&lt;h1 id=&#34;ikhaya&#34;&gt;Ikhaya&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;https://ikhaya.ubuntuusers.de/feeds/KATEGORIE/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Bedeutung von &amp;ldquo;WAS&amp;rdquo; und &amp;ldquo;ANZAHL&amp;rdquo; ist weiter oben geschrieben und &amp;ldquo;KATEGORIE&amp;rdquo; ist eigentlich das gleiche, wie FORENSLUG im Bereich Forum.&lt;/p&gt;
+&lt;h1 id=&#34;planet&#34;&gt;Planet&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;https://planet.ubuntuusers.de/feeds/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wie oben beschrieben.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Newsboat</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</link>
