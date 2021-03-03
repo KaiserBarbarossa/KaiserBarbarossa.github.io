@@ -6,7 +6,27 @@
     <description>Recent content in Posts on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 02 Mar 2021 15:15:38 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Mar 2021 10:31:14 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wieso Linux Mint sich unbeliebt macht</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/03/wieso-linux-mint-sich-unbeliebt-macht/</link>
+      <pubDate>Wed, 03 Mar 2021 10:31:14 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/03/wieso-linux-mint-sich-unbeliebt-macht/</guid>
+      <description>&lt;p&gt;Linux Mint (bzw. seine Benutzer haben) nicht unbedingt überall einen sehr guten Ruf. Das liegt in Ubuntuforen natürlich daran, dass es augenscheinlich wohl heißt &amp;ldquo;Linux Mint basiert auf Ubuntu, also Linux Mint == Ubuntu&amp;rdquo;. Das dies nicht unbedingt stimmt merkt man an Linux Mints Updatesystem. Gerade habe ich &lt;a href=&#34;https://gnulinux.ch/updatepflicht&#34;&gt;diesen&lt;/a&gt; Blogbeitrag auf dem OSBN gelesen. Und dazu muss ich jetzt meinen Senf geben.&lt;/p&gt;
+&lt;p&gt;Linux Mint hat sicherlich seine &lt;a href=&#34;https://axebase.net/blog/2020/10/26/snap-oder-richtig/&#34;&gt;Vorzüge&lt;/a&gt;, allerdings ist besonders das Updatesystem Linux Mints, der Punkt der Linux Mint immer wieder zum Verhängnis wird und enorm den Ruf schädigt.&lt;/p&gt;
+&lt;p&gt;Eine Distribution die langjährig Updates zurückhält (&lt;a href=&#34;https://de.wikipedia.org/wiki/Linux_Mint#mintUpdate&#34;&gt;Quelle&lt;/a&gt;) möchte ich nicht nutzen. Und augenscheinlich viele andere auch. Dass dadurch Sicherheitslücken entstehen können. Das selbe Schicksal widerfuhr auch dem sogenannten Arch-Derivat Manjaro. &lt;a href=&#34;https://de.wikipedia.org/wiki/Manjaro_Linux#Kritik&#34;&gt;Click!&lt;/a&gt; Manjaro verbesserte sein System 2014 und Linux Mint tat dies im Sommer 2018; der Ruf bleibt allerdings und sorgt nicht überall für ein tolles Image. Ausgerechnet Linux Mint, die Distribution, die Benutzern Updates vorenthielt, meint jetzt seinen Updatemechanismus zu erweitern und auch an vergessene Updates zu erinnern. Vielleicht erscheint das nicht nur mir etwas ironisch.&lt;/p&gt;
+&lt;p&gt;Noch hat Linux Mint keine Updatepflicht und wird sie wahrscheinlich auch nicht in der nächsten Version haben. Sollte es allerdings irgendwann(tm) eine Updatepflicht geben, gehe ich jetzt schon davon aus, dass es sehr viele negatvie Reaktionen geben wird, weil Benutzer dann wieder in eine - wenn auch sinnvolle - Zwangsjacke gesteckt werden und denken, sie hätten ein Windows 10. Dann würde nur noch fehlen, dass die Updates automatisch eingespielt werden und der Computer danach plötzlich selbst neustartet. (Willkommen bei Windows!!)&lt;/p&gt;
+&lt;p&gt;Deshalb mein Fazit (an alle):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spielt Updates ein!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Was daran so schwer ist verstehe ich immmernoch nicht. Man muss es ja nicht täglich machen, aber einmal in der Woche einen Terminal öffnen und folgenden Befehl einfügen und bestätigen dürfte doch eigentlich nicht so schwer sein:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ubuntuusers Feeds</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/02/ubuntuusers-feeds/</link>
