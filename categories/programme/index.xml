@@ -6,7 +6,59 @@
     <description>Recent content in Programme on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 01 Mar 2021 13:30:41 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/programme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 20:19:17 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/programme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansiweather</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/21/ansiweather/</link>
+      <pubDate>Sun, 21 Mar 2021 20:19:17 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/21/ansiweather/</guid>
+      <description>&lt;p&gt;Um sich das Wetter unter Linux anzeigen zu lassen, gibt es mehrere Varianten. Entweder nimmt man den einfachen Weg und ruft einfach&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl http://wttr.in
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;im Terminal auf (optional kann man das auch als Skript packen und in &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern) oder man nimmt &lt;strong&gt;ansiweather&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Bei diesem Programm handelt es sich im Prinzip auch nur um ein simples Shellskript. Unter Ubuntu und Co. installiert man es einfach mit APT - das entsprechende Paket heißt passenderweise auch einfach &lt;em&gt;ansiweather&lt;/em&gt;. Also&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ansiweather
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nach dem Start des Programmes (Aufruf über das Kommando &lt;code&gt;ansiweather&lt;/code&gt; wird allerdings noch nicht der eigene Wohnort angezeigt. Dafür muss man erst die Datei &lt;strong&gt;~/.ansiweatherrc&lt;/strong&gt; anpassen. Eine Beispieldatei:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;api_key:85a4e3c55b73909f42c6a23ec35b7147
+location:Berlin,DE
+fetch_cmd:curl -s
+units:metric
+symbols:false
+forecast:0
+show_daylight:true
+dateformat:%a %b %d
+timeformat:%b %d %R
+
+# Text and Colors
+background:\033[44m
+text:\033[36;1m
+data:\033[33;1m
+delimiter:\033[35m=&amp;gt;
+dashes:\033[34m-
+greeting_text:Aktuelles Wetter in
+wind_text:Windgeschwindigkeit
+humidity_text:Luftfeuchtigkeit
+pressure_text:Luftdruck
+sunrise_text:Sonnenaufgang
+sunset_text:Sonnenuntergang
+
+# Icons
+sun:\033[33;1m\xe2\x98\x80
+moon:\033[36m\xe2\x98\xbd
+clouds:\033[37;1m\xe2\x98\x81
+rain:\xe2\x98\x94
+fog:\033[37;1m\xe2\x96\x92
+mist:\033[34m\xe2\x96\x91
+haze:\033[33m\xe2\x96\x91
+snow:\033[37;1m\xe2\x9d\x84
+thunderstorm:\xe2\x9a\xa1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die meisten Einstellungen sind eigentlich selbsterklärend. Dieses Beispiel zeigt also das Wetter in Berlin an und ist das im Ubuntuusers-Wiki gezeigte Beispiel, es gefällt mir allerdings sehr gut und ich habe mir ansiweather auch in meine .bashrc gelegt.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Newsboat</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</link>
