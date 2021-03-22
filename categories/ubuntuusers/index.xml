@@ -36,6 +36,11 @@
 &lt;pre&gt;&lt;code&gt;https://wiki.ubuntuusers.de/_feed/10/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Bei Feeds für einzelne Artikel scheint es aktuell einen Fehler zu geben.&lt;/p&gt;
+&lt;h2 id=&#34;update-22321&#34;&gt;[Update 22.3.21]&lt;/h2&gt;
+&lt;p&gt;Bei den Feeds für einzelne Artikel gab es nicht wirklich einen Bug, der lag unter &lt;a href=&#34;https://ubuntuusers.de/feeds&#34;&gt;https://ubuntuusers.de/feeds/&lt;/a&gt; und wird beim nächsten Inyoka-Release korrigiert. :) Die Feeds für einen einzelnen Artikel funktionieren wie folgt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://wiki.ubuntuusers.de/SEITE/a/feed/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Auch dieser Link dürfte verständlich sein.&lt;/p&gt;
 &lt;h1 id=&#34;ikhaya&#34;&gt;Ikhaya&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;https://ikhaya.ubuntuusers.de/feeds/KATEGORIE/WAS/ANZAHL/
 &lt;/code&gt;&lt;/pre&gt;
