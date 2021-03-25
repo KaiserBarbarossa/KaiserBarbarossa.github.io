@@ -6,11 +6,35 @@
     <description>Recent content in Posts on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 22 Mar 2021 13:51:40 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Mar 2021 13:35:16 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hallo Arch!</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/25/hallo-arch/</link>
+      <pubDate>Thu, 25 Mar 2021 13:35:16 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/25/hallo-arch/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;[user@hostname ~]$ cowsay &amp;quot;Hallo Arch!&amp;quot;
+ _____________ 
+&amp;lt; Hallo Arch! &amp;gt;
+ ------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+[user@hostname ~]$ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Seit gestern Abend läuft auf meinem ca. 10 Jahre alten Laptop Arch. Der Hauptbeweggrund für mich war, dass das bisher verwendete System (Ubuntu 18.04 mit Xfce) irgendwann EOL haben würde und ich mich früh nach Alternativen umsehen wollte. Das System gefällt mir sehr gut und funktioniert - anders, als das, was immer behauptet wird - großteils &amp;ldquo;out of the box&amp;rdquo; und braucht nicht viel zusätzliche Konfiguration.
+Vor allem ist die mitgelieferte Xfce-Konfiguration passend und im Gegensatz zu Ubuntu ist das automatisch mit Xfce mitinstallierte Icon-Theme auch nicht unvollständig.&lt;/p&gt;
+&lt;p&gt;Ich werde natürlich weiterhin auf &lt;a href=&#34;https://ubuntuusers.de/&#34;&gt;ubuntuusers.de&lt;/a&gt; aktiv sein, auch da ich auf dem PC immernoch Ubuntu nutze und mir das System auch - nach wie vor - sehr gut gefällt.
+Da ich im Ubuntuusers-Team so ziemlich der einzige war, der noch nie Arch genutzt hat, fand ich es wäre an der Zeit, dies nachzuholen.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Distributionen sind nicht überholt</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/22/distributionen-sind-nicht-ueberholt/</link>
-      <pubDate>Mon, 22 Mar 2021 13:51:40 +0100</pubDate>
+      <pubDate>Mon, 22 Mar 2021 08:59:40 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/03/22/distributionen-sind-nicht-ueberholt/</guid>
       <description>&lt;p&gt;Im Moment scheinen ja &lt;a href=&#34;https://curius.de/2021/02/linux-distributionen-welche-bedeutung-haben-sie-in-zukunft/&#34;&gt;einige&lt;/a&gt; der &lt;a href=&#34;https://www.deimeke.net/dirk/blog/index.php?/archives/4067-Rolle-von-Linux-Distributionen.html&#34;&gt;Meinung&lt;/a&gt; zu sein, dass das unter Linux exessiv benutzte System von Distributionen überholt sei. Ich persönlich sehe das etwas anders.&lt;/p&gt;
@@ -256,12 +280,12 @@ Theoretisch könnte man jetzt also den Befehl &lt;code&gt;xfce4-session-logout&l
 &lt;pre&gt;&lt;code&gt;#!/bin/bash
 desktop=$(printenv XDG_SESSION_DESKTOP)
 if [ &amp;quot;$desktop&amp;quot; == &amp;quot;openbox&amp;quot; ]
-    then
+	then
         obsession-logout
-    elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
+	elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
         then
             xfce4-session-logout
-    else
+	else
         echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
         exit 1
 fi

@@ -26,12 +26,12 @@ Theoretisch könnte man jetzt also den Befehl &lt;code&gt;xfce4-session-logout&l
 &lt;pre&gt;&lt;code&gt;#!/bin/bash
 desktop=$(printenv XDG_SESSION_DESKTOP)
 if [ &amp;quot;$desktop&amp;quot; == &amp;quot;openbox&amp;quot; ]
-    then
+	then
         obsession-logout
-    elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
+	elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
         then
             xfce4-session-logout
-    else
+	else
         echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
         exit 1
 fi
