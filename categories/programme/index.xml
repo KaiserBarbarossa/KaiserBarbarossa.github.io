@@ -6,7 +6,23 @@
     <description>Recent content in Programme on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 21 Mar 2021 20:19:17 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/programme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Mar 2021 05:11:39 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/programme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Den neuen Firefox-Druckdialog deaktivieren</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</link>
+      <pubDate>Mon, 29 Mar 2021 05:11:39 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</guid>
+      <description>&lt;p&gt;Ich war recht erfreut als ich auf Mozillas Mailing-Listen davon las, dass es einen überarbeiten Druck-Dialog in Firefox 86 geben soll und war schon gespannt, was denn wirklich die Verbesserungen daran sein sollten.&lt;/p&gt;
+&lt;p&gt;Ehrlich gesagt, muss ich aber nach ein paar Tagen zu dem Konsens kommen, dass sich meiner Meinung nach diese &amp;ldquo;Verbesserung&amp;rdquo; nicht zu einem Praxiseinsatz eignen. Leider.&lt;/p&gt;
+&lt;p&gt;Natürlich ist das Deaktivieren einfach durch eine Änderung in &lt;code&gt;about:config&lt;/code&gt; getan:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;about:config&lt;/code&gt; öffnen&lt;/li&gt;
+&lt;li&gt;Den Wert &lt;strong&gt;print.tab_modal.enabled&lt;/strong&gt; auf &amp;ldquo;false&amp;rdquo; ändern&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ansiweather</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/21/ansiweather/</link>
