@@ -6,7 +6,59 @@
     <description>Recent content on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 29 Mar 2021 05:11:39 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 16:02:05 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Systemd-Zram</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</link>
+      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</guid>
+      <description>&lt;p&gt;Bei Laptops mit weniger Arbeitsspeicher kann Zram Wunder bewirken. Zram erstellt einen komprimierten Arbeitsspeicher. Wenn man will, dass sich ZRam perfekt in Systemd integriert, ist &lt;a href=&#34;https://github.com/mdomlop/systemd-zram&#34;&gt;Systemd-Zram&lt;/a&gt; ein guter Fork, der sich auch sehr einfach unter Arch (AUR) und unter Debian, Ubuntu etc. installieren lässt.&lt;/p&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&#34;installation-unter-archlinux&#34;&gt;Installation unter ArchLinux&lt;/h2&gt;
+&lt;p&gt;Die Installation erfolgt unter Arch am Besten mithilfe des AURs, kann allerdings auch manueller erfolgen &lt;a href=&#34;https://github.com/mdomlop/systemd-zram#arch-linux-package&#34;&gt;Click!&lt;/a&gt;. Ich will hier allerdings nur die Installation mithilfe des AURs beschreiben. (Ohne AUR-Helfer, wie z.B. yay oder trizen)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/aur &amp;amp;&amp;amp; cd ~/aur
+git clone https://aur.archlinux.org/systemd-zram.git &amp;amp;&amp;amp; cd systemd-zram
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nun erfolgt das Bauen des Paketes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;makepkg -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach kann mit su in den Root-Account gewechselt werden und das Paket mit folgendem Befehl installiert werden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -U $PWD/systemd-zram-*.pkg.tar.zst
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dieser Schritt weicht natürlich ab, wenn man sudo installiert hat oder &lt;code&gt;su&lt;/code&gt; als Alias  &lt;code&gt;su -l&lt;/code&gt; hat. Aber dann sollte man auch wissen, wie man das macht.&lt;/p&gt;
+&lt;p&gt;WICHTIG: Bei der Installation über das AUR wird man (genauso wie bei allen folgenden Methoden) nicht automatisch über Updates informiert!!&lt;/p&gt;
+&lt;h2 id=&#34;installation-unter-debian&#34;&gt;Installation unter Debian&lt;/h2&gt;
+&lt;p&gt;Unter Debian, Ubuntu etc. kann systemd-zram auch installiert werden.&lt;/p&gt;
+&lt;p&gt;Man klont das Git-Repo (&lt;code&gt;git clone https://github.com/mdomlop/systemd-zram.git&lt;/code&gt;) und führt danach folgende Befehle aus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make debian_pkg
+sudo dpkg -i systemd-zram_*.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;installation-unter-anderen-systemen&#34;&gt;Installation unter anderen Systemen&lt;/h2&gt;
+&lt;p&gt;Die Installation kann natürlich auch mithilfe des klassischen &lt;code&gt;make&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;make install&lt;/code&gt; &lt;a href=&#34;https://github.com/mdomlop/systemd-zram#classic-method&#34;&gt;erfolgen&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;benutzung&#34;&gt;Benutzung&lt;/h1&gt;
+&lt;p&gt;Der Service kann wie gewohnt mit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl enable systemd-zram --now
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;aktiviert werden und mit &lt;code&gt;systemctl&lt;/code&gt; gestartet bzw. beendet werden.&lt;/p&gt;
+&lt;p&gt;Wie gesagt, komprimiert zRam einen Teil des Arbeitsspeichers und erledigt dies mit unterschiedlichen Algorithmen. Der aktuell verwendete Algorithmus wird, wird durch den Inhalt der Datei &lt;strong&gt;/sys/block/zram0/comp_algorithm&lt;/strong&gt; angezeigt. In dieser stehen auch alle anderen möglichen Algorithmen.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat /sys/block/zram0/comp_algorithm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ergibt dann zum Beispiel&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[lzo] lzo-rle lz4 lz4hc 842 zstd 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Der aktuell verwendete Algorithmus steht also in [] und ist im Moment lzo. Einen Vergleich der möglichen Algorithmen findet man unter &lt;a href=&#34;https://github.com/mavam/compbench&#34;&gt;https://github.com/mavam/compbench&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Einen anderen Algorithmus kann man in der Datei &lt;strong&gt;/lib/systemd/system/systemd-zram.service&lt;/strong&gt; einstellen - dort muss der Wert &lt;em&gt;Environment=COMP_ALGORITHM=lzo&lt;/em&gt; angepasst werden.&lt;/p&gt;
+&lt;h1 id=&#34;wann-nützt-zram&#34;&gt;Wann nützt zRam?&lt;/h1&gt;
+&lt;p&gt;Wenn man 64GB RAM hat, bringt zRAM wahrscheinlich keinen großen, merkbaren Unterschied. Je weniger RAM man aber hat, umso größer sind die Vorteile von zRAM. Allerdings kann zRAM auch bei viel Arbeitsspeicher Vorteile bringen, wenn man zum Beispiel gerade sehr arbeitsspeicherintensive Sachen wie Virtualisierung macht.&lt;/p&gt;
+&lt;h1 id=&#34;mehr-swap&#34;&gt;Mehr Swap?&lt;/h1&gt;
+&lt;p&gt;Wenn man zRAM nutzt, wird dieser als Swap-Speicher angezeigt, weshalb man auch mithilfe von&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;swapon -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;überprüfen kann, ob der zRAM aktiviert ist. Den &amp;ldquo;alten&amp;rdquo; Swap jedoch &lt;strong&gt;nicht&lt;/strong&gt; entfernen, er wird zum Beispiel noch für den Ruhezustand benutzt!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Den neuen Firefox-Druckdialog deaktivieren</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</link>
