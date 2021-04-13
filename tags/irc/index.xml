@@ -6,7 +6,27 @@
     <description>Recent content in IRC on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 27 Jan 2021 18:52:29 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/irc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 16:18:21 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/irc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WeeChat: Benachrichtigungen bei Pings</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</link>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</guid>
+      <description>&lt;p&gt;Für mich war lange ein großer Nachteil an &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/&#34;&gt;WeeChat&lt;/a&gt;, dass ich im Gegensatz zu Thunderbird keine Desktop-Benachrichtigungen erhalten habe, wenn ich angepingt wurde. Eine Lösung dazu habe ich im &lt;a href=&#34;https://wiki.archlinux.org/index.php/WeeChat#Desktop_notifications&#34;&gt;ArchWiki&lt;/a&gt; gefunden.&lt;/p&gt;
+&lt;p&gt;Ich habe mich gegen die Lösung mit einem Plugin entschieden, da dass die Sache doch kompliziert hätte, was in diesem Punkt nicht nötig ist. Beide Lösungen benötigen &lt;a href=&#34;https://wiki.ubuntuusers.de/Benachrichtigungsdienst/#Eigene-Nachrichten-ausgeben&#34;&gt;libnotify&lt;/a&gt; um die Benachrichtigungen anzuzeigen.&lt;/p&gt;
+&lt;p&gt;Also sprach Zarathustra:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install libnotify-bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bzw.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -S libnotify
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach öffnet man WeeChat und gibt folgenden &amp;ldquo;Befehl&amp;rdquo; in WeeChat ein:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/set trigger.trigger.beep.command &amp;quot;/print -beep;/exec -bg notify-send -i &#39;/usr/share/icons/hicolor/32x32/apps/weechat.png&#39; &#39;IRC Notification&#39; &amp;quot;${tg_tag_nick}: ${tg_message_nocolor}&amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
     <item>
       <title>Weechat - der bessere IRC-Client</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</link>

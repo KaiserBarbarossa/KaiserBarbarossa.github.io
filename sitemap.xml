@@ -2,40 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kaiserbarbarossa.github.io/tags/arch/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/categories/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/irc/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/linux/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/open-source/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/post/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/programme/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/categories/programme/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</loc>
+    <lastmod>2021-04-13T16:18:21+00:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/arch/</loc>
     <lastmod>2021-04-13T16:02:05+00:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/categories/linux/</loc>
     <lastmod>2021-04-13T16:02:05+00:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/open-source/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/post/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/programme/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</loc>
     <lastmod>2021-04-13T16:02:05+00:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</loc>
-    <lastmod>2021-03-29T05:11:39+00:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/categories/programme/</loc>
     <lastmod>2021-03-29T05:11:39+00:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/03/25/hallo-arch/</loc>
@@ -118,9 +124,6 @@
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</loc>
     <lastmod>2021-01-31T20:01:46+01:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/irc/</loc>
-    <lastmod>2021-01-27T18:52:29+01:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</loc>
     <lastmod>2021-01-27T18:52:29+01:00</lastmod>

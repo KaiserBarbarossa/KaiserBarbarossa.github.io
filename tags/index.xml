@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 13 Apr 2021 16:02:05 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 16:18:21 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Arch</title>
-      <link>https://kaiserbarbarossa.github.io/tags/arch/</link>
-      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      <title>IRC</title>
+      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
       
-      <guid>https://kaiserbarbarossa.github.io/tags/arch/</guid>
+      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
       <link>https://kaiserbarbarossa.github.io/tags/linux/</link>
-      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/linux/</guid>
       <description></description>
@@ -28,7 +28,7 @@
     <item>
       <title>Open Source</title>
       <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
       <description></description>
@@ -37,9 +37,18 @@
     <item>
       <title>Programme</title>
       <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
-      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arch</title>
+      <link>https://kaiserbarbarossa.github.io/tags/arch/</link>
+      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/arch/</guid>
       <description></description>
     </item>
     
@@ -103,15 +112,6 @@
       <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IRC</title>
-      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
-      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
       <description></description>
     </item>
     
