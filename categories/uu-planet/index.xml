@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uu-Planet on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/categories/uu-planet/</link>
+    <description>Recent content in uu-Planet on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 14 Feb 2021 17:05:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/uu-planet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Warum schreibt man einen eigenen Browser?</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</link>
+      <pubDate>Sun, 14 Feb 2021 17:05:45 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/14/warum-einen-eigenen-browser/</guid>
+      <description>&lt;p&gt;Ich frage mich, warum ich hier eigentlich gar nicht über MyBrowse berichte. Viel mehr Infos darüber findet man tatsächlich im entsprechenden &lt;a href=&#34;https://forum.ubuntuusers.de/topic/mybrowse-ein-simpler-webkitbrowser-in-python/&#34;&gt;Thread&lt;/a&gt; auf ubuntuusers. Das will ich hiermit ändern und vor allem meine Ambition und meine Ziele dahinter klarmachen.&lt;/p&gt;
+&lt;h1 id=&#34;warum&#34;&gt;Warum?&lt;/h1&gt;
+&lt;p&gt;Computer sind viel zu schnell zu alt. Ich selber bin stolzer Nutzer eines ca. 10 Jahre alten Notebookes und muss demzufolge mit Restriktionen rechnen. Die meisten Browser wie Firefox (und &lt;strong&gt;auch&lt;/strong&gt; der oftmals als viel schneller und ressourcenschonender dargestellte Chrom{e/ium} frisst Ressourcen)&lt;/p&gt;
+&lt;p&gt;Firefox ist ein toller Browser! Wirklich! Aber er ist halt sicher nicht der ressourcenschonenste.&lt;/p&gt;
+&lt;p&gt;Viele Browser vergessen, wofür ein Webbrowser da ist. Man vergisst, dass ein Webbrowser Internetseiten darstellen soll und nicht noch zwei dutzend andere Dinge machen soll, auch wenn für mich ein bisschen Komfort beim Surfen dazugehört. Aber eben alles in Maßen.&lt;/p&gt;
+&lt;p&gt;Es gibt für mich aktuell genau einen Browser, der alle diese Bedingungen erfüllt und das ist meiner Meinung nach &lt;a href=&#34;https://www.uninformativ.de/git/lariza/&#34;&gt;Lariza&lt;/a&gt;. Da ich aber nicht so hohe Anforderungen an einen Browser habe, habe ich also beschlossen, einen eigenen Browser zu programmieren, auch auf Basis WebKits sowie in Python.&lt;/p&gt;
+&lt;p&gt;Was mich auch gestört hat, ist das viele Browser meinen, dass man einen eigenen Stil festlegen soll. Warum lege ich denn GTK-Themes fest, wenn jedes Programm dann doch eigene Farben definiert.&lt;/p&gt;
+&lt;p&gt;Ein anderer Hintergrundgedanke für mich war, dass meine Pythonkenntnisse im Moment eher als rudimentär zu bezeichnen sind und ich diese so ausbauen will.&lt;/p&gt;
+&lt;p&gt;So entstand innerhalb eines Tages die erste laufende Version von MyBrowse, die ich auch kurz darauf im o.g. Thread bekanntgab.&lt;/p&gt;
+&lt;h1 id=&#34;quo-vadis&#34;&gt;Quo vadis?&lt;/h1&gt;
+&lt;p&gt;MyBrowse ist &lt;strong&gt;mein&lt;/strong&gt; Webbrowser. Ich habe ihn als Ersatz für Firefox auf meinem Notebook geschrieben und habe meine eigenen Anforderungen an einen Browser.&lt;/p&gt;
+&lt;p&gt;Von daher versteht es sich denke ich von selbst, dass ich gerne Ideen und Gedanken anderer Nutzer aufgreife, aber nicht alles umsetze. Ich möchte einen Browser, der auf mich zugeschnitten ist und der meine Anforderungen trifft. Auf keinen Fall möchte ich, dass daraus so ein wunderbarer, aber aufgeblähter, Browser wie Firefox entsteht, sondern dass es endlich einen Browser gibt, der auch für Systeme älteren Semesters funktioniert.&lt;/p&gt;
+&lt;p&gt;Ich hoffe, dass ich hier während der Entwicklung noch mehr über MyBrowse schreiben werde.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

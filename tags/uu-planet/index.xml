@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uu-Planet on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/tags/uu-planet/</link>
+    <description>Recent content in uu-Planet on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 13 Apr 2021 16:18:21 +0000</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/uu-planet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WeeChat: Benachrichtigungen bei Pings</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</link>
+      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</guid>
+      <description>&lt;p&gt;Für mich war lange ein großer Nachteil an &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/&#34;&gt;WeeChat&lt;/a&gt;, dass ich im Gegensatz zu Thunderbird keine Desktop-Benachrichtigungen erhalten habe, wenn ich angepingt wurde. Eine Lösung dazu habe ich im &lt;a href=&#34;https://wiki.archlinux.org/index.php/WeeChat#Desktop_notifications&#34;&gt;ArchWiki&lt;/a&gt; gefunden.&lt;/p&gt;
+&lt;p&gt;Ich habe mich gegen die Lösung mit einem Plugin entschieden, da dass die Sache doch kompliziert hätte, was in diesem Punkt nicht nötig ist. Beide Lösungen benötigen &lt;a href=&#34;https://wiki.ubuntuusers.de/Benachrichtigungsdienst/#Eigene-Nachrichten-ausgeben&#34;&gt;libnotify&lt;/a&gt; um die Benachrichtigungen anzuzeigen.&lt;/p&gt;
+&lt;p&gt;Also sprach Zarathustra:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install libnotify-bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bzw.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -S libnotify
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach öffnet man WeeChat und gibt folgenden &amp;ldquo;Befehl&amp;rdquo; in WeeChat ein:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/set trigger.trigger.beep.command &amp;quot;/print -beep;/exec -bg notify-send -i &#39;/usr/share/icons/hicolor/32x32/apps/weechat.png&#39; &#39;IRC Notification&#39; &amp;quot;${tg_tag_nick}: ${tg_message_nocolor}&amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Systemd-Zram</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</link>
+      <pubDate>Tue, 13 Apr 2021 16:02:05 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</guid>
+      <description>&lt;p&gt;Bei Laptops mit weniger Arbeitsspeicher kann Zram Wunder bewirken. Zram erstellt einen komprimierten Arbeitsspeicher. Wenn man will, dass sich ZRam perfekt in Systemd integriert, ist &lt;a href=&#34;https://github.com/mdomlop/systemd-zram&#34;&gt;Systemd-Zram&lt;/a&gt; ein guter Fork, der sich auch sehr einfach unter Arch (AUR) und unter Debian, Ubuntu etc. installieren lässt.&lt;/p&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&#34;installation-unter-archlinux&#34;&gt;Installation unter ArchLinux&lt;/h2&gt;
+&lt;p&gt;Die Installation erfolgt unter Arch am Besten mithilfe des AURs, kann allerdings auch manueller erfolgen &lt;a href=&#34;https://github.com/mdomlop/systemd-zram#arch-linux-package&#34;&gt;Click!&lt;/a&gt;. Ich will hier allerdings nur die Installation mithilfe des AURs beschreiben. (Ohne AUR-Helfer, wie z.B. yay oder trizen)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/aur &amp;amp;&amp;amp; cd ~/aur
+git clone https://aur.archlinux.org/systemd-zram.git &amp;amp;&amp;amp; cd systemd-zram
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nun erfolgt das Bauen des Paketes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;makepkg -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach kann mit su in den Root-Account gewechselt werden und das Paket mit folgendem Befehl installiert werden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -U $PWD/systemd-zram-*.pkg.tar.zst
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dieser Schritt weicht natürlich ab, wenn man sudo installiert hat oder &lt;code&gt;su&lt;/code&gt; als Alias  &lt;code&gt;su -l&lt;/code&gt; hat. Aber dann sollte man auch wissen, wie man das macht.&lt;/p&gt;
+&lt;p&gt;WICHTIG: Bei der Installation über das AUR wird man (genauso wie bei allen folgenden Methoden) nicht automatisch über Updates informiert!!&lt;/p&gt;
+&lt;h2 id=&#34;installation-unter-debian&#34;&gt;Installation unter Debian&lt;/h2&gt;
+&lt;p&gt;Unter Debian, Ubuntu etc. kann systemd-zram auch installiert werden.&lt;/p&gt;
+&lt;p&gt;Man klont das Git-Repo (&lt;code&gt;git clone https://github.com/mdomlop/systemd-zram.git&lt;/code&gt;) und führt danach folgende Befehle aus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;make debian_pkg
+sudo dpkg -i systemd-zram_*.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;installation-unter-anderen-systemen&#34;&gt;Installation unter anderen Systemen&lt;/h2&gt;
+&lt;p&gt;Die Installation kann natürlich auch mithilfe des klassischen &lt;code&gt;make&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;make install&lt;/code&gt; &lt;a href=&#34;https://github.com/mdomlop/systemd-zram#classic-method&#34;&gt;erfolgen&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;benutzung&#34;&gt;Benutzung&lt;/h1&gt;
+&lt;p&gt;Der Service kann wie gewohnt mit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl enable systemd-zram --now
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;aktiviert werden und mit &lt;code&gt;systemctl&lt;/code&gt; gestartet bzw. beendet werden.&lt;/p&gt;
+&lt;p&gt;Wie gesagt, komprimiert zRam einen Teil des Arbeitsspeichers und erledigt dies mit unterschiedlichen Algorithmen. Der aktuell verwendete Algorithmus wird, wird durch den Inhalt der Datei &lt;strong&gt;/sys/block/zram0/comp_algorithm&lt;/strong&gt; angezeigt. In dieser stehen auch alle anderen möglichen Algorithmen.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat /sys/block/zram0/comp_algorithm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ergibt dann zum Beispiel&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[lzo] lzo-rle lz4 lz4hc 842 zstd 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Der aktuell verwendete Algorithmus steht also in [] und ist im Moment lzo. Einen Vergleich der möglichen Algorithmen findet man unter &lt;a href=&#34;https://github.com/mavam/compbench&#34;&gt;https://github.com/mavam/compbench&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Einen anderen Algorithmus kann man in der Datei &lt;strong&gt;/lib/systemd/system/systemd-zram.service&lt;/strong&gt; einstellen - dort muss der Wert &lt;em&gt;Environment=COMP_ALGORITHM=lzo&lt;/em&gt; angepasst werden.&lt;/p&gt;
+&lt;h1 id=&#34;wann-nützt-zram&#34;&gt;Wann nützt zRam?&lt;/h1&gt;
+&lt;p&gt;Wenn man 64GB RAM hat, bringt zRAM wahrscheinlich keinen großen, merkbaren Unterschied. Je weniger RAM man aber hat, umso größer sind die Vorteile von zRAM. Allerdings kann zRAM auch bei viel Arbeitsspeicher Vorteile bringen, wenn man zum Beispiel gerade sehr arbeitsspeicherintensive Sachen wie Virtualisierung macht.&lt;/p&gt;
+&lt;h1 id=&#34;mehr-swap&#34;&gt;Mehr Swap?&lt;/h1&gt;
+&lt;p&gt;Wenn man zRAM nutzt, wird dieser als Swap-Speicher angezeigt, weshalb man auch mithilfe von&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;swapon -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;überprüfen kann, ob der zRAM aktiviert ist. Den &amp;ldquo;alten&amp;rdquo; Swap jedoch &lt;strong&gt;nicht&lt;/strong&gt; entfernen, er wird zum Beispiel noch für den Ruhezustand benutzt!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Den neuen Firefox-Druckdialog deaktivieren</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</link>
+      <pubDate>Mon, 29 Mar 2021 05:11:39 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</guid>
+      <description>&lt;p&gt;Ich war recht erfreut als ich auf Mozillas Mailing-Listen davon las, dass es einen überarbeiten Druck-Dialog in Firefox 86 geben soll und war schon gespannt, was denn wirklich die Verbesserungen daran sein sollten.&lt;/p&gt;
+&lt;p&gt;Ehrlich gesagt, muss ich aber nach ein paar Tagen zu dem Konsens kommen, dass sich meiner Meinung nach diese &amp;ldquo;Verbesserung&amp;rdquo; nicht zu einem Praxiseinsatz eignen. Leider.&lt;/p&gt;
+&lt;p&gt;Natürlich ist das Deaktivieren einfach durch eine Änderung in &lt;code&gt;about:config&lt;/code&gt; getan:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;about:config&lt;/code&gt; öffnen&lt;/li&gt;
+&lt;li&gt;Den Wert &lt;strong&gt;print.tab_modal.enabled&lt;/strong&gt; auf &amp;ldquo;false&amp;rdquo; ändern&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hallo Arch!</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/25/hallo-arch/</link>
+      <pubDate>Thu, 25 Mar 2021 13:35:16 +0000</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/25/hallo-arch/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;[user@hostname ~]$ cowsay &amp;quot;Hallo Arch!&amp;quot;
+ _____________ 
+&amp;lt; Hallo Arch! &amp;gt;
+ ------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+[user@hostname ~]$ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Seit gestern Abend läuft auf meinem ca. 10 Jahre alten Laptop Arch. Der Hauptbeweggrund für mich war, dass das bisher verwendete System (Ubuntu 18.04 mit Xfce) irgendwann EOL haben würde und ich mich früh nach Alternativen umsehen wollte. Das System gefällt mir sehr gut und funktioniert - anders, als das, was immer behauptet wird - großteils “out of the box” und braucht nicht viel zusätzliche Konfiguration. Vor allem ist die mitgelieferte Xfce-Konfiguration passend und im Gegensatz zu Ubuntu ist das automatisch mit Xfce mitinstallierte Icon-Theme auch nicht unvollständig.&lt;/p&gt;
+&lt;p&gt;Ich werde natürlich weiterhin auf &lt;a href=&#34;https://ubuntuusers.de/&#34;&gt;ubuntuusers.de&lt;/a&gt; aktiv sein, auch da ich auf dem PC immernoch Ubuntu nutze und mir das System auch - nach wie vor - sehr gut gefällt. Da ich im Ubuntuusers-Team so ziemlich der einzige war, der noch nie Arch genutzt hat, fand ich es wäre an der Zeit, dies nachzuholen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distributionen sind nicht überholt</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/22/distributionen-sind-nicht-ueberholt/</link>
+      <pubDate>Mon, 22 Mar 2021 08:59:40 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/22/distributionen-sind-nicht-ueberholt/</guid>
+      <description>&lt;p&gt;Im Moment scheinen ja &lt;a href=&#34;https://curius.de/2021/02/linux-distributionen-welche-bedeutung-haben-sie-in-zukunft/&#34;&gt;einige&lt;/a&gt; der &lt;a href=&#34;https://www.deimeke.net/dirk/blog/index.php?/archives/4067-Rolle-von-Linux-Distributionen.html&#34;&gt;Meinung&lt;/a&gt; zu sein, dass das unter Linux exessiv benutzte System von Distributionen überholt sei. Ich persönlich sehe das etwas anders.&lt;/p&gt;
+&lt;p&gt;Zum einen könnte man wieder mit dem Argument kommen, dass C auch eine veraltete Programmiersprache ist, die sich aber  immernoch bewährt und durch &amp;ldquo;modernere&amp;rdquo; Sprachen wohl nie ganz ersetzen lassen wird. Aber das muss man hier nicht erneut aufgreifen.&lt;/p&gt;
+&lt;p&gt;Einer der Punkte, der immer wieder aufgeführt wird, um zu zeigen, dass das Prinzip von Linux-Distributionen obsolet ist, ist immer wieder das Paketmanagment. Oft gibt es hier die Meinung, dass altbewährte Systeme wie APT oder RPM (oder auch das nicht ganz so alte pacman) überholt sind und nocht dezentral genug. Das finde ich eigentlich ganz und gar nicht. Ich finde ein zentrales Repo (das natürlich gemirrort werden kann, um einen besser erreichbaren Mirror zu benutzen), aus dem man seine Pakete bezieht deutlich besser als ein komplett dezentrales System, wie es zum Beispiel AppImages bieten. Dadurch können nämlich auf einzigartige Art und Weise doppelte Bibliotheken vermieden werden und somit wird auch die Sicherheit des Systemes bestärkt. Wenn es nämlich nur eine Bibliothek &lt;strong&gt;einmal&lt;/strong&gt; gibt, dann muss auch nur einmal der Fehler korrigiert werden. Gleichzeitig ist es auch gut, wenn jeder ein einzelnes kleines Repository betrieben kann, wie dies zum Beispiel mit den PPAs bei Ubuntu oder den AURs bei Arch umgesetzt ist.&lt;/p&gt;
+&lt;p&gt;Das Gegenteil dieser Zersplitterung wäre für mich ein zentrales Linux. Dies wäre allein bei der Paketverwaltung schwer. Wie macht man dies? Entscheidet man sich nur z.B. für APT, kehrt man anderen sehr guten Systemen den Rücken. Das selbe gilt auch, wenn man z.B. nur auf AppImages umsteigen würde, mal abgesehen von den obigen Gründen.&lt;/p&gt;
+&lt;p&gt;Das Tolle an Linux war und ist für mich immer die Tatsache, dass man immer eine Wahl hat. Das wäre viel schwerer, wenn es nicht mehr unterschiedliche Distributionen gäbe. Dann hätte man im Prinzip das selbe wie bei zwei anderen bekannten Betriebssystemen.&lt;/p&gt;
+&lt;p&gt;Ja, es gibt zunehmend mehr Standards, die von mehreren Distributionen umgesetzt werden. Das ist auch gut so, denn dadurch wird es Entwicklern einfacher gemacht an unterschiedlichen Projekten zu arbeiten, es sollte allerdings meiner Meinung nach &lt;strong&gt;nicht&lt;/strong&gt; den Weg in Richtung einer großen einheitlichen Linux-Distribution ebnen. Ein weiterer Punkt, dem ich zustimme, ist dass nicht jeder kleine Hinterhofentwickler eine eigene &amp;ldquo;Distribution&amp;rdquo; veröffentlichen muss, nur weil er bei &amp;lt;HIER_DIE_DISTRI_DEINER_WAHL&amp;gt; das Hintergrundbild und das Icon-Theme verändert hat. Ja, so etwas ist unnötig. Da konzentriert man besser seine Mittel um bei dem Mutter-Projekt zu helfen. Genau vor diesem Hintergrund sehe ich es auch nicht als Grund, Distributionen &amp;ldquo;abzuschaffen&amp;rdquo;, nur weil viele Distributionen jetzt &lt;a href=&#34;https://calamares.io&#34;&gt;Calamares&lt;/a&gt; anstelle anderer Installationsassistenten verwenden. Vielleicht ist es ja tatsächlich eine bessere Alternative und man will nicht auch noch Ressourcen aufwenden, einen eigenen Installer zu schreiben, wenn es schon einen guten gibt.&lt;/p&gt;
+&lt;p&gt;Auch wenn für viele Benutzer die Desktopumgebung mehr zählt, bin ich mir sicher, dass die Nutzer der Kommandozeile (also der Klischee-Linux-Nutzer) dann doch den Unterschied zwischen den Distributionen merken und an &amp;ldquo;ihrer&amp;rdquo; Distribution hängen und sie nicht gegen eine Mainstream-Distribution, die es allen versucht recht zu machen austauschen lassen wollen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ansiweather</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/21/ansiweather/</link>
+      <pubDate>Sun, 21 Mar 2021 20:19:17 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/21/ansiweather/</guid>
+      <description>&lt;p&gt;Um sich das Wetter unter Linux anzeigen zu lassen, gibt es mehrere Varianten. Entweder nimmt man den einfachen Weg und ruft einfach&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl http://wttr.in
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;im Terminal auf (optional kann man das auch als Skript packen und in &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern) oder man nimmt &lt;strong&gt;ansiweather&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Bei diesem Programm handelt es sich im Prinzip auch nur um ein simples Shellskript. Unter Ubuntu und Co. installiert man es einfach mit APT - das entsprechende Paket heißt passenderweise auch einfach &lt;em&gt;ansiweather&lt;/em&gt;. Also&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ansiweather
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nach dem Start des Programmes (Aufruf über das Kommando &lt;code&gt;ansiweather&lt;/code&gt; wird allerdings noch nicht der eigene Wohnort angezeigt. Dafür muss man erst die Datei &lt;strong&gt;~/.ansiweatherrc&lt;/strong&gt; anpassen. Eine Beispieldatei:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;api_key:85a4e3c55b73909f42c6a23ec35b7147
+location:Berlin,DE
+fetch_cmd:curl -s
+units:metric
+symbols:false
+forecast:0
+show_daylight:true
+dateformat:%a %b %d
+timeformat:%b %d %R
+
+# Text and Colors
+background:\033[44m
+text:\033[36;1m
+data:\033[33;1m
+delimiter:\033[35m=&amp;gt;
+dashes:\033[34m-
+greeting_text:Aktuelles Wetter in
+wind_text:Windgeschwindigkeit
+humidity_text:Luftfeuchtigkeit
+pressure_text:Luftdruck
+sunrise_text:Sonnenaufgang
+sunset_text:Sonnenuntergang
+
+# Icons
+sun:\033[33;1m\xe2\x98\x80
+moon:\033[36m\xe2\x98\xbd
+clouds:\033[37;1m\xe2\x98\x81
+rain:\xe2\x98\x94
+fog:\033[37;1m\xe2\x96\x92
+mist:\033[34m\xe2\x96\x91
+haze:\033[33m\xe2\x96\x91
+snow:\033[37;1m\xe2\x9d\x84
+thunderstorm:\xe2\x9a\xa1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die meisten Einstellungen sind eigentlich selbsterklärend. Dieses Beispiel zeigt also das Wetter in Berlin an und ist das im Ubuntuusers-Wiki gezeigte Beispiel, es gefällt mir allerdings sehr gut und ich habe mir ansiweather auch in meine .bashrc gelegt.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wieso Linux Mint sich unbeliebt macht</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/03/wieso-linux-mint-sich-unbeliebt-macht/</link>
+      <pubDate>Wed, 03 Mar 2021 10:31:14 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/03/wieso-linux-mint-sich-unbeliebt-macht/</guid>
+      <description>&lt;p&gt;Linux Mint (bzw. seine Benutzer haben) nicht unbedingt überall einen sehr guten Ruf. Das liegt in Ubuntuforen natürlich daran, dass es augenscheinlich wohl heißt &amp;ldquo;Linux Mint basiert auf Ubuntu, also Linux Mint == Ubuntu&amp;rdquo;. Das dies nicht unbedingt stimmt merkt man an Linux Mints Updatesystem. Gerade habe ich &lt;a href=&#34;https://gnulinux.ch/updatepflicht&#34;&gt;diesen&lt;/a&gt; Blogbeitrag auf dem OSBN gelesen. Und dazu muss ich jetzt meinen Senf geben.&lt;/p&gt;
+&lt;p&gt;Linux Mint hat sicherlich seine &lt;a href=&#34;https://axebase.net/blog/2020/10/26/snap-oder-richtig/&#34;&gt;Vorzüge&lt;/a&gt;, allerdings ist besonders das Updatesystem Linux Mints, der Punkt der Linux Mint immer wieder zum Verhängnis wird und enorm den Ruf schädigt.&lt;/p&gt;
+&lt;p&gt;Eine Distribution die langjährig Updates zurückhält (&lt;a href=&#34;https://de.wikipedia.org/wiki/Linux_Mint#mintUpdate&#34;&gt;Quelle&lt;/a&gt;) möchte ich nicht nutzen. Und augenscheinlich viele andere auch. Dass dadurch Sicherheitslücken entstehen können. Das selbe Schicksal widerfuhr auch dem sogenannten Arch-Derivat Manjaro. &lt;a href=&#34;https://de.wikipedia.org/wiki/Manjaro_Linux#Kritik&#34;&gt;Click!&lt;/a&gt; Manjaro verbesserte sein System 2014 und Linux Mint tat dies im Sommer 2018; der Ruf bleibt allerdings und sorgt nicht überall für ein tolles Image. Ausgerechnet Linux Mint, die Distribution, die Benutzern Updates vorenthielt, meint jetzt seinen Updatemechanismus zu erweitern und auch an vergessene Updates zu erinnern. Vielleicht erscheint das nicht nur mir etwas ironisch.&lt;/p&gt;
+&lt;p&gt;Noch hat Linux Mint keine Updatepflicht und wird sie wahrscheinlich auch nicht in der nächsten Version haben. Sollte es allerdings irgendwann(tm) eine Updatepflicht geben, gehe ich jetzt schon davon aus, dass es sehr viele negatvie Reaktionen geben wird, weil Benutzer dann wieder in eine - wenn auch sinnvolle - Zwangsjacke gesteckt werden und denken, sie hätten ein Windows 10. Dann würde nur noch fehlen, dass die Updates automatisch eingespielt werden und der Computer danach plötzlich selbst neustartet. (Willkommen bei Windows!!)&lt;/p&gt;
+&lt;p&gt;Deshalb mein Fazit (an alle):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spielt Updates ein!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Was daran so schwer ist verstehe ich immmernoch nicht. Man muss es ja nicht täglich machen, aber einmal in der Woche einen Terminal öffnen und folgenden Befehl einfügen und bestätigen dürfte doch eigentlich nicht so schwer sein:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ubuntuusers Feeds</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/02/ubuntuusers-feeds/</link>
+      <pubDate>Tue, 02 Mar 2021 15:15:38 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/02/ubuntuusers-feeds/</guid>
+      <description>&lt;p&gt;Bei &lt;a href=&#34;https://ubuntuusers.de&#34;&gt;ubuntuusers.de&lt;/a&gt; kann man viel &amp;ldquo;Abbonieren&amp;rdquo; und erhält dann E-Mail-Benachrichtigungen. Ansonsten kann man auch Atom-Feeds in seinen &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/&#34;&gt;Feedreader&lt;/a&gt; der Wahl importieren. Diese Feedurls sind logisch aufgebaut.&lt;/p&gt;
+&lt;p&gt;Einen Überblick über die Feeds kann man auch &lt;a href=&#34;https://ubuntuusers.de/feeds/&#34;&gt;hier&lt;/a&gt; bekommen.&lt;/p&gt;
+&lt;h1 id=&#34;forum&#34;&gt;Forum&lt;/h1&gt;
+&lt;h2 id=&#34;das-ganze-forum&#34;&gt;Das ganze Forum&lt;/h2&gt;
+&lt;p&gt;Wenn man das ganze Forum abbonieren will, benutzt man folgende URL:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://forum.ubuntuusers.de/feeds/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das &amp;ldquo;ANZAHL&amp;rdquo; kann man mit einer entsprechenden Zahl ersetzen. Das ist eigentlich nebensächlich, ich habe da meistens 10 oder 20 eingetragen. Für &amp;ldquo;WAS&amp;rdquo; gibt es drei Optionen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;short&lt;/code&gt; - nur die Einleitung&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;full&lt;/code&gt; - ganzer Beitrag&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;- nur der Titel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;unterforum&#34;&gt;Unterforum&lt;/h2&gt;
+&lt;p&gt;Auch Unterforen (z.B. das &lt;a href=&#34;https://forum.ubuntuusers.de/forum/wiki/&#34;&gt;Wikiforum&lt;/a&gt;) können per Feed abboniert werden.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://forum.ubuntuusers.de/feeds/forum/FORENSLUG/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;ldquo;WAS&amp;rdquo; und &amp;ldquo;ANZAHL&amp;rdquo; sind die selben Optionen wie oben.  &amp;ldquo;FORENSLUG&amp;rdquo; legt das Forum fest. Das Wikiforum hat die URL &lt;a href=&#34;https://forum.ubuntuusers.de/forum/wiki/&#34;&gt;https://forum.ubuntuusers.de/forum/wiki/&lt;/a&gt;, FORENSLUG ist also mit &lt;strong&gt;wiki&lt;/strong&gt; zu ersetzen.&lt;/p&gt;
+&lt;h1 id=&#34;wiki&#34;&gt;Wiki&lt;/h1&gt;
+&lt;p&gt;Die letzten Änderungen im Wiki sind über folgende Feed-URL erreichbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://wiki.ubuntuusers.de/_feed/10/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bei Feeds für einzelne Artikel scheint es aktuell einen Fehler zu geben.&lt;/p&gt;
+&lt;h2 id=&#34;update-22321&#34;&gt;[Update 22.3.21]&lt;/h2&gt;
+&lt;p&gt;Bei den Feeds für einzelne Artikel gab es nicht wirklich einen Bug, der lag unter &lt;a href=&#34;https://ubuntuusers.de/feeds&#34;&gt;https://ubuntuusers.de/feeds/&lt;/a&gt; und wird beim nächsten Inyoka-Release korrigiert. :) Die Feeds für einen einzelnen Artikel funktionieren wie folgt:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://wiki.ubuntuusers.de/SEITE/a/feed/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Auch dieser Link dürfte verständlich sein.&lt;/p&gt;
+&lt;h3 id=&#34;update-290321&#34;&gt;[Update 29.03.21]&lt;/h3&gt;
+&lt;p&gt;Gestern war das Webteam so nett und hat Inyoka 0.26.0 auf die Server geschoben, dass den Fehler unter &lt;a href=&#34;https://ubuntuusers.de/feeds&#34;&gt;ubuntuusers.de/feeds&lt;/a&gt; behoben hat.&lt;/p&gt;
+&lt;h1 id=&#34;ikhaya&#34;&gt;Ikhaya&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;https://ikhaya.ubuntuusers.de/feeds/KATEGORIE/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Bedeutung von &amp;ldquo;WAS&amp;rdquo; und &amp;ldquo;ANZAHL&amp;rdquo; ist weiter oben geschrieben und &amp;ldquo;KATEGORIE&amp;rdquo; ist eigentlich das gleiche, wie FORENSLUG im Bereich Forum.&lt;/p&gt;
+&lt;h1 id=&#34;planet&#34;&gt;Planet&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;https://planet.ubuntuusers.de/feeds/WAS/ANZAHL/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wie oben beschrieben.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Newsboat</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</link>
+      <pubDate>Mon, 01 Mar 2021 13:30:41 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/01/newsboat/</guid>
+      <description>&lt;p&gt;Mein liebster Feedreader ist eigentlich Newsbeuter. Dieser wird aber nicht mehr weiterentwickelt und ist deshalb auch für Ubuntu 20.04 nicht mehr in den Paketquellen. Schade&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Die gute Nachricht: Newsbeuter hat einen aktiv weiterentwickelten Fork - Newsboat. Und Newsboat ist sogar in den Paketquellen. Deshalb kann man das Programm mit folgendem Kommando installieren:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install newsboat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Die Feeds werden in der Datei &lt;strong&gt;~/.newsboat/urls&lt;/strong&gt; abgespeichert. Hier schreibt man einfach eine URL in jede Zeile und startet danach Newsboat neu - alternativ benutzt man die Tastenkombination [Strg] + [R].&lt;/p&gt;
+&lt;p&gt;Folgende Konfigurationen habe ich vorgenommen:&lt;/p&gt;
+&lt;h2 id=&#34;newsboatconfig&#34;&gt;~/.newsboat/config&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;browser lariza
+auto-reload yes
+reload-time 10
+user-agent &amp;quot;Lynx/2.8.9dev.16 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.5.17&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das bewirkt das beim Drücken von [o] der Artikel in Lariza geöffnet wird. Würde man hier &lt;code&gt;firefox&lt;/code&gt; eintragen, würde der Artikel in Firefox geöffnet werden. Die zweite und dritte Zeile sorgt dafür, dass die Feeds alle 10 Minuten neu eingelesen werden und die letzte Zeile ist der User-Agent, mit dem sich newsboat beim Abrufen der Feeds ausgibt, in meinem Fall also der User-Agent Lynx’. Die Konfigurationen und die Feed-Liste können 1:1 von newsbeuter übernommen werden.&lt;/p&gt;
+&lt;h2 id=&#34;bashrc&#34;&gt;~/.bashrc&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;[...]
+
+alias newsboat=&#39;newsboat -r&#39;
+
+[...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Beim Öffnen von Newsboat werden die Feeds neueingelesen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ein echtes freies Betriebssystem</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</link>
+      <pubDate>Mon, 01 Mar 2021 12:09:20 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</guid>
+      <description>&lt;p&gt;Ein paar GEdanken zu freier Software und GNU&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Einer der ersten Vorteile, der einem bei Linux immer am Anfang erzählt wird, ist sicherlich, dass Linux Open Source ist und man deshalb ja den Quellcode einsehen kann und verändern kann (wie viel Benutzer das tatsächlich machen, sei mal dahingestellt).
+Tatsächlich ist das gar nicht schlecht und auch einer der Gründe für Linux für mich. Viele behaupten deshalb pauschal, Linux ist ein sog. &amp;ldquo;freies Betriebssystem&amp;rdquo;.
+Wenn man sich mit Linux zumindest etwas beschäftigt hat, müssen einem die Namen &amp;ldquo;Richard Stallman&amp;rdquo; sowie GNU, das man ja bekanntermaßen &lt;em&gt;nicht&lt;/em&gt; Unix ist 😉, über den Weg laufen. Wenn es nach Richard Stallman geht, ist Linux kein freies System und vor allem folgt es nicht dem GNU-Prinzip (&amp;ldquo;One tool, one job&amp;rdquo;). In Linux wird nämlich nicht per se gegen proprietäre Software vorgegangen.&lt;/p&gt;
+&lt;p&gt;Also gab es schlaue Entwickler, die den Linux-Kernel (also &lt;strong&gt;das&lt;/strong&gt; eigentliche &amp;ldquo;Linux&amp;rdquo;) von allem proprietären Kram befreit haben und das ganze als &amp;ldquo;Linux Libre&amp;rdquo; zur Verfügung stellen. Aber wieso nimmt man nicht einfach das Betriebssystem, das durch Richard Stallman in die Welt gerufen wurde: GNU.&lt;/p&gt;
+&lt;p&gt;Tja, da gibt es ein winziges Problem, der Betriebssystemkernel von GNU, GNU Hurd, ist ziemlich instabil und es will wohl keiner damit arbeiten.&lt;/p&gt;
+&lt;p&gt;Das GNU-Projekt und die &amp;ldquo;Free Software Foundation&amp;rdquo;, die von dem selben Herrn gegründet wurde, setzt sich radikal gegen proprietäre Software ein und entwickelt dabei eine &lt;a href=&#34;https://www.gnu.org/software/&#34;&gt;Reihe&lt;/a&gt; von eigenen Programmen, darunter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailman - Programm zum Verwalten von Mailinglisten&lt;/li&gt;
+&lt;li&gt;wget - Downloadmanager&lt;/li&gt;
+&lt;li&gt;bazaar - Versionsverwaltung&lt;/li&gt;
+&lt;li&gt;coreutils - ohne das kann man die meisten Linux-Distris vergessen&lt;/li&gt;
+&lt;li&gt;Linux-Libre - siehe oben&lt;/li&gt;
+&lt;li&gt;bc - Taschenrechner für die Konsole&lt;/li&gt;
+&lt;li&gt;GNOME - eine Desktopumgebung&lt;/li&gt;
+&lt;li&gt;GnuPG - muss man das erklären&amp;hellip;&lt;/li&gt;
+&lt;li&gt;u.v.m.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Man kann sogar seine eigenen Programme dem GNU-Projekt vorschlagen, vielleicht wird man ja aufgenommen. Vorraussetzung ist natürlich, dass die Programme frei sind. Aufgrund der Tatsache, dass Linux in vielen Punkten von GNU-Software abhängt, wird es auch GNU/Linux genannt.&lt;/p&gt;
+&lt;p&gt;Aus diesen vielen Programmen kann man dann sogar theoretisch ein echtes GNU basteln, mit Hurd als Kernel. Viel Spaß! (von Debian gibt es sogar eine Variante mit Hurd).&lt;/p&gt;
+&lt;p&gt;Was bräuchte es dafür (lose Gedankensammlung):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hurd als Kernel&lt;/li&gt;
+&lt;li&gt;IceCat als Webbrowser&lt;/li&gt;
+&lt;li&gt;coreutils&lt;/li&gt;
+&lt;li&gt;bash als Shell&lt;/li&gt;
+&lt;li&gt;GNOME als Desktopumgebung (vielleicht sollte mal jemand(tm) eine leichtgewichtige Desktopumgebung schreiben, unter die GPL stellen und GNU vorschlagen)&lt;/li&gt;
+&lt;li&gt;GRUB als Bootmanager&lt;/li&gt;
+&lt;li&gt;durchgängig GTK+-Programme (Qt ist böse 😈  )&lt;/li&gt;
+&lt;li&gt;Guix als Paketmanager&lt;/li&gt;
+&lt;li&gt;wget als Downloadmanager&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dann hätte man ein echtes GNU als Betriebssystem. Es ist ja nicht so, dass sowas schon gemacht wurde: GNU Guix System (nicht mit dem Paketmanager verwechseln!!)
+*&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Desktopübergreifendes Ausloggen aus Whiskermenu</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</link>
+      <pubDate>Sun, 21 Feb 2021 17:20:45 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</guid>
+      <description>&lt;p&gt;Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.&lt;/p&gt;
+&lt;p&gt;Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden &lt;code&gt;xfce4-session-logout&lt;/code&gt; gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.&lt;/p&gt;
+&lt;p&gt;Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter &lt;em&gt;&amp;ldquo;Exit&amp;rdquo;&lt;/em&gt;. Alternativ mit mehr Auswahlmöglichkeiten gibt es den Befehl &lt;code&gt;obsession-logout&lt;/code&gt;.
+Theoretisch könnte man jetzt also den Befehl &lt;code&gt;xfce4-session-logout&lt;/code&gt;durch &lt;code&gt;obsession-logout&lt;/code&gt; ersetzen. Dann könnte ich die Schaltfläche aber nicht einfach unter Xfce einsetzen. Also muss eine Lösung her - z.B. ein Skript.&lt;/p&gt;
+&lt;p&gt;Der Aufbau ist eigentlich denkbar einfach: Ein Skript überprüft, ob gerade Xfce oder Openbox läuft. Wenn Xfce verwendet wird wird der Befehl &lt;code&gt;xfce4-session-logout&lt;/code&gt; aufgerufen und unter Openbox der andere Befehl. Theoretisch wäre dieses Skript dann beliebig erweiterbar (Habe ich aber nicht probiert).&lt;/p&gt;
+&lt;p&gt;Welche Desktopumgebung man verwendet kann man mit folgendem Befehl herausfinden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;printenv XDG_SESSION_DESKTOP
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;herausfinden.&lt;/p&gt;
+&lt;p&gt;Ein Skript (nennen wir es z.B. &lt;code&gt;obxfceausloggen&lt;/code&gt;) sähe z.B. so aus:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+desktop=$(printenv XDG_SESSION_DESKTOP)
+if [ &amp;quot;$desktop&amp;quot; == &amp;quot;openbox&amp;quot; ]
+	then
+        obsession-logout
+	elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
+        then
+            xfce4-session-logout
+	else
+        echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
+        exit 1
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Das kann man jetzt zum Beispiel unter &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &amp;ldquo;Paths&amp;rdquo; ist) im Whiskermenu als Befehl beim Abmelden &lt;code&gt;obxfceausloggen&lt;/code&gt; eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Rechtsklick auf das Whiskermenu &amp;ndash;&amp;gt; &amp;ldquo;Eigenschaften&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Befehle&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Abmelden&amp;rdquo;&lt;/em&gt;. Dort kann man dann das Skript als Befehl eintragen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Launchpad vs. Github</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</link>
+      <pubDate>Thu, 18 Feb 2021 07:53:10 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/18/launchpad-vs-github/</guid>
+      <description>&lt;p&gt;Sowohl Launchpad als auch Github sind Webanwendungen auf denen man seine Projekte verwalten kann. Außerdem gibt es noch andere Anwendungen wie zum Beispiel Gitlab etc.&lt;/p&gt;
+&lt;h1 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h1&gt;
+&lt;p&gt;ACHTUNG!!!&lt;/p&gt;
+&lt;p&gt;Es besteht die Möglichkeit, dass dieser Post eigene Meinung enthält.&lt;/p&gt;
+&lt;h1 id=&#34;github&#34;&gt;Github&lt;/h1&gt;
+&lt;p&gt;Github hat den großen Vorteil, dass es von enorm vielen Menschen benutzt wird. Dadurch hat man automatisch sehr viele potentielle Mithelfer an seinem Open Source-Projekt. Der wahrscheinlich größte Nachteil Githubs ist, dass es Closed Source ist (und dass es zu M$ gehört ]:-) ) Allerdings ist es nicht mehr so wie früher, dass man bei GitHub sehr zur Kasse gebeten wird. Eigentlich kann man alles, was man normalerweise braucht auch kostenlos erledigen.&lt;/p&gt;
+&lt;h1 id=&#34;launchpad&#34;&gt;Launchpad&lt;/h1&gt;
+&lt;p&gt;Launchpad wurde von Canonical, also der Firma hinter Ubuntu, entwickelt.&lt;/p&gt;
+&lt;p&gt;Launchpad unterstützt im Gegensatz zu GitHub nicht nur Git als Versionskontrollsystem, sondern auch Bazaar nativ und kann fremde Repos z.B. von Github importieren.&lt;/p&gt;
+&lt;p&gt;Launchpad selber unterstützt Git und Bazaar, aber man kann auch Subversion- oder CVS-Repos importieren. Launchpad ist viel mehr als eine reine Code-Hosting-Plattform. Es ist genauso wie auf Github möglich, die Plattform als Bugtracker zu nutzen. Gleichzeitig bietet Launchpad aber zusätzlich noch ein wirklich wunderbares Web-Interface für Übersetzungen auf Basis gettexts und eine Frage-Antwort-Abteilung, die bei Github in die Issues-Abteilung integriert ist. Was aber wahrscheinlich die bekannteste Funktion Launchpad ist, ist die Möglichkeit mit den PPAs (Personal Package Archiv) anderen Leuten seine Programme als DEB-Paket zur Verfügung zu stellen.&lt;/p&gt;
+&lt;h1 id=&#34;fazit&#34;&gt;Fazit&lt;/h1&gt;
+&lt;p&gt;Eigentlich braucht es weder Github noch Launchpad. Theoretisch könnte man einfach einen Webserver benutzen und darauf seine Git-Repos hosten (oder man macht das mit NFS-Freigaben, dann kann man sogar den Webserver wegsparen), aber Github und Launchpad, machen einem das Leben aber deutlich einfacher. Wer allerdings unbedingt Bazaar als VCS haben möchte, sollte sich Launchpad unbedingt mal ansehen.&lt;/p&gt;
+&lt;h2 id=&#34;meine-verwendung&#34;&gt;Meine Verwendung&lt;/h2&gt;
+&lt;p&gt;Ich hoste meine meisten Projekte aktuell auf Github. Zum einen finde ich die Oberfläche intuitiever. Zum Anderen hat Github aber auch so viele Nutzer (und macht es diesen im Webinterface einfacher, sich an Projekten zu beteiligen), dass es wahrscheinlicher ist, dass sich mehr Leute an meinen Projekten beteiligen. Launchpad hat mit den PPAs allerdings auch einen Riesenvorteil.&lt;/p&gt;
+&lt;h3 id=&#34;beispiel-mybrowse&#34;&gt;Beispiel MyBrowse&lt;/h3&gt;
+&lt;p&gt;Bei MyBrowse mache ich das folgendermaßen:&lt;/p&gt;
+&lt;p&gt;Der Quellcode liegt auf Github und dort wird auch entwickelt (da MyBrowse keine Lokalisierung braucht, brauche ich dieses wirklich tolle Feature Launchpads hier nicht). Launchpad importiert dann in regelmäßigen Abständen (5 Stunden) den Quellcode und baut täglich in mein testing-PPA die Pakete. Von dort kopiere ich dann die Pakete in das normale PPA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ganzen Inhalt in Hugo-Feeds anzeigen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/ganzen-inhalt-in-feeds-anzeigen/</link>
+      <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/ganzen-inhalt-in-feeds-anzeigen/</guid>
+      <description>&lt;p&gt;Standardmäßig zeigt Hugo nur den Anfang eines Artikels in den Feeds an.&lt;/p&gt;
+&lt;p&gt;Will man dies ändern kann man wie folgt vorgehen:&lt;/p&gt;
+&lt;p&gt;Normalerweise sollte man nicht die Themes direkt unter &lt;code&gt;themes/&lt;/code&gt; bearbeiten. Stattdessen sollte man die Vorlagen nach &lt;code&gt;layouts&lt;/code&gt; kopieren und dort bearbeiten beziehungsweise aus dem Git-Repo dorthin herunterladen. Also folgende Befehle ausgehend von dem Pfad des Blogs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd layouts/_default
+wget https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/_default/rss.xml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jetzt kann man die Datei &lt;code&gt;rss.xml&lt;/code&gt; editieren und die Zeile&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;description&amp;gt;{{ .Summary | html }}&amp;lt;/description&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;durch&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;description&amp;gt;{{- .Content | html -}}&amp;lt;/description&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Danach muss man die Seite neu bauen.&lt;/p&gt;
+&lt;p&gt;Gefunden hatte ich die Lösung &lt;a href=&#34;https://blog.eternalrecurrence.space/posts/displaying-the-full-content-in-hugo-rss-feed/&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Xfce: Themes auf der Kommandozeile auswählen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</link>
+      <pubDate>Mon, 15 Feb 2021 22:09:15 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/15/xfce-themes-auf-der-kommandozeile-anpassen/</guid>
+      <description>&lt;p&gt;Xfconf, also Xfces Konfigurationsmanager, bietet die Möglichkeit die Konfiguration nicht nur über die grafische Oberfläche sondern auch über die Kommandozeile zu nutzen. Dies ist zum Beispiel in Skripten nützlich.&lt;/p&gt;
+&lt;p&gt;Das Theme lässt sich folgender Maßen anpassen:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/ThemeName -s &amp;lt;NameDesThemas&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Und der Iconsatz lässt sich folgendermaßen anpassen:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xfconf-query -c xsettings -p /Net/IconThemeName -s &amp;lt;NameDesIconthemes&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So lässt sich bspw. ein Skript erstellen. Ich habe mir also zwei Skripte erstellt, die zwischen einem hellen und einem dunklen Theme wechseln.&lt;/p&gt;
+&lt;p&gt;Theoretisch könnte man dies auch in einem Skript z.B. wie folgt zusammenfassen.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+if [ &amp;quot;$1&amp;quot; == &amp;quot;light&amp;quot; ]
+    then
+        xfconf-query -c xsettings -p /Net/ThemeName -s Adapta
+        xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta
+        notify-send &amp;quot;Theme&amp;quot; &amp;quot;Helles Theme aktiviert&amp;quot;
+    elif [ &amp;quot;$1&amp;quot; == &amp;quot;dark&amp;quot; ]
+        then
+            xfconf-query -c xsettings -p /Net/ThemeName -s Adapta-Nokto
+            xfconf-query -c xsettings -p /Net/IconThemeName -s Papirus-Adapta-Nokto
+            notify-send &amp;quot;Theme&amp;quot; &amp;quot;Dunkles Theme aktiviert&amp;quot;
+    else
+        echo &amp;quot;Fehlendes oder falsches Argument. Beende...&amp;quot;
+        exit 1
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wenn man das Skript jetzt also mit dem Argument &amp;ldquo;light&amp;rdquo; aufruft, würden ein helles Theme und ein helles Icontheme aktiviert und mit dem Argument &amp;ldquo;dark&amp;rdquo; mit einem entsprechenden dunklen Design. Die Themen müsste man natürlich entsprechend den eigenen Vorlieben anpassen&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sich an Open-Source-Projekten beteiligen</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</link>
+      <pubDate>Fri, 12 Feb 2021 19:16:51 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/12/sich-beteiligen/</guid>
+      <description>&lt;p&gt;Für mich ist einer der großen &lt;a href=&#34;https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/&#34;&gt;Vorteile&lt;/a&gt;, die OPen-Source-Projekte mitscihbringen, dass man zumindest uneingeschränkt die Möglichkeit hat, sich zu beteiligen.&lt;/p&gt;
+&lt;p&gt;Auch wenn es nur ein (sehr geringer) Bruchteil der Personen, die die Möglichkeit dazu haben, wahrnimmt, finde ich allein die Möglichkeit, dass man ohne viel Bürokratie helfen kann toll.Zwie wichtige Möglichkeiten wie man sich an solchen Projekten beteiligen kann sind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bugs melden. Viele Fehler sehen die Programmierer selber nicht und müssen erst darauf hingewiesen werden. Das kann enorm hilfreich sein und ist deshalb - auch wenn es banal klingt - ein &lt;!-- raw HTML omitted --&gt;großer&lt;!-- raw HTML omitted --&gt; Beitrag. Bugtracker findet man oft direkt beim Code-Repository des Projektes.&lt;/li&gt;
+&lt;li&gt;Übersetzungen beitragen. Die meisten Programme werden standardmäßig mit englischer Oberfläche ausgeliefert (und ggf. der Sprache des Programmierers) und können oft lokalisiert, also in andere Sprachen übersetzt werden. Die fördert zum einen die Verbreitung der Software und zum Anderen übt man dadurch selber seine eigenen Fremdsprachenkenntnisse.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wenn man nicht weiß, ob und wie man sich in einem Projekt einbringen kann, hilft es oft, den Maintainer zu kontaktieren.Ich wüßte keinen, der sich über die Anfrage nach Mitarbeit beklagen würde. Dasselbe  gilt auch für geschlossen entwickelte Projekte (wie z.B. bei &lt;a href=&#34;https://ubuntuusers.de/inyoka/&#34;&gt;Inyoka&lt;/a&gt; - so habe ich das bei Inyoka auch gemach gehabt), auch hier hilft oft eine nette Nachricht an einen Entwickler ob man helfen darf.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MyBrowse</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</link>
+      <pubDate>Sun, 07 Feb 2021 18:12:26 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/mybrowse/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../mybrowse.png&#34; alt=&#34;Bildschirmfoto&#34; title=&#34;MyBrowse&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kurz notiert: Vor ein paar Tagen hatte ich beschlossen einen eigenen WebKit-Browser in Python zu schreiben.&lt;/p&gt;
+&lt;p&gt;Den Quellcode findet man unter &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse.git&#34;&gt;https://github.com/KaiserBarbarossa/MyBrowse.git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mehr zu meinen Ambitionen den Browser betreffend habe ich im ubuntuusers-Forum geschrieben: &lt;a href=&#34;https://forum.ubuntuusers.de/post/9227690/&#34;&gt;https://forum.ubuntuusers.de/post/9227690/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Warum ich Linux Nutze</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</link>
+      <pubDate>Sun, 07 Feb 2021 10:37:30 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/02/07/warum-ich-linux-nutze/</guid>
+      <description>&lt;p&gt;Linux ist zwar schon lange kein Nischenprodukt mehr, aber das wollen augenscheinlich viele nicht wahr haben.&lt;/p&gt;
+&lt;p&gt;Linux ist für viele nicht existent, man kennt es halt nicht und die paar Menschen, denen ich begegne, die von Linux schon gehört haben, für die ist es oft keine Alternative. Es ist halt dieses &amp;ldquo;Geek-System&amp;rdquo; - wer soll damit schon vernünftig arbeiten? Die Erwartung ist, dass einfach viel zu viel sich unterscheidet von dem bisher genutzten System.&lt;/p&gt;
+&lt;p&gt;Ich war als ich das erste mal vor einem Linxu-System saß, begeistert.&lt;/p&gt;
+&lt;p&gt;Die Gründe, die Linux für mich zu einem perfekten System machen:&lt;/p&gt;
+&lt;h2 id=&#34;1-für-jeden-einsazzweck-gibt-es-ein-system&#34;&gt;1. Für jeden Einsazzweck gibt es ein System&lt;/h2&gt;
+&lt;p&gt;Linux per se ist enorm flexibel. Einzelne Distributionen bieten für alle die Möglichkeit das System zu haben, das man für sich selber braucht. Und selbst wenn es &lt;strong&gt;das&lt;/strong&gt; System für einen aktuell nicht gibt, kann man es selber erstellen.&lt;/p&gt;
+&lt;h2 id=&#34;2-flexibilität&#34;&gt;2. Flexibilität&lt;/h2&gt;
+&lt;p&gt;Eigentlich schon mit dem ersten Punkt angesprochen. Es ist recht egal ob ich einen dick auftragenden Blink-Blink-Desktop haben möchte, einen simplen Fenstermanager oder gar keine grafische Oberfläche. Mit Linux ist alles möglich.&lt;/p&gt;
+&lt;h2 id=&#34;3-es-gibt-immer-eine-wahl&#34;&gt;3. Es gibt immer eine Wahl&lt;/h2&gt;
+&lt;p&gt;Wenn eine Anwendung nicht zustimmt, kann man sich eigentlich immer sicher sein, dass es eine Alternative gibt. Das selbe gilt auch bei Distributionen - hier gibt es auch immer eine Alternative.&lt;/p&gt;
+&lt;h2 id=&#34;4-linux-ist-cool&#34;&gt;4. Linux ist cool!&lt;/h2&gt;
+&lt;p&gt;Ich kann meinen Desktop so anpassen, wie &lt;strong&gt;ich&lt;/strong&gt; es will. Das bietet in diesem Umfang keines der beiden großen amerikanischen Betriebssysteme. Man kann damit angeben, was man aus einem simplen System gemacht hat und wie toll das jetzt aussieht. Auch die Arbeit in der Konsole hat finde ich etwas. ;)&lt;/p&gt;
+&lt;h2 id=&#34;5-kostenlos&#34;&gt;5. Kostenlos&lt;/h2&gt;
+&lt;p&gt;Auch wenn Geiz nicht gut ist, hapert es doch oft am Geld. Wieso sollte man also mehr als 100€ für ein Betriebssystem ausgeben, wenn man Linux-Distributionen kostenlos bekommen kann.&lt;/p&gt;
+&lt;h2 id=&#34;6-quelloffen&#34;&gt;6. Quelloffen&lt;/h2&gt;
+&lt;p&gt;Die wenigsten Anwender werden jemals den gesamten Quellcode studieren und dann entscheiden, inwiefern man ein Programm benutzt. Aber die Möglichkeit allein gibt einem ein gutes Gefühl. Gleichzeitig erleichtert dies oftmals auch die Mitarbeit an Softwareprojekten.&lt;/p&gt;
+&lt;h2 id=&#34;7-hilfe&#34;&gt;7. Hilfe!&lt;/h2&gt;
+&lt;p&gt;Für mich ist die doch riesige Community rund um einzelne Linux-Distributionen einfach faszinierend. Man findet zu fast keinem Problem nicht schon irgendwo eine Lösung. Wenn es diese wider Erwarten doch noch nicht gibt, findet man in einem der vielen Foren sicher eine Lösung. Alternativ sind oft auch die Entwickler nicht weit.&lt;/p&gt;
+&lt;p&gt;Wenn man dann etwas mehr Erfahrung gesammelt hat, kann man wie ich auch anderen Nutzern bei ihren Problemen helfen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Grafische Tools für Git</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</link>
+      <pubDate>Sun, 31 Jan 2021 20:01:46 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/01/31/grafische-git-tools/</guid>
+      <description>&lt;p&gt;Git, die Versionsverwaltung, die in meinen Augen als Notlösung startete und heute eines der besten Versionsverwaltungssysteme ist, ist eigentlich ein reines Kommandozeilentool. Mit den Grundfunktionen habe ich mich mittlerweile auch ein wenig eingearbeitet. Jetzt gibt es aber immer wieder Momente, wo ich dann doch den Commit-Verlauf grafisch sehen möchte. Meine Favoriten:&lt;/p&gt;
+&lt;h2 id=&#34;gitg&#34;&gt;gitg&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_gitg.png&#34; alt=&#34;Bildschirmfoto von gitg&#34; title=&#34;gitg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gitg ist super im grafischen Darstellen von Commitverläufen. Unter Ubuntu ist es mit folgendem Befehl installierbar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install gitg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;thunar-vcs-plugin&#34;&gt;thunar-vcs-plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;../Bildschirmfoto_thunar-vcs.png&#34; alt=&#34;Bildschirmfoto von thunar-vcs-plugin&#34; title=&#34;thunar-vcs-plugin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Der Dateimanager der Desktopumgebung XFCE, Thunar, ist durch Plugins und sog. benutzerdefinierte Aktionen erweiterbar. Eines dieser Plugins rüstet eine Unterstützung für Subversion und Git nach. Installierbar passenderweise über das Paket &lt;strong&gt;thunar-vcs-plugin&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get install thunar-vcs-plugin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;atom&#34;&gt;Atom&lt;/h2&gt;
+&lt;p&gt;Atom ist vielmehr als einfach ein Programm für git. Es ist der von Github entwickelte Texteditor mit Unterstützung für Syntaxhighlighting mehrerer Sprachen, Plugins, eigenen Stylesheets sowie einer Git- und einer Github-Integration&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weechat - der bessere IRC-Client</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</link>
+      <pubDate>Wed, 27 Jan 2021 18:52:29 +0100</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/01/27/weechat/</guid>
+      <description>&lt;p&gt;Ich selber nutze als Messenger eigentlich nur den &lt;a href=&#34;https://wiki.ubuntuusers.de/IRC&#34;&gt;IRC&lt;/a&gt; und wurde letztens von einem Freenode-Staffer nur belächelt als ich erwähnte, dass ich Thunderbird als Client benutze. Empfohlen wurde mir für eine GTK-GUI Hexchat und für die Kommandozeile Weechat und irssi.&lt;/p&gt;
+&lt;p&gt;Nach dem ich Weechat benutzte, brauche ich die anderen eigentlich gar nicht mehr, das Programm ist genial! Theoretisch funktioniert darin wohl auch Jabber, was ich aber nicht getestet habe, da der IRC mir reicht.&lt;/p&gt;
+&lt;p&gt;Für Ubuntu/Debian etc. lässt sich das Programm wie folgt installieren:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install weechat weechat-plugins weechat-scripts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Für Debian muss man im Regelfall sich das sudo wegdenken und das als Root ausführen. Starten geht einfach mit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;weechat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Weechat ist optimal für mich, da ich es einfach immer in Guake offen haben kann und bei Bedarf einblenden.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
