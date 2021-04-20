@@ -6,7 +6,22 @@
     <description>Recent content in Xfce on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 21 Feb 2021 17:20:45 +0100</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/xfce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 08:07:24 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/xfce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.desktop-Dateien validieren</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</link>
+      <pubDate>Tue, 20 Apr 2021 08:07:24 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</guid>
+      <description>&lt;p&gt;Programmstarter und die meisten Symbole auf dem Desktop unter Linux sind eigentlich einfache Textdateien. Diese Textdateien enden mit der Dateiendung &amp;ldquo;.desktop&amp;rdquo; und heißen dementsprechend auch &lt;a href=&#34;https://wiki.ubuntuusers.de/.desktop-Dateien/&#34;&gt;.desktop-Dateien&lt;/a&gt;. Diese kann man entweder mit grafischen Programmen oder in einem Texteditor der Wahl erstellen. Die systemweiten Programmstarter liegen unter &lt;strong&gt;/usr/share/applications&lt;/strong&gt; und selbst Erstellte legt man am Besten unter &lt;strong&gt;~/.local/share/applications&lt;/strong&gt; ab. Aber natürlich kann man auch selbst solche Dateien schreiben und abspeichern - sei es weil man gerade ein Programm schreibt.&lt;/p&gt;
+&lt;p&gt;Um das Verfassen solcher Dateien soll es hier aber nicht gehen, sondern darum, wie man .desktop-Dateien validiert, also auf Richtigkeit überprüft; denn wie für so vieles gibt es auch für diese Dateien eine Spezifikation auf &lt;a href=&#34;http://freedesktop.org/wiki/Specifications/desktop-entry-spec&#34;&gt;freedesktop.org&lt;/a&gt; Dafür gibt es in dem Paket &lt;em&gt;desktop-file-utils&lt;/em&gt;, ein Programm mit dem Namen &amp;ldquo;desktop-file-validate&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Die Anwendung des Programmes ist denkbar einfach:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;desktop-file-validate /PFAD/ZUR/DATEI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hiermit kann man dann u.a. eigene .desktop-Dateien auf Richtigkeit überprüfen und bekommt recht exakte Fehlermeldungen angezeigt, wenn etwas nicht stimmt und wie man das korrigieren kann.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Desktopübergreifendes Ausloggen aus Whiskermenu</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/</link>
