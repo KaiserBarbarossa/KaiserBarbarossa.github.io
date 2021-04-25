@@ -6,7 +6,25 @@
     <description>Recent content in Open Source on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 20 Apr 2021 08:07:24 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Apr 2021 09:25:58 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox: Proton deaktivieren</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/</link>
+      <pubDate>Sun, 25 Apr 2021 09:25:58 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/</guid>
+      <description>&lt;p&gt;So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr &lt;em&gt;so&lt;/em&gt; schlimm aus.&lt;/p&gt;
+&lt;p&gt;Für alle, die das neue Design nicht kennen, ein Screenshot:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kaiserbarbarossa.github.io/post/2021/04/25/proton.png&#34; alt=&#34;Bildschirmfoto des Proton-Designs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.&lt;/p&gt;
+&lt;p&gt;Man öffne die allwissende Konfigurationsseite von Firefox &lt;code&gt;about:config&lt;/code&gt; und sucht nach &amp;ldquo;proton&amp;rdquo;. Hier werden einem einige Schalter vorgeschlagen und es reicht eigentlich den Schalter &lt;code&gt;browser.proton.enabled&lt;/code&gt; auf &lt;code&gt;false&lt;/code&gt; zu setzen und vieles erinnert dann doch wieder an das Photon-Design (also das jetzige bis einschließlich FF-88 verwendete).&lt;/p&gt;
+&lt;p&gt;Das sieht dann so aus:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kaiserbarbarossa.github.io/post/2021/04/25/noproton.png&#34; alt=&#34;Bildschirmfoto mit deaktiviertem Proton&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Leider gibt es da allerdings noch viele Sachen, die eher suboptimal aussehen, was ja auch logisch ist, weil eigentlich ist Photon ja abgeschafft. Vielleicht kann man manches auch noch mit einer userChrome.css verändern. Wenn jemand eine Lösung dazu kennt, kann er sie mir ja zukommen lassen.&lt;/p&gt;
+&lt;p&gt;Ich selber werde mal sehen, ob ich dann mit dem regulären Update auf Firefox 89 mit Proton leben werde, es deaktivieren werde oder ganz auf &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse&#34;&gt;MyBrowse&lt;/a&gt; umsteigen werden.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>.desktop-Dateien validieren</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</link>
