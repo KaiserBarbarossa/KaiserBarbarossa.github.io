@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 25 Apr 2021 09:25:58 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Apr 2021 19:34:23 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://kaiserbarbarossa.github.io/tags/hugo/</link>
+      <pubDate>Wed, 28 Apr 2021 19:34:23 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>intern</title>
+      <link>https://kaiserbarbarossa.github.io/tags/intern/</link>
+      <pubDate>Wed, 28 Apr 2021 19:34:23 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://kaiserbarbarossa.github.io/tags/linux/</link>
@@ -103,24 +121,6 @@
       <pubDate>Thu, 18 Feb 2021 07:53:10 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://kaiserbarbarossa.github.io/tags/hugo/</link>
-      <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>intern</title>
-      <link>https://kaiserbarbarossa.github.io/tags/intern/</link>
-      <pubDate>Mon, 15 Feb 2021 22:40:19 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
       <description></description>
     </item>
     

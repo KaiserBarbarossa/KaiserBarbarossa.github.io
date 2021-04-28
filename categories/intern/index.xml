@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intern on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/categories/intern/</link>
+    <description>Recent content in intern on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 28 Apr 2021 19:34:23 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/intern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suchefunktion</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/</link>
+      <pubDate>Wed, 28 Apr 2021 19:34:23 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/</guid>
+      <description>&lt;p&gt;Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen &lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page&#34;&gt;Doku&lt;/a&gt; dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun &lt;a href=&#34;https://kaiserbarbarossa.github.io/suche&#34;&gt;hier&lt;/a&gt; oder auch oben im Menü.
+Die Umsetzung wird hier mithilfe von einer &lt;a href=&#34;https://kaiserbarbarossa.github.io/index.json&#34;&gt;JSON-Datei&lt;/a&gt; durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.B. die javascriptfreie Variante von DuckDuckGo.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
