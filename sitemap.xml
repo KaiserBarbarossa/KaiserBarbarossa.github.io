@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kaiserbarbarossa.github.io/tags/arch/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/linux/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/categories/linux/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
+  </url><url>
     <loc>https://kaiserbarbarossa.github.io/</loc>
     <lastmod>2021-05-18T07:53:24+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/</loc>
     <lastmod>2021-05-18T07:53:24+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/post/2021/05/18/wahl-eines-betriebssystemes/</loc>
+    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
     <lastmod>2021-05-18T07:53:24+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
-    <lastmod>2021-04-28T19:34:23+02:00</lastmod>
+    <loc>https://kaiserbarbarossa.github.io/tags/uu-planet/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/post/2021/05/18/wahl-eines-betriebssystemes/</loc>
+    <lastmod>2021-05-18T07:53:24+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/hugo/</loc>
     <lastmod>2021-04-28T19:34:23+02:00</lastmod>
@@ -26,25 +41,13 @@
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/</loc>
     <lastmod>2021-04-28T19:34:23+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
-    <lastmod>2021-04-28T19:34:23+02:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/</loc>
-    <lastmod>2021-04-25T09:25:58+02:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/linux/</loc>
     <lastmod>2021-04-25T09:25:58+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/open-source/</loc>
     <lastmod>2021-04-25T09:25:58+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/uu-planet/</loc>
-    <lastmod>2021-04-25T09:25:58+02:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</loc>
-    <lastmod>2021-04-20T08:07:24+02:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/categories/linux/</loc>
     <lastmod>2021-04-20T08:07:24+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/programme/</loc>
@@ -61,9 +64,6 @@
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/13/weechat-benachrichtigungen-bei-pings/</loc>
     <lastmod>2021-04-13T16:18:21+00:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/arch/</loc>
-    <lastmod>2021-04-13T16:02:05+00:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/13/systemd-zram/</loc>
     <lastmod>2021-04-13T16:02:05+00:00</lastmod>
