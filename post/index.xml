@@ -6,7 +6,33 @@
     <description>Recent content in Posts on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 18 May 2021 07:53:24 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 May 2021 09:51:50 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unterstützt Freenode - was ist da los? - eine Zusammenfassung</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/05/19/freenode/</link>
+      <pubDate>Wed, 19 May 2021 09:51:50 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/05/19/freenode/</guid>
+      <description>&lt;p&gt;Die meisten Menschen, die diesen Blog lesen, wissen, dass Freenode ein &lt;a href=&#34;https://wiki.ubuntuusers.de/IRC&#34;&gt;IRC&lt;/a&gt;-Netzwerk ist und viele haben es entweder im IRC-Channel oder in den unterschiedlichen sozialen Netzwerken mitbekommen, dass bei Freenode im Moment Einiges am Brodeln ist.&lt;/p&gt;
+&lt;p&gt;Wir, die wir das schon recht früh in einem IRC-Kanal mitbekommen haben, wurden gebeten, uns doch bitte etwas zurückzuhalten und damit nicht an die Öffentlichkeit zu gehen - aber zum Einen ist jetzt schon recht viel &amp;ldquo;geleakt&amp;rdquo; worden und zum anderen will ich, dass alle darüber Bescheid wissen.&lt;/p&gt;
+&lt;p&gt;Ein gewisser reicher Mensch, &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Andrew_Lee_(entrepreneur)&amp;amp;oldid=1023779340&#34;&gt;Andrew Lee&lt;/a&gt; meint aktuell Freenode übernehmen zu wollen. Damit sind allerdings die aktuellen Freenode-Staffer nicht zufrieden und wollen das nicht - vollkommen zurecht!&lt;/p&gt;
+&lt;p&gt;Die Staffer wollen zurücktreten, wenn Andrew Lee sich durchsetzt, wonach es aktuell aussieht. Ich will das hier aber auch nciht genau und haarklein zerreisen - auch weil ich dazu keinen Nerv habe und mich das tatsächlich etwas mitnimmt, obwohl es mich im Moment eigentlich nicht interessieren muss. Ich habe trotzdem Sorgen, dass wegen solch einem Typ ein wirklich tolles Netzwerk droht, zu zerfallen.&lt;/p&gt;
+&lt;p&gt;Ich denke, es ist an der Zeit, dass man dagegen friedlich vorgeht und sich informiert. Bitte teilt diese Informationen auch in euren anderen Communities mit und hoffentlich (auch wenn ich, als Pessimist, der ich nun einmal zu sein scheine, nicht so recht daran glaube) bleibt Freenode ja wie es ist.&lt;/p&gt;
+&lt;p&gt;Eine recht ausführliche Erklärung zu dem Unfug, der gerade getrieben wird findet man hier:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409&#34;&gt;https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es ist einfach grausam, wenn wegen so einem Scheiß solch eine tolle Community-Plattform, droht zu sterben.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Wer ein Channel-Operator eines Freenode-Channels ist, wird von mir hiermit gebeten folgenden Brief mit zu unterschreiben (habe ich auch gemacht):&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/shadowcat-mst/998cea12794768bdb3da2daeff31baad&#34;&gt;https://gist.github.com/shadowcat-mst/998cea12794768bdb3da2daeff31baad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ich kann hier trotzdem verkünden, dass es schon einen Nachfolger für Freenode gibt, werde den Namen hier aber noch nicht erzählen. Entweder man weiß ihn schon, oder man weiß ihn ncoh nicht und wird ihn schon noch früh genug erfahren. Aber wenn schon &lt;em&gt;jetzt&lt;/em&gt; auf dieses neue Netzwerk gewechselt wird, macht das den Eindruck, als würde man vor dem Feind fliehen und diesen Eindruck sollte man nie auf andere machen.&lt;/p&gt;
+&lt;p&gt;Wer sich außerdem wundert, wieso ich oben auf eine alte Version des Wikipedia-Artikels zu Andrew Lee aka &lt;a href=&#34;https://github.com/realrasengan&#34;&gt;realrasengan&lt;/a&gt; aka rasengan, der gerne Kontrolle über &lt;strong&gt;sämtliche&lt;/strong&gt; privaten Daten von Freenode hätte, verlinkt habe, kann ja mal in der Versionsgeschichte nachschauen&amp;hellip; ;)&lt;/p&gt;
+&lt;p&gt;PS: [In eigener Sache] Ich werde diesen Artikel auf meinem Blog oben anheften und auf meinem Blog zu der Sache weiterhin Updates veröffentlichen.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Wahl eines Betriebssystems</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/05/18/wahl-eines-betriebssystemes/</link>

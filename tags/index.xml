@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 18 May 2021 07:53:24 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 May 2021 09:51:50 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Freenode</title>
+      <link>https://kaiserbarbarossa.github.io/tags/freenode/</link>
+      <pubDate>Wed, 19 May 2021 09:51:50 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/freenode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IRC</title>
+      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
+      <pubDate>Wed, 19 May 2021 09:51:50 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
+      <pubDate>Wed, 19 May 2021 09:51:50 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uu-Planet</title>
+      <link>https://kaiserbarbarossa.github.io/tags/uu-planet/</link>
+      <pubDate>Wed, 19 May 2021 09:51:50 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/uu-planet/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Arch</title>
       <link>https://kaiserbarbarossa.github.io/tags/arch/</link>
@@ -22,15 +58,6 @@
       <pubDate>Tue, 18 May 2021 07:53:24 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>uu-Planet</title>
-      <link>https://kaiserbarbarossa.github.io/tags/uu-planet/</link>
-      <pubDate>Tue, 18 May 2021 07:53:24 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/uu-planet/</guid>
       <description></description>
     </item>
     
@@ -53,15 +80,6 @@
     </item>
     
     <item>
-      <title>Open Source</title>
-      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Sun, 25 Apr 2021 09:25:58 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Programme</title>
       <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
       <pubDate>Tue, 20 Apr 2021 08:07:24 +0200</pubDate>
@@ -76,15 +94,6 @@
       <pubDate>Tue, 20 Apr 2021 08:07:24 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/xfce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IRC</title>
-      <link>https://kaiserbarbarossa.github.io/tags/irc/</link>
-      <pubDate>Tue, 13 Apr 2021 16:18:21 +0000</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/irc/</guid>
       <description></description>
     </item>
     
