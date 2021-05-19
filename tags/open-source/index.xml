@@ -30,6 +30,11 @@
 &lt;p&gt;Ich kann hier trotzdem verkünden, dass es schon einen Nachfolger für Freenode gibt, werde den Namen hier aber noch nicht erzählen. Entweder man weiß ihn schon, oder man weiß ihn ncoh nicht und wird ihn schon noch früh genug erfahren. Aber wenn schon &lt;em&gt;jetzt&lt;/em&gt; auf dieses neue Netzwerk gewechselt wird, macht das den Eindruck, als würde man vor dem Feind fliehen und diesen Eindruck sollte man nie auf andere machen.&lt;/p&gt;
 &lt;p&gt;Wer sich außerdem wundert, wieso ich oben auf eine alte Version des Wikipedia-Artikels zu Andrew Lee aka &lt;a href=&#34;https://github.com/realrasengan&#34;&gt;realrasengan&lt;/a&gt; aka rasengan, der gerne Kontrolle über &lt;strong&gt;sämtliche&lt;/strong&gt; privaten Daten von Freenode hätte, verlinkt habe, kann ja mal in der Versionsgeschichte nachschauen&amp;hellip; ;)&lt;/p&gt;
 &lt;p&gt;PS: [In eigener Sache] Ich werde diesen Artikel auf meinem Blog oben anheften und auf meinem Blog zu der Sache weiterhin Updates veröffentlichen.&lt;/p&gt;
+&lt;h1 id=&#34;update&#34;&gt;Update&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Wichtig:&lt;/strong&gt; Ändert eure Passwörter und E-Mail-Addressen auf Freenode:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; /msg NickServ help set password
+ /msg NickServ help set email
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
