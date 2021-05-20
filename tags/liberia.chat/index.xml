@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liberia.Chat on Mein Schmierzettel</title>
+    <link>https://kaiserbarbarossa.github.io/tags/liberia.chat/</link>
+    <description>Recent content in Liberia.Chat on Mein Schmierzettel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 20 May 2021 21:07:05 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/liberia.chat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liberia.chat</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/05/20/liberia-chat/</link>
+      <pubDate>Thu, 20 May 2021 21:07:05 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/05/20/liberia-chat/</guid>
+      <description>&lt;h1 id=&#34;früher&#34;&gt;Früher&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;&amp;hellip;war alles besser. Das stimmt leider nicht immer, aber in diesem Fall stimme ich dem Satz zu. Lange Zeit war das Freenode-IRC-Netzwerk ein zentraler Treffpunkt für Open-Source-Communities. Dies hat sich nun geändert. Wer die genauen Hintergründe wissen will, was passiert ist, dem kann ich Fuchs’ &lt;a href=&#34;https://fuchsnet.ch/freenode-resign-letter.txt&#34;&gt;Rücktrittsschreiben&lt;/a&gt; ans Herzen legen. Er beschreibt recht ausführlich, was passiert ist und was dazu führte, dass &lt;a href=&#34;https://en.wikipedia.org/wiki/Andrew_Lee_(entrepreneur)&#34;&gt;Andrew Lee&lt;/a&gt; den Rücktritt aller (Ex)-Freenode-Staffer forderte, wogegen sich die Staffer weigerten und was zum Untergang freenodes führte. So traurig es auch ist, dass so etwas mit einem tollen Netzwerk wie Freenode passieren musste, war es trotzdme interessant, die (teils) recht wilden Spekulationen in &lt;a href=&#34;https://webchat.freenode.net/freenode&#34;&gt;#freenode&lt;/a&gt; zu lesen und gestern zu sehen, wie zuerst maßig Leute dem Channel beigetreten sind, um ihre Cloaks zurückzugeben, und jess danach erst die Bans für #freenode aufgelöst hatte, Tor-Exit-Nodes entbannt wurden und die Staffer zurücktraten. Als dann die Nachricht kam, dass Liberia.Chat zur Verfügung stand, war der Ansturm auf den Freenode-Nachfolger so groß, dass zwischenzeitlich sogar ein Server ausfiel aufgrund des hohen Ansturmes und die Registrierungsmails kamen auch eher verzögert an.&lt;/p&gt;
+&lt;h1 id=&#34;jetzt&#34;&gt;Jetzt&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://liberia.chat&#34;&gt;Liberia.chat&lt;/a&gt; ist der von den ehemaligen Freenode-Staffern gegründete Ersatz für Freenode und hinter dem IRC-Netzwerk steht ein schwedischer Verein. Das ganze Projekt ist natürlich noch etwas im Aufbau, aber einige Communities sind schon von Freenode auf Liberia.chat umgezogen, manche überlegen noch, wie sie am Besten umziehen, viele Communities werden wohl zu Matrix oder Discord gehen (wobei Discord bei OSS-Projekten etwas ironisch auf mich wirkt) und vielleicht bleibt der ein oder andere Channel ja doch noch auf Freenode. Die Verbindung ist denkbar einfach. Man muss als Server nur &lt;code&gt;irc.liberia.chat&lt;/code&gt; angeben und der Port ist für SSL 6697 (beziehungsweise, für alle, die immernoch meinen auf SSL zu verzichten, ist der Port 6667). Die REgistrierung erfolgt via&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/msg NickServ REGISTER nickname email@example.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;ldquo;nickname&amp;rdquo; und die E-Mail-Adresse natürlich anpassen :). Grundsätzlich wird man wahrscheinlich gar keinen so großen Unterschied zwischen außer dass noch nicht alle Kanäle gewechselt sind und wahrscheinlich das auch gar nicht alle machen werden.&lt;/p&gt;
+&lt;p&gt;Grundsätzlich ist es immer schade, wenn einem tollen Projekt, wie Freenode es war, so etwas passieren muss. Aber ich glaube, dass dies ein guter Weg ist, der mit liberia.chat begangen wird und ich hoffe, dass das Projekt erfolgreich sein wird. Freenode schein mittlerweile auch die erste Spamwelle seit der Übernahme hinter sich zu haben, aber Andrew ist ja jetzt OP und sicher in der kompetenten Lage, da einzugreifen. Nichtsdestotrotz habe ich bei meinem (&lt;em&gt;noch&lt;/em&gt; vorhandenem) Freenode-Account bei den Usermodus +R gesetzt.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
