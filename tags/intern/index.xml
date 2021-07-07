@@ -6,7 +6,21 @@
     <description>Recent content in intern on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 28 Apr 2021 19:34:23 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/intern/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 09:28:44 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/intern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mein Problem mit Github</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/07/07/mein-problem-mit-github/</link>
+      <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/07/07/mein-problem-mit-github/</guid>
+      <description>&lt;p&gt;Microsoft hat ein echtes Talent, sich bei seinen Benutzern unbeliebt zu machen. Respekt!&lt;/p&gt;
+&lt;p&gt;Das Github nicht Open-Source ist und von Microsoft gekauft wurde, war mir bewusst und ich hoste trotzdem meinen Code und auch diesen Blog auf Github. Mal sehen, wie lange noch.&lt;/p&gt;
+&lt;p&gt;In den Augen der Redmonder ist echtes Programmieren also überflüssig und man schreibt eine &lt;em&gt;ganz tolle&lt;/em&gt; &amp;ldquo;Künstliche Intelligenz&amp;rdquo;, die nun Projekte auf Github durchsucht und den entsprechenden Code liefert. Warum sollte die KI, die &lt;strong&gt;Open-Source-Software&lt;/strong&gt; durchsucht, nicht auch freie Software sein? Am Ende wird die ja auch von einer KI kopiert. Nein, das ginge ja ganz und gar nicht!&lt;/p&gt;
+&lt;p&gt;Ich schreibe also Programme, stelle sie unter die GPL und weiß nicht, ob diese &amp;ldquo;Intelligenz&amp;rdquo; nicht meinen Code irgendwo anders vorschlägt. Da könnte ich mir dann auch die GPL sparen. Ich bin aber auch kein Lizenz-Experte&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ich gehe also davon aus, dass meine Projekte und dieser Blog in Kürze auf eine andere Plattform umziehen. Ob dies dann aber eine bereits bestehende Gitlab- oder Gitea-Instanz wird oder ob ich da nicht selbst etwas hoste, da bin ich mir aber noch nicht sicher.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Suchfunktion</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/</link>

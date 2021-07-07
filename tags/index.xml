@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 20 May 2021 07:07:05 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 09:28:44 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://kaiserbarbarossa.github.io/tags/git/</link>
+      <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>intern</title>
+      <link>https://kaiserbarbarossa.github.io/tags/intern/</link>
+      <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
+      <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Freenode</title>
       <link>https://kaiserbarbarossa.github.io/tags/freenode/</link>
@@ -44,15 +71,6 @@
     </item>
     
     <item>
-      <title>Open Source</title>
-      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Thu, 20 May 2021 07:07:05 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>uu-Planet</title>
       <link>https://kaiserbarbarossa.github.io/tags/uu-planet/</link>
       <pubDate>Thu, 20 May 2021 07:07:05 +0200</pubDate>
@@ -76,15 +94,6 @@
       <pubDate>Wed, 28 Apr 2021 19:34:23 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>intern</title>
-      <link>https://kaiserbarbarossa.github.io/tags/intern/</link>
-      <pubDate>Wed, 28 Apr 2021 19:34:23 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
       <description></description>
     </item>
     
@@ -130,15 +139,6 @@
       <pubDate>Sun, 21 Feb 2021 17:20:45 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/openbox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://kaiserbarbarossa.github.io/tags/git/</link>
-      <pubDate>Thu, 18 Feb 2021 07:53:10 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/git/</guid>
       <description></description>
     </item>
     
