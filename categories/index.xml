@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 07 Jul 2021 09:28:44 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 13:43:07 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyBrowse</title>
+      <link>https://kaiserbarbarossa.github.io/categories/mybrowse/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:07 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/categories/mybrowse/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>intern</title>
       <link>https://kaiserbarbarossa.github.io/categories/intern/</link>
@@ -49,15 +58,6 @@
       <pubDate>Tue, 02 Mar 2021 15:15:38 +0100</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/categories/ubuntuusers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MyBrowse</title>
-      <link>https://kaiserbarbarossa.github.io/categories/mybrowse/</link>
-      <pubDate>Fri, 26 Feb 2021 15:55:31 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/categories/mybrowse/</guid>
       <description></description>
     </item>
     

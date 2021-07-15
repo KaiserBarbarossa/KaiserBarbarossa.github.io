@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
+  </url><url>
     <loc>https://kaiserbarbarossa.github.io/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/mybrowse/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/categories/mybrowse/</loc>
     <lastmod>2021-07-15T13:43:07+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/07/15/mybrowse-04/</loc>
     <lastmod>2021-07-15T13:43:07+02:00</lastmod>
   </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/open-source/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
+  </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/</loc>
     <lastmod>2021-07-15T13:43:07+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/categories/</loc>
-    <lastmod>2021-07-07T09:28:44+02:00</lastmod>
+    <loc>https://kaiserbarbarossa.github.io/tags/programme/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
+  </url><url>
+    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
+    <lastmod>2021-07-15T13:43:07+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/git/</loc>
     <lastmod>2021-07-07T09:28:44+02:00</lastmod>
@@ -24,12 +39,6 @@
     <lastmod>2021-07-07T09:28:44+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/07/07/mein-problem-mit-github/</loc>
-    <lastmod>2021-07-07T09:28:44+02:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/open-source/</loc>
-    <lastmod>2021-07-07T09:28:44+02:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/</loc>
     <lastmod>2021-07-07T09:28:44+02:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/tags/freenode/</loc>
@@ -77,9 +86,6 @@
     <loc>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</loc>
     <lastmod>2021-04-20T08:07:24+02:00</lastmod>
   </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/programme/</loc>
-    <lastmod>2021-04-20T08:07:24+02:00</lastmod>
-  </url><url>
     <loc>https://kaiserbarbarossa.github.io/categories/programme/</loc>
     <lastmod>2021-04-20T08:07:24+02:00</lastmod>
   </url><url>
@@ -118,12 +124,6 @@
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/03/01/ein-echtes-freies-betriebssystem/</loc>
     <lastmod>2021-03-01T12:09:20+01:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/tags/mybrowse/</loc>
-    <lastmod>2021-02-26T15:55:31+01:00</lastmod>
-  </url><url>
-    <loc>https://kaiserbarbarossa.github.io/categories/mybrowse/</loc>
-    <lastmod>2021-02-26T15:55:31+01:00</lastmod>
   </url><url>
     <loc>https://kaiserbarbarossa.github.io/post/2021/02/26/mybrowse-0-3-ist-da/</loc>
     <lastmod>2021-02-26T15:55:31+01:00</lastmod>

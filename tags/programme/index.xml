@@ -6,7 +6,43 @@
     <description>Recent content in Programme on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 20 Apr 2021 08:07:24 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/programme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 13:43:07 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/programme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyBrowse 0.4 - Rück- und Ausblick</title>
+      <link>https://kaiserbarbarossa.github.io/post/2021/07/15/mybrowse-04/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:07 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/post/2021/07/15/mybrowse-04/</guid>
+      <description>&lt;p&gt;Heute morgen habe ich Version 0.4 von &lt;a href=&#34;https://github.com/KaiserBarbarossa/MyBrowse&#34;&gt;MyBrowse&lt;/a&gt; veröffentlicht. Eigentlich war das gar nicht geplant, aber die Änderungen sind doch recht umfangreich geworden, weshalb jetzt Zeit für ein neues Release war.&lt;/p&gt;
+&lt;p&gt;Langsam, aber kontinuierlich entwickelt sich MyBrowse in meinen Augen zu einem Webbrowser, der alle wichtigen Funktionen hat, aber trotzdem minimalistisch ist.
+Seit Version 0.3.1 gab es mehrere Änderungen:&lt;/p&gt;
+&lt;h1 id=&#34;zoom&#34;&gt;Zoom&lt;/h1&gt;
+&lt;p&gt;Wie von allen Webbrowsern gewöhnt kann man nun auch mit &lt;code&gt;Strg&lt;/code&gt; + &lt;code&gt;+&lt;/code&gt;/&lt;code&gt;-&lt;/code&gt; in eine Webseite hinein-/herauszoomen  und mit &lt;code&gt;Strg&lt;/code&gt; + &lt;code&gt;0&lt;/code&gt; den Zoom auf 100% zurücksetzen. Falls der Standardzoom beim Öffnen einer Webseite angepasst werden soll, kann man in der Konfigurationsdatei den Wert &amp;ldquo;[General][zoom]&amp;rdquo; anpassen, allerdings muss man hier nicht z.B. 100% angeben, sondern in diesem Fall 1.&lt;/p&gt;
+&lt;h1 id=&#34;erweiterungen&#34;&gt;Erweiterungen&lt;/h1&gt;
+&lt;p&gt;Ob ein Programm erweiterbar sein sollte, ist eine Diskussion für sich. Ich denke allerdings, dass ein Programm die wesentlichen Funktionen mitbringen sollte und der Benutzer dann entscheidet, ob und wenn ja welche Funktionen hinzugefügt werden sollen. WeeChat ist hier ein recht schönes Beispiel, finde ich.&lt;/p&gt;
+&lt;p&gt;Auch MyBrowse soll erweiterbar sein. Mit Version 0.4 kommt ein erster Schritt in diese Richtung. MyBrowse unterstützt nun &amp;ldquo;&lt;a href=&#34;https://webkitgtk.org/reference/webkit2gtk/stable/WebKitWebExtension.html&#34;&gt;WebKitWebExtensions&lt;/a&gt;&amp;rdquo;. Auch wenn der Name übereinstimmt, sind dies &lt;strong&gt;nicht&lt;/strong&gt; die &amp;ldquo;WebExtensions&amp;rdquo;, wie man sie von Firefox kennt, sondern in C geschrieben und werden kompiliert. Diese werden nach ~/.local/share/mybrowse/extensions gelinkt und MyBrowse führt alle *.so-Dateien aus, die in diesem Verzeichnis liegen.&lt;/p&gt;
+&lt;p&gt;In der Zukunft wird MyBrowse noch zwei andere Arten von Erweiterungen besitzen, zum einen JavaScript-Userskripte sowie Skripte, die Befehle für MyBrowse ausführen (also die, die man auch jetzt in der Adressleiste eingeben kann).
+Das Ziel der Erweiterbarkeit von MyBrowse ist also auf jeden Fall, die Flexibilität. Mit dem Ende der XUL-Erweiterungen bei Firefox und Thunderbird hat man gemerkt, das die WebExtensions bei Firefox sehr eingeschränkt sind.&lt;/p&gt;
+&lt;h1 id=&#34;benutzerdefinierte-protokolle&#34;&gt;&amp;ldquo;Benutzerdefinierte Protokolle&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;Einen besseren Namen kann ich mir nicht ausdenken&amp;hellip; 😉 Diese Funktion kann man am Besten auch nur an einem Beispiel erklären. Dazu ein Auszug aus meiner Konfiguration:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Protocols]
+ddg = https://duckduckgo.com/?q=
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Wenn man mit dieser Konfiguration in der Adressleiste zum Beispiel &lt;code&gt;ddg://foobar&lt;/code&gt; eingibt, ruft MyBrowse die Webseite &lt;code&gt;https://duckduckgo.com/q?=foobar&lt;/code&gt; auf. Damit kann man aber auch zum Beispiel Gopher-Links in MyBrowse öffnen, die dann in einem HTTP-Proxy angezeigt werden. So eine Funktion hat mir bisher in jedem Browser gefehlt oder ich habe sie nicht gefunden.&lt;/p&gt;
+&lt;h1 id=&#34;suchfunktion&#34;&gt;Suchfunktion&lt;/h1&gt;
+&lt;p&gt;Ab nun können Webseiten auch durchsucht werden. Dazu nimmt man entweder [Strg]+[F] oder gibt in die Adressleiste &lt;code&gt;:/&lt;/code&gt; ein - gefolgt von dem Suchbegriff. Eine Unterstützung für Reguläre Ausdrücke fehlt noch, ist aber nicht durch WebKits Bordmittel möglich; eine Implementierung der Suche in JavaScript wäre hier eine Möglichkeit. Vor dem selben Problem steht auch noch &lt;a href=&#34;https://github.com/qutebrowser/qutebrowser/issues/5652&#34;&gt;Qutebrowser&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;änderungen-unter-der-haube&#34;&gt;Änderungen &amp;ldquo;unter der Haube&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;Die Logik für die Kommandos (z.B. &lt;code&gt;:report&lt;/code&gt;) wurde nun in eine eigene Funktion ausgelagert, die auch aufgerufen wird, wenn man MyBrowse mit einem Argument startet.&lt;/p&gt;
+&lt;h1 id=&#34;andere-änderungen&#34;&gt;Andere Änderungen&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;MyBrowse unterstützt nun mehr &amp;ldquo;Kommandos&amp;rdquo; als vorher für die Adressleiste. Dies wird auch - wie oben genannt - für Erweiterungen verwendet werden.&lt;/li&gt;
+&lt;li&gt;Die Fortschrittsanzeige in der Adressleiste wird nun nicht mehr angezeigt, wenn die Seite geladen wird&lt;/li&gt;
+&lt;li&gt;Auch URLs wie &lt;code&gt;~/.config/mybrowse/mybrowse.cfg&lt;/code&gt; können nun geöffnet werden und werden richtig aufgelöst&lt;/li&gt;
+&lt;li&gt;Die Adressleiste kann ihren Fokus mit [Strg]+[L] und mit [Escape] erhalten&lt;/li&gt;
+&lt;li&gt;Einige neue Kommandos für die Adressleiste, wie z.B. &amp;ldquo;:exec&amp;rdquo;, um Befehle in einer Subshell auszuführen und &amp;ldquo;:set&amp;rdquo; um die Konfiguration zu bearbeiten.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>.desktop-Dateien validieren</title>
       <link>https://kaiserbarbarossa.github.io/post/2021/04/20/desktop-dateien-validieren/</link>

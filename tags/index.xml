@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Mein Schmierzettel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 07 Jul 2021 09:28:44 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 13:43:07 +0200</lastBuildDate><atom:link href="https://kaiserbarbarossa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyBrowse</title>
+      <link>https://kaiserbarbarossa.github.io/tags/mybrowse/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:07 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/mybrowse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:07 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programme</title>
+      <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
+      <pubDate>Thu, 15 Jul 2021 13:43:07 +0200</pubDate>
+      
+      <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>git</title>
       <link>https://kaiserbarbarossa.github.io/tags/git/</link>
@@ -22,15 +49,6 @@
       <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/intern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Open Source</title>
-      <link>https://kaiserbarbarossa.github.io/tags/open-source/</link>
-      <pubDate>Wed, 07 Jul 2021 09:28:44 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/open-source/</guid>
       <description></description>
     </item>
     
@@ -98,29 +116,11 @@
     </item>
     
     <item>
-      <title>Programme</title>
-      <link>https://kaiserbarbarossa.github.io/tags/programme/</link>
-      <pubDate>Tue, 20 Apr 2021 08:07:24 +0200</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/programme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Xfce</title>
       <link>https://kaiserbarbarossa.github.io/tags/xfce/</link>
       <pubDate>Tue, 20 Apr 2021 08:07:24 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/tags/xfce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MyBrowse</title>
-      <link>https://kaiserbarbarossa.github.io/tags/mybrowse/</link>
-      <pubDate>Fri, 26 Feb 2021 15:55:31 +0100</pubDate>
-      
-      <guid>https://kaiserbarbarossa.github.io/tags/mybrowse/</guid>
       <description></description>
     </item>
     
