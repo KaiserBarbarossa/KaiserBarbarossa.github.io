@@ -6,9 +6,10 @@
 <meta name=robots content="index, follow">
 <title>Firefox: Proton deaktivieren | Mein Schmierzettel</title>
 <meta name=keywords content="Linux,uu-Planet,Open Source">
-<meta name=description content="So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.
-Für alle, die das neue Design nicht kennen, ein Screenshot:
-Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.">
+<meta name=description content="Update 15.8.21: Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine userChrome.css zurückgreifen.
+Die Option browser.proton.enabled darf nicht auf false stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.
+ Der originale Artikel:
+So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.">
 <meta name=author content="tuxifreund">
 <link rel=canonical href=https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/>
 <meta name=google-site-verification content="uP6g5r_5OYfEhkvk2Gq_T6B5PyPPsxHtp7-uuGpqmmM">
@@ -22,19 +23,21 @@ Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Vers
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
 <meta property="og:title" content="Firefox: Proton deaktivieren">
-<meta property="og:description" content="So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.
-Für alle, die das neue Design nicht kennen, ein Screenshot:
-Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.">
+<meta property="og:description" content="Update 15.8.21: Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine userChrome.css zurückgreifen.
+Die Option browser.proton.enabled darf nicht auf false stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.
+ Der originale Artikel:
+So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/">
 <meta property="article:published_time" content="2021-04-25T09:25:58+02:00">
 <meta property="article:modified_time" content="2021-04-25T09:25:58+02:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Firefox: Proton deaktivieren">
-<meta name=twitter:description content="So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.
-Für alle, die das neue Design nicht kennen, ein Screenshot:
-Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Firefox: Proton deaktivieren","name":"Firefox: Proton deaktivieren","description":"So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des …","keywords":["Linux","uu-Planet","Open Source"],"articleBody":"So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.\nFür alle, die das neue Design nicht kennen, ein Screenshot:\nTrotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.\nMan öffne die allwissende Konfigurationsseite von Firefox about:config und sucht nach “proton”. Hier werden einem einige Schalter vorgeschlagen und es reicht eigentlich den Schalter browser.proton.enabled auf false zu setzen und vieles erinnert dann doch wieder an das Photon-Design (also das jetzige bis einschließlich FF-88 verwendete).\nDas sieht dann so aus:\nLeider gibt es da allerdings noch viele Sachen, die eher suboptimal aussehen, was ja auch logisch ist, weil eigentlich ist Photon ja abgeschafft. Vielleicht kann man manches auch noch mit einer userChrome.css verändern. Wenn jemand eine Lösung dazu kennt, kann er sie mir ja zukommen lassen.\nIch selber werde mal sehen, ob ich dann mit dem regulären Update auf Firefox 89 mit Proton leben werde, es deaktivieren werde oder ganz auf MyBrowse umsteigen werden.\n","wordCount":"199","inLanguage":"en","datePublished":"2021-04-25T09:25:58+02:00","dateModified":"2021-04-25T09:25:58+02:00","author":{"@type":"Person","name":"tuxifreund"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/"},"publisher":{"@type":"Organization","name":"Mein Schmierzettel","logo":{"@type":"ImageObject","url":"https://kaiserbarbarossa.github.io/favicon.ico"}}}</script>
+<meta name=twitter:description content="Update 15.8.21: Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine userChrome.css zurückgreifen.
+Die Option browser.proton.enabled darf nicht auf false stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.
+ Der originale Artikel:
+So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Firefox: Proton deaktivieren","name":"Firefox: Proton deaktivieren","description":"Update 15.8.21: Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine userChrome.css …","keywords":["Linux","uu-Planet","Open Source"],"articleBody":"Update 15.8.21: Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine userChrome.css zurückgreifen.\nDie Option browser.proton.enabled darf nicht auf false stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.\n Der originale Artikel:\nSo ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr so schlimm aus.\nFür alle, die das neue Design nicht kennen, ein Screenshot:\nTrotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.\nMan öffne die allwissende Konfigurationsseite von Firefox about:config und sucht nach “proton”. Hier werden einem einige Schalter vorgeschlagen und es reicht eigentlich den Schalter browser.proton.enabled auf false zu setzen und vieles erinnert dann doch wieder an das Photon-Design (also das jetzige bis einschließlich FF-88 verwendete).\nDas sieht dann so aus:\nLeider gibt es da allerdings noch viele Sachen, die eher suboptimal aussehen, was ja auch logisch ist, weil eigentlich ist Photon ja abgeschafft. Vielleicht kann man manches auch noch mit einer userChrome.css verändern. Wenn jemand eine Lösung dazu kennt, kann er sie mir ja zukommen lassen.\nIch selber werde mal sehen, ob ich dann mit dem regulären Update auf Firefox 89 mit Proton leben werde, es deaktivieren werde oder ganz auf MyBrowse umsteigen werden.\n","wordCount":"245","inLanguage":"en","datePublished":"2021-04-25T09:25:58+02:00","dateModified":"2021-04-25T09:25:58+02:00","author":{"@type":"Person","name":"tuxifreund"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/"},"publisher":{"@type":"Organization","name":"Mein Schmierzettel","logo":{"@type":"ImageObject","url":"https://kaiserbarbarossa.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -80,10 +83,15 @@ Firefox: Proton deaktivieren
 <div class=post-description>
 </div>
 <div class=post-meta>
-April 25, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;tuxifreund
+April 25, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;tuxifreund
 </div>
 </header>
 <div class=post-content>
+<h1 id=update-15821>Update 15.8.21:<a hidden class=anchor aria-hidden=true href=#update-15821>#</a></h1>
+<p>Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine <code>userChrome.css</code> zurückgreifen.</p>
+<p>Die Option <code>browser.proton.enabled</code> darf <em>nicht</em> auf <code>false</code> stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.</p>
+<hr>
+<p><strong>Der originale Artikel:</strong></p>
 <p>So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr <em>so</em> schlimm aus.</p>
 <p>Für alle, die das neue Design nicht kennen, ein Screenshot:</p>
 <p><img src=https://kaiserbarbarossa.github.io/post/2021/04/25/proton.png alt="Bildschirmfoto des Proton-Designs"></p>

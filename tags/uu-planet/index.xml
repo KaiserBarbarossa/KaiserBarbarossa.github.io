@@ -101,7 +101,12 @@ In nächster Zeit - bin ich mir sicher - landet bei mir irgendwo auf einer Festp
       <pubDate>Sun, 25 Apr 2021 09:25:58 +0200</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/04/25/proton-deaktivieren/</guid>
-      <description>&lt;p&gt;So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr &lt;em&gt;so&lt;/em&gt; schlimm aus.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;update-15821&#34;&gt;Update 15.8.21:&lt;/h1&gt;
+&lt;p&gt;Folgende Anleitung funktioniert nicht mehr für Firefox 91 und neuere Versionen! Wenn einem Proton also nicht gefällt, muss man dann auf eine &lt;code&gt;userChrome.css&lt;/code&gt; zurückgreifen.&lt;/p&gt;
+&lt;p&gt;Die Option &lt;code&gt;browser.proton.enabled&lt;/code&gt; darf &lt;em&gt;nicht&lt;/em&gt; auf &lt;code&gt;false&lt;/code&gt; stehen, da es ansonsten zu Darstellungsfehlern in den Einstellungen kommt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Der originale Artikel:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So ganz warm werde ich mit dem neuen Firefox-Design Proton nicht, auch wenn ich zugeben muss, dass es sich doch deutlich verbessert habe im Vergleich zu meinen ersten Tests des Designs und es sieht gar nicht mehr &lt;em&gt;so&lt;/em&gt; schlimm aus.&lt;/p&gt;
 &lt;p&gt;Für alle, die das neue Design nicht kennen, ein Screenshot:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kaiserbarbarossa.github.io/post/2021/04/25/proton.png&#34; alt=&#34;Bildschirmfoto des Proton-Designs&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Trotz allem kann man es in der aktuellen Firefox-89-Beta und in der Nightly-Version, die schon auf dem Stand von Firefox 90 ist, recht einfach deaktivieren.&lt;/p&gt;
