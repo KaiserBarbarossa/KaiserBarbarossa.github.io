@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Microblog</title>
+        <meta charset="utf-8">
+        <style>
+            .microblogentry {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            const RSS_URL = 'https://troet.cafe/@tuxifreund.rss'
+
+            fetch(RSS_URL)
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                                console.log(data);
+                                const items = data.querySelectorAll("item");
+                                let html = ``;
+                                items.forEach(el => {
+                                                html += `
+           <article class="microblogentry">
+           <p>
+           <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
+           ${el.querySelector("title").innerHTML}
+           </p>
+           </h2>
+           </article>
+           `;
+                                            });
+                                document.body.insertAdjacentHTML("beforeend", html);
+                            });
+        </script>
+        <noscript>Leider braucht diese Seite JavaScript zum Funktionieren. Aktiviere also bitte JavaScript. <br>
+        Ansonsten kann man meinen Microblog auch direkt <a href="https://troet.cafe/@tuxifreund">auf Mastodon</a>lesen.</noscript>
+    </body>   
+</html>
