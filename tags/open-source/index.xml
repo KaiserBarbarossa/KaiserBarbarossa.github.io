@@ -25,7 +25,7 @@ Seit Version 0.3.1 gab es mehrere Änderungen:&lt;/p&gt;
 Das Ziel der Erweiterbarkeit von MyBrowse ist also auf jeden Fall, die Flexibilität. Mit dem Ende der XUL-Erweiterungen bei Firefox und Thunderbird hat man gemerkt, das die WebExtensions bei Firefox sehr eingeschränkt sind.&lt;/p&gt;
 &lt;h1 id=&#34;benutzerdefinierte-protokolle&#34;&gt;&amp;ldquo;Benutzerdefinierte Protokolle&amp;rdquo;&lt;/h1&gt;
 &lt;p&gt;Einen besseren Namen kann ich mir nicht ausdenken&amp;hellip; 😉 Diese Funktion kann man am Besten auch nur an einem Beispiel erklären. Dazu ein Auszug aus meiner Konfiguration:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[Protocols]
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Protocols]
 ddg = https://duckduckgo.com/?q=
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Wenn man mit dieser Konfiguration in der Adressleiste zum Beispiel &lt;code&gt;ddg://foobar&lt;/code&gt; eingibt, ruft MyBrowse die Webseite &lt;code&gt;https://duckduckgo.com/q?=foobar&lt;/code&gt; auf. Damit kann man aber auch zum Beispiel Gopher-Links in MyBrowse öffnen, die dann in einem HTTP-Proxy angezeigt werden. So eine Funktion hat mir bisher in jedem Browser gefehlt oder ich habe sie nicht gefunden.&lt;/p&gt;
 &lt;h1 id=&#34;suchfunktion&#34;&gt;Suchfunktion&lt;/h1&gt;
