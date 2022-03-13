@@ -231,13 +231,13 @@ Theoretisch könnte man jetzt also den Befehl &lt;code&gt;xfce4-session-logout&l
 desktop=$(printenv XDG_SESSION_DESKTOP)
 if [ &amp;quot;$desktop&amp;quot; == &amp;quot;openbox&amp;quot; ]
 	then
-        obsession-logout
+		obsession-logout
 	elif [ &amp;quot;$desktop&amp;quot; == &amp;quot;xfce&amp;quot; ]
-        then
-            xfce4-session-logout
+		then
+			xfce4-session-logout
 	else
-        echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
-        exit 1
+		echo &amp;quot;Desktopumgebung nicht unterstützt. Beende.&amp;quot;
+		exit 1
 fi
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Das kann man jetzt zum Beispiel unter &lt;strong&gt;~/bin&lt;/strong&gt; abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &amp;ldquo;Paths&amp;rdquo; ist) im Whiskermenu als Befehl beim Abmelden &lt;code&gt;obxfceausloggen&lt;/code&gt; eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:&lt;/p&gt;

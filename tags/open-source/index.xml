@@ -226,7 +226,8 @@ sudo dpkg -i systemd-zram_*.deb
       <pubDate>Mon, 29 Mar 2021 05:11:39 +0000</pubDate>
       
       <guid>https://kaiserbarbarossa.github.io/post/2021/03/29/neuen-firefox-druck-dialog-deaktivieren/</guid>
-      <description>&lt;p&gt;Ich war recht erfreut als ich auf Mozillas Mailing-Listen davon las, dass es einen überarbeiten Druck-Dialog in Firefox 86 geben soll und war schon gespannt, was denn wirklich die Verbesserungen daran sein sollten.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;In neuen Firefox-Versionen scheint diese Lösung nichtmehr zu funktionieren. Leider habe ich aber noch keine bessere Lösung gefunden.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Ich war recht erfreut als ich auf Mozillas Mailing-Listen davon las, dass es einen überarbeiten Druck-Dialog in Firefox 86 geben soll und war schon gespannt, was denn wirklich die Verbesserungen daran sein sollten.&lt;/p&gt;
 &lt;p&gt;Ehrlich gesagt, muss ich aber nach ein paar Tagen zu dem Konsens kommen, dass sich meiner Meinung nach diese &amp;ldquo;Verbesserung&amp;rdquo; nicht zu einem Praxiseinsatz eignen. Leider.&lt;/p&gt;
 &lt;p&gt;Natürlich ist das Deaktivieren einfach durch eine Änderung in &lt;code&gt;about:config&lt;/code&gt; getan:&lt;/p&gt;
 &lt;ol&gt;

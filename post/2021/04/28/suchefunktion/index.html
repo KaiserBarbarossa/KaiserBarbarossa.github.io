@@ -4,8 +4,7 @@
 <meta name=msvalidate.01 content="CDDAE18EF13C225BF267F33934517460">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Suchfunktion | Mein Schmierzettel</title>
-<meta name=keywords content="intern,Hugo">
+<title>Suchfunktion | Mein Schmierzettel</title><meta name=keywords content="intern,Hugo">
 <meta name=description content="Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen Doku dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun hier oder auch oben im Menü. Die Umsetzung wird hier mithilfe von einer JSON-Datei durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.">
 <meta name=author content="tuxifreund">
 <link rel=canonical href=https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/>
@@ -18,7 +17,7 @@
 <link rel=mask-icon href=https://kaiserbarbarossa.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.93.2">
 <meta property="og:title" content="Suchfunktion">
 <meta property="og:description" content="Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen Doku dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun hier oder auch oben im Menü. Die Umsetzung wird hier mithilfe von einer JSON-Datei durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.">
 <meta property="og:type" content="article">
@@ -29,74 +28,51 @@
 <meta name=twitter:title content="Suchfunktion">
 <meta name=twitter:description content="Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen Doku dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun hier oder auch oben im Menü. Die Umsetzung wird hier mithilfe von einer JSON-Datei durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Suchfunktion","name":"Suchfunktion","description":"Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen Doku dieses wirklich wundervollen Themes darauf gestossen, dass ein Template …","keywords":["intern","Hugo"],"articleBody":"Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen Doku dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun hier oder auch oben im Menü. Die Umsetzung wird hier mithilfe von einer JSON-Datei durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.B. die javascriptfreie Variante von DuckDuckGo.\n","wordCount":"87","inLanguage":"en","datePublished":"2021-04-28T19:34:23+02:00","dateModified":"2021-04-28T19:34:23+02:00","author":{"@type":"Person","name":"tuxifreund"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiserbarbarossa.github.io/post/2021/04/28/suchefunktion/"},"publisher":{"@type":"Organization","name":"Mein Schmierzettel","logo":{"@type":"ImageObject","url":"https://kaiserbarbarossa.github.io/favicon.ico"}}}</script>
-</head>
-<body id=top>
-<script>window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+</head><body id=top>
+<script>window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <noscript>
-<style type=text/css>.theme-toggle,.top-link{display:none}</style>
-</noscript>
-<header class=header>
+<style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header>
 <nav class=nav>
 <div class=logo>
 <a href=https://kaiserbarbarossa.github.io accesskey=h title="Mein Schmierzettel (Alt + H)">Mein Schmierzettel</a>
 <span class=logo-switches>
 </span>
-</div>
-<ul class=menu id=menu onscroll=menu_on_scroll()>
+</div><ul class=menu id=menu onscroll=menu_on_scroll()>
 <li>
 <a href=https://kaiserbarbarossa.github.io/suche/ title="Suche (Alt + /)" accesskey=/>
 <span>Suche</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/archiv/index.html title=Archiv>
 <span>Archiv</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/categories/ title=Kategorien>
 <span>Kategorien</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/tags/ title=Tags>
 <span>Tags</span>
 </a>
-</li></ul>
-</nav>
-</header>
-<main class=main>
+</li></ul></nav></header><main class=main>
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
 Suchfunktion
-</h1>
-<div class=post-description>
-</div>
-<div class=post-meta>
+</h1><div class=post-description>
+</div><div class=post-meta>
 April 28, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;tuxifreund
-</div>
-</header>
-<div class=post-content>
+</div></header><div class=post-content>
 <p>Bei der Überlegung, wie ich für dieses Blog eine Suchfunktion einbauen könnte, bin ich in der tollen <a href=https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page>Doku</a> dieses wirklich wundervollen Themes darauf gestossen, dass ein Template für die Suche fest eingebaut ist. Das habe ich so auch eingebaut und die Suche findet sich nun <a href=https://kaiserbarbarossa.github.io/suche>hier</a> oder auch oben im Menü.
-Die Umsetzung wird hier mithilfe von einer <a href=https://kaiserbarbarossa.github.io/index.json>JSON-Datei</a> durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.B. die javascriptfreie Variante von DuckDuckGo.</p>
-</div>
-<footer class=post-footer>
+Die Umsetzung wird hier mithilfe von einer <a href=https://kaiserbarbarossa.github.io/index.json>JSON-Datei</a> durchgeführt, die von einem JavaScript-Code durchsucht wird. Deshalb muss mindestens für diese eine Seite JavaScript aktiviert sein - oder man benutzt halt z.B. die javascriptfreie Variante von DuckDuckGo.</p></div><footer class=post-footer>
 <ul class=post-tags>
-<li><a href=https://kaiserbarbarossa.github.io/tags/intern/>intern</a></li>
-<li><a href=https://kaiserbarbarossa.github.io/tags/hugo/>Hugo</a></li>
-</ul>
-</footer>
-</article>
-</main><footer class=footer>
-<span>&copy; 2021 <a href=https://kaiserbarbarossa.github.io>Mein Schmierzettel</a></span>
+<li><a href=https://kaiserbarbarossa.github.io/tags/intern/>intern</a></li><li><a href=https://kaiserbarbarossa.github.io/tags/hugo/>Hugo</a></li></ul></footer></article></main><footer class=footer>
+<span>&copy; 2022 <a href=https://kaiserbarbarossa.github.io>Mein Schmierzettel</a></span>
 <span>&#183;</span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
 <button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </button>
 </a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-</body>
-</html>
+<script defer src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script>
+</body></html>

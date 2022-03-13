@@ -4,8 +4,7 @@
 <meta name=msvalidate.01 content="CDDAE18EF13C225BF267F33934517460">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Desktopübergreifendes Ausloggen aus Whiskermenu | Mein Schmierzettel</title>
-<meta name=keywords content="Xfce,Openbox,Linux,uu-Planet">
+<title>Desktopübergreifendes Ausloggen aus Whiskermenu | Mein Schmierzettel</title><meta name=keywords content="Xfce,Openbox,Linux,uu-Planet">
 <meta name=description content="Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.
 Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden xfce4-session-logout gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.
 Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter &ldquo;Exit&rdquo;.">
@@ -20,7 +19,7 @@ Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den
 <link rel=mask-icon href=https://kaiserbarbarossa.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.93.2">
 <meta property="og:title" content="Desktopübergreifendes Ausloggen aus Whiskermenu">
 <meta property="og:description" content="Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.
 Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden xfce4-session-logout gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.
@@ -35,99 +34,64 @@ Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den
 Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden xfce4-session-logout gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.
 Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter &ldquo;Exit&rdquo;.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Desktopübergreifendes Ausloggen aus Whiskermenu","name":"Desktopübergreifendes Ausloggen aus Whiskermenu","description":"Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu …","keywords":["Xfce","Openbox","Linux","uu-Planet"],"articleBody":"Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.\nDas Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden xfce4-session-logout gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.\nEin entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter “Exit”. Alternativ mit mehr Auswahlmöglichkeiten gibt es den Befehl obsession-logout. Theoretisch könnte man jetzt also den Befehl xfce4-session-logoutdurch obsession-logout ersetzen. Dann könnte ich die Schaltfläche aber nicht einfach unter Xfce einsetzen. Also muss eine Lösung her - z.B. ein Skript.\nDer Aufbau ist eigentlich denkbar einfach: Ein Skript überprüft, ob gerade Xfce oder Openbox läuft. Wenn Xfce verwendet wird wird der Befehl xfce4-session-logout aufgerufen und unter Openbox der andere Befehl. Theoretisch wäre dieses Skript dann beliebig erweiterbar (Habe ich aber nicht probiert).\nWelche Desktopumgebung man verwendet kann man mit folgendem Befehl herausfinden:\nprintenv XDG_SESSION_DESKTOP  herausfinden.\nEin Skript (nennen wir es z.B. obxfceausloggen) sähe z.B. so aus:\n#!/bin/bash desktop=$(printenv XDG_SESSION_DESKTOP) if [ \"$desktop\" == \"openbox\" ] then obsession-logout elif [ \"$desktop\" == \"xfce\" ] then xfce4-session-logout else echo \"Desktopumgebung nicht unterstützt. Beende.\" exit 1 fi  Das kann man jetzt zum Beispiel unter ~/bin abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des “Paths” ist) im Whiskermenu als Befehl beim Abmelden obxfceausloggen eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:\nRechtsklick auf das Whiskermenu – “Eigenschaften” – “Befehle” – “Abmelden”. Dort kann man dann das Skript als Befehl eintragen.\n","wordCount":"262","inLanguage":"en","datePublished":"2021-02-21T17:20:45+01:00","dateModified":"2021-02-21T17:20:45+01:00","author":{"@type":"Person","name":"tuxifreund"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kaiserbarbarossa.github.io/post/2021/02/21/desktopuebergreifendes-ausloggen-aus-whiskermenu/"},"publisher":{"@type":"Organization","name":"Mein Schmierzettel","logo":{"@type":"ImageObject","url":"https://kaiserbarbarossa.github.io/favicon.ico"}}}</script>
-</head>
-<body id=top>
-<script>window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+</head><body id=top>
+<script>window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <noscript>
-<style type=text/css>.theme-toggle,.top-link{display:none}</style>
-</noscript>
-<header class=header>
+<style type=text/css>.theme-toggle,.top-link{display:none}</style></noscript><header class=header>
 <nav class=nav>
 <div class=logo>
 <a href=https://kaiserbarbarossa.github.io accesskey=h title="Mein Schmierzettel (Alt + H)">Mein Schmierzettel</a>
 <span class=logo-switches>
 </span>
-</div>
-<ul class=menu id=menu onscroll=menu_on_scroll()>
+</div><ul class=menu id=menu onscroll=menu_on_scroll()>
 <li>
 <a href=https://kaiserbarbarossa.github.io/suche/ title="Suche (Alt + /)" accesskey=/>
 <span>Suche</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/archiv/index.html title=Archiv>
 <span>Archiv</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/categories/ title=Kategorien>
 <span>Kategorien</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://kaiserbarbarossa.github.io/tags/ title=Tags>
 <span>Tags</span>
 </a>
-</li></ul>
-</nav>
-</header>
-<main class=main>
+</li></ul></nav></header><main class=main>
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
 Desktopübergreifendes Ausloggen aus Whiskermenu
-</h1>
-<div class=post-description>
-</div>
-<div class=post-meta>
+</h1><div class=post-description>
+</div><div class=post-meta>
 February 21, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;tuxifreund
-</div>
-</header>
-<div class=post-content>
-<p>Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.</p>
-<p>Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden <code>xfce4-session-logout</code> gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.</p>
-<p>Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter <em>&ldquo;Exit&rdquo;</em>. Alternativ mit mehr Auswahlmöglichkeiten gibt es den Befehl <code>obsession-logout</code>.
-Theoretisch könnte man jetzt also den Befehl <code>xfce4-session-logout</code>durch <code>obsession-logout</code> ersetzen. Dann könnte ich die Schaltfläche aber nicht einfach unter Xfce einsetzen. Also muss eine Lösung her - z.B. ein Skript.</p>
-<p>Der Aufbau ist eigentlich denkbar einfach: Ein Skript überprüft, ob gerade Xfce oder Openbox läuft. Wenn Xfce verwendet wird wird der Befehl <code>xfce4-session-logout</code> aufgerufen und unter Openbox der andere Befehl. Theoretisch wäre dieses Skript dann beliebig erweiterbar (Habe ich aber nicht probiert).</p>
-<p>Welche Desktopumgebung man verwendet kann man mit folgendem Befehl herausfinden:</p>
-<pre><code>printenv XDG_SESSION_DESKTOP
-</code></pre>
-<p>herausfinden.</p>
-<p>Ein Skript (nennen wir es z.B. <code>obxfceausloggen</code>) sähe z.B. so aus:</p>
-<pre><code>#!/bin/bash
+</div></header><div class=post-content>
+<p>Openbox ist ein toller Fenstermanager und für mich in Kombination mit dem Panel Xfces ein guter Ersatz für komplette Desktopumgebungen. Auf meinem Laptop habe ich parallel zu Openbox noch Xfce.</p><p>Das Whiskermenu im Xfce-Panel hat als Standardbefehl zum Abmelden <code>xfce4-session-logout</code> gesetzt. Das funktioniert unter Xfce natürlich super, unter Openbox gibt es hier aber eine Fehlermeldung, da ja keine Xfce-Session läuft.</p><p>Ein entsprechendes Pentant für Openbox gibt es im Rootmenu (REchtsklick auf den Desktop) unter <em>&ldquo;Exit&rdquo;</em>. Alternativ mit mehr Auswahlmöglichkeiten gibt es den Befehl <code>obsession-logout</code>.
+Theoretisch könnte man jetzt also den Befehl <code>xfce4-session-logout</code>durch <code>obsession-logout</code> ersetzen. Dann könnte ich die Schaltfläche aber nicht einfach unter Xfce einsetzen. Also muss eine Lösung her - z.B. ein Skript.</p><p>Der Aufbau ist eigentlich denkbar einfach: Ein Skript überprüft, ob gerade Xfce oder Openbox läuft. Wenn Xfce verwendet wird wird der Befehl <code>xfce4-session-logout</code> aufgerufen und unter Openbox der andere Befehl. Theoretisch wäre dieses Skript dann beliebig erweiterbar (Habe ich aber nicht probiert).</p><p>Welche Desktopumgebung man verwendet kann man mit folgendem Befehl herausfinden:</p><pre><code>printenv XDG_SESSION_DESKTOP
+</code></pre><p>herausfinden.</p><p>Ein Skript (nennen wir es z.B. <code>obxfceausloggen</code>) sähe z.B. so aus:</p><pre><code>#!/bin/bash
 desktop=$(printenv XDG_SESSION_DESKTOP)
 if [ &quot;$desktop&quot; == &quot;openbox&quot; ]
 	then
-        obsession-logout
+		obsession-logout
 	elif [ &quot;$desktop&quot; == &quot;xfce&quot; ]
-        then
-            xfce4-session-logout
+		then
+			xfce4-session-logout
 	else
-        echo &quot;Desktopumgebung nicht unterstützt. Beende.&quot;
-        exit 1
+		echo &quot;Desktopumgebung nicht unterstützt. Beende.&quot;
+		exit 1
 fi
-</code></pre>
-<p>Das kann man jetzt zum Beispiel unter <strong>~/bin</strong> abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &ldquo;Paths&rdquo; ist) im Whiskermenu als Befehl beim Abmelden <code>obxfceausloggen</code> eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:</p>
-<p><em>Rechtsklick auf das Whiskermenu &ndash;> &ldquo;Eigenschaften&rdquo; &ndash;> &ldquo;Befehle&rdquo; &ndash;> &ldquo;Abmelden&rdquo;</em>. Dort kann man dann das Skript als Befehl eintragen.</p>
-</div>
-<footer class=post-footer>
+</code></pre><p>Das kann man jetzt zum Beispiel unter <strong>~/bin</strong> abspeichern und (das Folgende setzt voraus, dass ~/bin Teil des &ldquo;Paths&rdquo; ist) im Whiskermenu als Befehl beim Abmelden <code>obxfceausloggen</code> eintragen. Die Einstellungsmöglichkeit dazu findet man wie folgt:</p><p><em>Rechtsklick auf das Whiskermenu &ndash;> &ldquo;Eigenschaften&rdquo; &ndash;> &ldquo;Befehle&rdquo; &ndash;> &ldquo;Abmelden&rdquo;</em>. Dort kann man dann das Skript als Befehl eintragen.</p></div><footer class=post-footer>
 <ul class=post-tags>
-<li><a href=https://kaiserbarbarossa.github.io/tags/xfce/>Xfce</a></li>
-<li><a href=https://kaiserbarbarossa.github.io/tags/openbox/>Openbox</a></li>
-<li><a href=https://kaiserbarbarossa.github.io/tags/linux/>Linux</a></li>
-<li><a href=https://kaiserbarbarossa.github.io/tags/uu-planet/>uu-Planet</a></li>
-</ul>
-</footer>
-</article>
-</main><footer class=footer>
-<span>&copy; 2021 <a href=https://kaiserbarbarossa.github.io>Mein Schmierzettel</a></span>
+<li><a href=https://kaiserbarbarossa.github.io/tags/xfce/>Xfce</a></li><li><a href=https://kaiserbarbarossa.github.io/tags/openbox/>Openbox</a></li><li><a href=https://kaiserbarbarossa.github.io/tags/linux/>Linux</a></li><li><a href=https://kaiserbarbarossa.github.io/tags/uu-planet/>uu-Planet</a></li></ul></footer></article></main><footer class=footer>
+<span>&copy; 2022 <a href=https://kaiserbarbarossa.github.io>Mein Schmierzettel</a></span>
 <span>&#183;</span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
 <button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </button>
 </a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-</body>
-</html>
+<script defer src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script>
+</body></html>
